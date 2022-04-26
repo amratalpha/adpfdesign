@@ -62,62 +62,69 @@
 
             <div id="scrollbar">
                 <div class="container-fluid">
-
-                    <div id="two-column-menu">
-                    </div>
+                    <div id="two-column-menu"></div>
                     <ul class="navbar-nav" id="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link menu-link" href="index.html">
-                                <i class="mdi mdi-view-dashboard"></i>
-                                <span data-key="t-dashboards">Dashboard</span>
+                            <a class="nav-link menu-link active" href="index.html">
+                                <i class="mdi mdi-home"></i>
+                                <span data-key="t-dashboards">Homepage</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link menu-link active" href="news.html">
-                                <i class="mdi mdi-newspaper-variant"></i>
-                                <span data-key="t-news">News</span>
+                            <a class="nav-link menu-link" href="#">
+                                <i class="mdi mdi-information"></i>
+                                <span data-key="t-news">About Us</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link menu-link" href="department.html">
+                            <a class="nav-link menu-link" href="#department" data-bs-toggle="collapse" role="button"
+                            aria-expanded="false" aria-controls="department">
                                 <i class="mdi mdi-office-building"></i>
-                                <span data-key="t-news">Department</span>
+                                <span data-key="t-news">Division/Department</span>
+                            </a>
+                            <div class="collapse menu-dropdown" id="department">
+                                <ul class="nav nav-sm flex-column">
+                                    <li class="nav-item">
+                                        <a href="department.html" class="nav-link" data-key="t-analytics">Department
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="#">
+                                <i class="mdi mdi-account-group"></i>
+                                <span data-key="t-news">Committies</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link menu-link" href="index.html">
-                                <i class="mdi mdi-bullhorn"></i>
-                                <span data-key="t-news">Announcements</span>
+                            <a class="nav-link menu-link" href="#">
+                                <i class="mdi mdi-cog"></i>
+                                <span data-key="t-news">E-Services</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link menu-link" href="index.html">
-                                <i class="mdi mdi-calendar-check"></i>
-                                <span data-key="t-news">Upcoming Events</span>
+                            <a class="nav-link menu-link" href="#">
+                                <i class="mdi mdi-cog"></i>
+                                <span data-key="t-news">Systems</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link menu-link" href="index.html">
-                                <i class="mdi mdi-link-variant"></i>
-                                <span data-key="t-news">Quick Links</span>
+                            <a class="nav-link menu-link" href="#">
+                                <i class="mdi mdi-cog"></i>
+                                <span data-key="t-news">E-Resources</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link menu-link" href="index.html">
-                                <i class="mdi mdi-poll"></i>
-                                <span data-key="t-news">Survey Poll</span>
+                            <a class="nav-link menu-link" href="#">
+                                <i class="mdi mdi-link"></i>
+                                <span data-key="t-news">Recent</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link menu-link" href="index.html">
-                                <i class="mdi mdi-airplane"></i>
-                                <span data-key="t-news">Emirates News</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link menu-link" href="index.html">
-                                <i class="mdi mdi-image"></i>
-                                <span data-key="t-news">Gallery</span>
+                            <a class="nav-link menu-link" href="#">
+                                <i class="mdi mdi-lock"></i>
+                                <span data-key="t-news">Hesabi (Change Password)</span>
                             </a>
                         </li>
                     </ul>
@@ -306,70 +313,6 @@
                                             </div>
                                         </div>
                                     </form>
-                                </div>
-                            </div>
-    
-                            <div class="dropdown topbar-head-dropdown ms-1 header-item">
-                                <button type="button" class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle"
-                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <i class='bx bxs-star fs-18'></i>
-                                </button>
-                                <div class="dropdown-menu dropdown-menu-lg p-0 dropdown-menu-end">
-                                    <div class="p-3 border-top-0 border-start-0 border-end-0 border-dashed border">
-                                        <div class="row align-items-center">
-                                            <div class="col">
-                                                <h6 class="m-0 fw-semibold fs-15"> Web Apps </h6>
-                                            </div>
-                                            <div class="col-auto">
-                                                <a href="#!" class="btn btn-sm btn-soft-info"> View All Apps
-                                                    <i class="ri-arrow-right-s-line align-middle"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-    
-                                    <div class="p-2">
-                                        <div class="row g-0">
-                                            <div class="col">
-                                                <a class="dropdown-icon-item" href="#!">
-                                                    <img src="assets/images/brands/github.png" alt="Github">
-                                                    <span>GitHub</span>
-                                                </a>
-                                            </div>
-                                            <div class="col">
-                                                <a class="dropdown-icon-item" href="#!">
-                                                    <img src="assets/images/brands/bitbucket.png" alt="bitbucket">
-                                                    <span>Bitbucket</span>
-                                                </a>
-                                            </div>
-                                            <div class="col">
-                                                <a class="dropdown-icon-item" href="#!">
-                                                    <img src="assets/images/brands/dribbble.png" alt="dribbble">
-                                                    <span>Dribbble</span>
-                                                </a>
-                                            </div>
-                                        </div>
-    
-                                        <div class="row g-0">
-                                            <div class="col">
-                                                <a class="dropdown-icon-item" href="#!">
-                                                    <img src="assets/images/brands/dropbox.png" alt="dropbox">
-                                                    <span>Dropbox</span>
-                                                </a>
-                                            </div>
-                                            <div class="col">
-                                                <a class="dropdown-icon-item" href="#!">
-                                                    <img src="assets/images/brands/mail_chimp.png" alt="mail_chimp">
-                                                    <span>Mail Chimp</span>
-                                                </a>
-                                            </div>
-                                            <div class="col">
-                                                <a class="dropdown-icon-item" href="#!">
-                                                    <img src="assets/images/brands/slack.png" alt="slack">
-                                                    <span>Slack</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
     
@@ -679,13 +622,6 @@
                                 </button>
                             </div>
     
-                            <div class="ms-1 header-item">
-                                <button type="button"
-                                    class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle light-dark-mode">
-                                    <i class='bx bxs-cloud fs-18'></i>
-                                </button>
-                            </div>
-    
                             <div class="dropdown ms-sm-3 header-item topbar-user">
                                 <button type="button" class="btn" id="page-header-user-dropdown" data-bs-toggle="dropdown"
                                     aria-haspopup="true" aria-expanded="false">
@@ -694,8 +630,7 @@
                                             alt="Header Avatar">
                                     </span>
                                 </button>
-                                <div class="dropdown-menu dropdown-menu-end">
-                                    <!-- item-->
+                                <!-- <div class="dropdown-menu dropdown-menu-end">
                                     <h6 class="dropdown-header">Welcome Anna!</h6>
                                     <a class="dropdown-item" href="pages-profile.html"><i
                                             class="mdi mdi-account-circle text-muted fs-16 align-middle me-1"></i> <span
@@ -723,7 +658,7 @@
                                     <a class="dropdown-item" href="auth-logout-basic.html"><i
                                             class="mdi mdi-logout text-muted fs-16 align-middle me-1"></i> <span
                                             class="align-middle" data-key="t-logout">Logout</span></a>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -733,162 +668,217 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-xxl-12">
-                            <div class="card">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-2 my-auto">
+                                    <h3 class="fw-bold mb-0 text-center">News Listing</h3>
+                                </div>
+                                <div class="col-sm-12 col-md-10">
+                                    <form class="news-search">
+                                        <div class="position-relative">
+                                            <input type="text" class="form-control" placeholder="Search..." autocomplete="off"
+                                                id="search-options" value="">
+                                            <span class="mdi mdi-magnify search-widget-icon"></span>
+                                            <span class="mdi mdi-close-circle search-widget-icon search-widget-icon-close d-none"
+                                                id="search-close-options"></span>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="card news-card2">
                                 <div class="card-body">
-                                    <div class="row pt-2">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-1 text-center my-auto">
+                                            <div class="date">
+                                                <span>15</span>May<br>22
+                                            </div>
+                                        </div>
                                         <div class="col-sm-12 col-md-2 my-auto">
-                                            <h3 class="fw-bold mb-0 text-center">News Listing</h3>
+                                            <img class="d-block img-fluid news-img2" src="assets/images/news/building.jpg" alt="First slide">
                                         </div>
-                                        <div class="col-sm-12 col-md-10">
-                                            <form class="news-search">
-                                                <div class="position-relative">
-                                                    <input type="text" class="form-control" placeholder="Search..." autocomplete="off"
-                                                        id="search-options" value="">
-                                                    <span class="mdi mdi-magnify search-widget-icon"></span>
-                                                    <span class="mdi mdi-close-circle search-widget-icon search-widget-icon-close d-none"
-                                                        id="search-close-options"></span>
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                    <div class="row pt-3">
-                                        <div class="col-sm-2 col-md-2 text-center my-auto">
-                                            <p class="news-date">15</p>
-                                            <p class="news-month">May 2022</p>
-                                        </div>
-                                        <div class="col-sm-5 col-md-5">
-                                            <img class="d-block img-fluid news-img" src="assets/images/news/news-img.jpg" alt="First slide">
-                                        </div>
-                                        <div class="col-sm-5 col-md-5 my-auto">
+                                        <div class="col-sm-12 col-md-9 my-auto">
                                             <h4 class="news-headlines"><a href="news-detail.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h4>
                                             <p class="news-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
                                             <a class="news-read-more" href="#">Read More</a>
                                         </div>
-                                    </div>
-                                    <div class="row pt-5">
-                                        <div class="col-sm-2 col-md-2 text-center my-auto">
-                                            <p class="news-date">15</p>
-                                            <p class="news-month">May 2022</p>
-                                        </div>
-                                        <div class="col-sm-5 col-md-5">
-                                            <img class="d-block img-fluid news-img" src="assets/images/news/news-img.jpg" alt="First slide">
-                                        </div>
-                                        <div class="col-sm-5 col-md-5 my-auto">
-                                            <h4 class="news-headlines"><a href="news-detail.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h4>
-                                            <p class="news-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                                            <a class="news-read-more" href="#">Read More</a>
-                                        </div>
-                                    </div>
-                                    <div class="row pt-5">
-                                        <div class="col-sm-2 col-md-2 text-center my-auto">
-                                            <p class="news-date">15</p>
-                                            <p class="news-month">May 2022</p>
-                                        </div>
-                                        <div class="col-sm-5 col-md-5">
-                                            <img class="d-block img-fluid news-img" src="assets/images/news/news-img.jpg" alt="First slide">
-                                        </div>
-                                        <div class="col-sm-5 col-md-5 my-auto">
-                                            <h4 class="news-headlines"><a href="news-detail.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h4>
-                                            <p class="news-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                                            <a class="news-read-more" href="#">Read More</a>
-                                        </div>
-                                    </div>
-                                    <div class="row pt-5">
-                                        <div class="col-sm-2 col-md-2 text-center my-auto">
-                                            <p class="news-date">15</p>
-                                            <p class="news-month">May 2022</p>
-                                        </div>
-                                        <div class="col-sm-5 col-md-5">
-                                            <img class="d-block img-fluid news-img" src="assets/images/news/news-img.jpg" alt="First slide">
-                                        </div>
-                                        <div class="col-sm-5 col-md-5 my-auto">
-                                            <h4 class="news-headlines"><a href="news-detail.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h4>
-                                            <p class="news-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                                            <a class="news-read-more" href="#">Read More</a>
-                                        </div>
-                                    </div>
-                                    <div class="row pt-5">
-                                        <div class="col-sm-2 col-md-2 text-center my-auto">
-                                            <p class="news-date">15</p>
-                                            <p class="news-month">May 2022</p>
-                                        </div>
-                                        <div class="col-sm-5 col-md-5">
-                                            <img class="d-block img-fluid news-img" src="assets/images/news/news-img.jpg" alt="First slide">
-                                        </div>
-                                        <div class="col-sm-5 col-md-5 my-auto">
-                                            <h4 class="news-headlines"><a href="news-detail.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h4>
-                                            <p class="news-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                                            <a class="news-read-more" href="#">Read More</a>
-                                        </div>
-                                    </div>
-                                    <div class="row pt-5">
-                                        <div class="col-sm-2 col-md-2 text-center my-auto">
-                                            <p class="news-date">15</p>
-                                            <p class="news-month">May 2022</p>
-                                        </div>
-                                        <div class="col-sm-5 col-md-5">
-                                            <img class="d-block img-fluid news-img" src="assets/images/news/news-img.jpg" alt="First slide">
-                                        </div>
-                                        <div class="col-sm-5 col-md-5 my-auto">
-                                            <h4 class="news-headlines"><a href="news-detail.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h4>
-                                            <p class="news-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                                            <a class="news-read-more" href="#">Read More</a>
-                                        </div>
-                                    </div>
-                                    <div class="row pt-5">
-                                        <div class="col-sm-2 col-md-2 text-center my-auto">
-                                            <p class="news-date">15</p>
-                                            <p class="news-month">May 2022</p>
-                                        </div>
-                                        <div class="col-sm-5 col-md-5">
-                                            <img class="d-block img-fluid news-img" src="assets/images/news/news-img.jpg" alt="First slide">
-                                        </div>
-                                        <div class="col-sm-5 col-md-5 my-auto">
-                                            <h4 class="news-headlines"><a href="news-detail.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h4>
-                                            <p class="news-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                                            <a class="news-read-more" href="#">Read More</a>
-                                        </div>
-                                    </div>
-                                    <div class="row pt-5">
-                                        <div class="col-sm-2 col-md-2 text-center my-auto">
-                                            <p class="news-date">15</p>
-                                            <p class="news-month">May 2022</p>
-                                        </div>
-                                        <div class="col-sm-5 col-md-5">
-                                            <img class="d-block img-fluid news-img" src="assets/images/news/news-img.jpg" alt="First slide">
-                                        </div>
-                                        <div class="col-sm-5 col-md-5 my-auto">
-                                            <h4 class="news-headlines"><a href="news-detail.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h4>
-                                            <p class="news-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                                            <a class="news-read-more" href="#">Read More</a>
-                                        </div>
-                                    </div>
-                                    <div class="row pt-5">
-                                        <nav aria-label="Page navigation example">
-                                            <ul class="pagination justify-content-center">
-                                                <li class="page-item">
-                                                    <a class="page-link" href="#" aria-label="Previous">
-                                                        <span aria-hidden="true">&laquo;</span>
-                                                    </a>
-                                                </li>
-                                                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                                <li class="page-item"><a class="page-link" href="#">...</a></li>
-                                                <li class="page-item"><a class="page-link" href="#">4</a></li>
-                                                <li class="page-item active"><a class="page-link" href="#">5</a></li>
-                                                <li class="page-item"><a class="page-link" href="#">6</a></li>
-                                                <li class="page-item"><a class="page-link" href="#">7</a></li>
-                                                <li class="page-item"><a class="page-link" href="#">8</a></li>
-                                                <li class="page-item"><a class="page-link" href="#">...</a></li>
-                                                <li class="page-item"><a class="page-link" href="#">30</a></li>
-                                                <li class="page-item">
-                                                    <a class="page-link" href="#" aria-label="Next">
-                                                        <span aria-hidden="true">&raquo;</span>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </nav>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="card news-card2">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-1 text-center my-auto">
+                                            <div class="date">
+                                                <span>15</span>May<br>22
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-2 my-auto">
+                                            <img class="d-block img-fluid news-img2" src="assets/images/news/building.jpg" alt="First slide">
+                                        </div>
+                                        <div class="col-sm-12 col-md-9 my-auto">
+                                            <h4 class="news-headlines"><a href="news-detail.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h4>
+                                            <p class="news-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                            <a class="news-read-more" href="#">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card news-card2">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-1 text-center my-auto">
+                                            <div class="date">
+                                                <span>15</span>May<br>22
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-2 my-auto">
+                                            <img class="d-block img-fluid news-img2" src="assets/images/news/building.jpg" alt="First slide">
+                                        </div>
+                                        <div class="col-sm-12 col-md-9 my-auto">
+                                            <h4 class="news-headlines"><a href="news-detail.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h4>
+                                            <p class="news-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                            <a class="news-read-more" href="#">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card news-card2">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-1 text-center my-auto">
+                                            <div class="date">
+                                                <span>15</span>May<br>22
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-2 my-auto">
+                                            <img class="d-block img-fluid news-img2" src="assets/images/news/building.jpg" alt="First slide">
+                                        </div>
+                                        <div class="col-sm-12 col-md-9 my-auto">
+                                            <h4 class="news-headlines"><a href="news-detail.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h4>
+                                            <p class="news-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                            <a class="news-read-more" href="#">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card news-card2">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-1 text-center my-auto">
+                                            <div class="date">
+                                                <span>15</span>May<br>22
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-2 my-auto">
+                                            <img class="d-block img-fluid news-img2" src="assets/images/news/building.jpg" alt="First slide">
+                                        </div>
+                                        <div class="col-sm-12 col-md-9 my-auto">
+                                            <h4 class="news-headlines"><a href="news-detail.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h4>
+                                            <p class="news-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                            <a class="news-read-more" href="#">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card news-card2">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-1 text-center my-auto">
+                                            <div class="date">
+                                                <span>15</span>May<br>22
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-2 my-auto">
+                                            <img class="d-block img-fluid news-img2" src="assets/images/news/building.jpg" alt="First slide">
+                                        </div>
+                                        <div class="col-sm-12 col-md-9 my-auto">
+                                            <h4 class="news-headlines"><a href="news-detail.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h4>
+                                            <p class="news-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                            <a class="news-read-more" href="#">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card news-card2">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-1 text-center my-auto">
+                                            <div class="date">
+                                                <span>15</span>May<br>22
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-2 my-auto">
+                                            <img class="d-block img-fluid news-img2" src="assets/images/news/building.jpg" alt="First slide">
+                                        </div>
+                                        <div class="col-sm-12 col-md-9 my-auto">
+                                            <h4 class="news-headlines"><a href="news-detail.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h4>
+                                            <p class="news-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                            <a class="news-read-more" href="#">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card news-card2">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-1 text-center my-auto">
+                                            <div class="date">
+                                                <span>15</span>May<br>22
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-2 my-auto">
+                                            <img class="d-block img-fluid news-img2" src="assets/images/news/building.jpg" alt="First slide">
+                                        </div>
+                                        <div class="col-sm-12 col-md-9 my-auto">
+                                            <h4 class="news-headlines"><a href="news-detail.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h4>
+                                            <p class="news-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                            <a class="news-read-more" href="#">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card news-card2">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-1 text-center my-auto">
+                                            <div class="date">
+                                                <span>15</span>May<br>22
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-2 my-auto">
+                                            <img class="d-block img-fluid news-img2" src="assets/images/news/building.jpg" alt="First slide">
+                                        </div>
+                                        <div class="col-sm-12 col-md-9 my-auto">
+                                            <h4 class="news-headlines"><a href="news-detail.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h4>
+                                            <p class="news-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                            <a class="news-read-more" href="#">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row pt-3">
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination justify-content-center">
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Previous">
+                                                <span aria-hidden="true">&laquo;</span>
+                                            </a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">...</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                        <li class="page-item active"><a class="page-link" href="#">5</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">6</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">7</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">8</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">...</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">30</a></li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Next">
+                                                <span aria-hidden="true">&raquo;</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
                             </div>
                         </div>
                     </div>

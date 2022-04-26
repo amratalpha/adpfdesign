@@ -1434,7 +1434,7 @@ body {
 }
 
 [data-layout=vertical][data-sidebar=dark] .navbar-nav .nav-link.active {
-	color: #fff;
+	color: #fff !important;
 	background-color: #77765a;
 	border-radius: 10px;
 }
@@ -16130,6 +16130,8 @@ span.flatpickr-weekday {
 
 /* Custom */
 
+/* Home */
+
 .card {
     border-radius: 15px;
 }
@@ -16364,12 +16366,15 @@ a.read-more:hover {
 
 .emirate-news {
 	font-weight: bold;
+	width: 80%;
 }
 
 .image-gallery {
 	width: 32%;
     display: inline-block;
 }
+
+/* News Page */
 
 .news-search {
 	padding: calc(32px / 2) 0;
@@ -16394,6 +16399,31 @@ a.read-more:hover {
 
 .news-search .form-control::placeholder {
 	color: #77765a;
+}
+
+.news-card2 .date {
+    color: #77765a;
+    overflow: hidden;
+    padding-bottom: 10px;
+    line-height: 24px;
+    text-align: center;
+    border: 2px solid #ededed;
+    display: inline-block;
+    background-color: #ffffff;
+    text-transform: uppercase;
+    border-radius: 0.25rem;
+}
+
+.news-card2 .date span {
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 20px;
+    display: block;
+    text-align: center;
+    padding: 12px;
+    margin-bottom: 10px;
+    background-color: #77765a;
+    border-radius: 0.25rem;
 }
 
 .news-date {
@@ -16513,7 +16543,7 @@ a.read-more:hover {
 .department-msg-card {
 	background: #77765a;
 	border-radius: 15px;
-	height: 260px;
+	height: 413px;
 }
 
 .department-msg-card .card-header {
@@ -16522,11 +16552,10 @@ a.read-more:hover {
 }
 
 .tip-card {
-	height: 260px;
+	height: 413px;
 }
 
 .tip-heading {
-	color: #77765a;
 	font-weight: bold;
 }
 
@@ -16534,7 +16563,7 @@ a.read-more:hover {
 	overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 6;
+    /* -webkit-line-clamp: 6; */
     /* line-height: 22px; */
     -webkit-box-orient: vertical;
     /* color: #252627;
@@ -16566,7 +16595,10 @@ a.read-more:hover {
 .quick-links-card .bx-chevron-left, .quick-links-card .bx-chevron-right {
 	color: #fff !important;
     border: 1px solid #fff !important;
+}
 
+.department-news {
+	font-weight: bold;
 }
 
 .dept-links-icons {
@@ -16610,7 +16642,7 @@ a.read-more:hover {
 }
 
 .dep-event {
-	height: 275px;
+	height: 200px;
 	overflow-y: auto;
 }
 
@@ -16774,7 +16806,19 @@ a.read-more:hover {
 
 @media only screen and (min-width:1440px) and (max-width:1599px) {
 	.user {
-		width: 145px;
+		width: 125px;
+	}
+
+	.news-card .card-body{
+		height: 300px;
+	}
+
+	.news-img {
+		height: 223px;
+	}
+
+	.profile-card .card-body{
+		height: 300px;
 	}
 
 	.headlines {
@@ -16787,7 +16831,7 @@ a.read-more:hover {
 	}
 
 	.headlines-more {
-		padding-top: 30px;
+		padding-top: 40px;
 	}
 
 	.event-date {
@@ -16809,6 +16853,10 @@ a.read-more:hover {
 	.gift-text {
 		padding: 15px 0;
     	font-size: 23px;
+	}
+
+	.events-card {
+		height: 325px;
 	}
 }
 
