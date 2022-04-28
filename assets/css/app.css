@@ -1528,7 +1528,7 @@ body {
 }
 
 [data-layout=vertical][data-sidebar=dark][data-sidebar-size=sm] .navbar-menu .navbar-nav .nav-item:hover>.menu-dropdown {
-	background: var(--vz-vertical-menu-bg-dark);
+	background: #fff;
 }
 
 [data-layout=vertical][data-sidebar=dark][data-sidebar-size=sm] .navbar-menu .navbar-nav .nav-sm {
@@ -16161,16 +16161,12 @@ i.bx.bx-chevron-right {
     border-radius: 50px;
 }
 
-.carousel-control-prev, .carousel-control-next {
-	width: 10%;
-}
-
 .news-img {
 	border-radius: 15px;
 }
 
 .news-card .card-header {
-    border-radius: 15px;
+    border-radius: 15px 15px 0px 0px;
 }
 
 .news-card .carousel-control-prev, .news-card .carousel-control-next {
@@ -16178,7 +16174,6 @@ i.bx.bx-chevron-right {
 }
 
 .news {
-	width: 80%;
 	font-weight: bold;
 }
 
@@ -16197,9 +16192,13 @@ i.bx.bx-chevron-right {
 	padding-left: 10px
 }
 
+.view-all {
+	text-transform: uppercase;
+	color: #77765a;
+}
+
 .read-more {
 	text-transform: uppercase;
-	float: right;
 	color: #77765a;
 }
 
@@ -16270,12 +16269,11 @@ a.read-more:hover {
 }
 
 .upcoming-events {
-	width: 80%;
     font-weight: bold;
 }
 
 .upcoming-events-card .card-header {
-	border-radius: 15px;
+	border-radius: 15px 15px 0px 0px;
 }
 
 .event-date {
@@ -16343,20 +16341,18 @@ a.read-more:hover {
 }
 
 .qlinks-card .card-header {
-	border-radius: 15px;
+	border-radius: 15px 15px 0px 0px;
 }
 
 .quick-links {
-	width: 80%;
     font-weight: bold;
 }
 
 .gallery-card .card-header {
-	border-radius: 15px;
+	border-radius: 15px 15px 0px 0px;
 }
 
 .gallery {
-	width: 75%;
 	font-weight: bold;
 }
 
@@ -16366,21 +16362,12 @@ a.read-more:hover {
 	margin: 0px 3px 3px;
 }
 
-.portfolio-item img{
-	border-radius: 5px;
-}
-
 .emirate-news-card .card-header {
-	border-radius: 15px;
+	border-radius: 15px 15px 0px 0px;
 }
 
 .emirate-news {
 	font-weight: bold;
-	width: 80%;
-}
-
-.emirate-news-card .carousel-control-prev, .emirate-news-card .carousel-control-next {
-	width: 60%;
 }
 
 /* News Page */
@@ -16746,15 +16733,77 @@ a.read-more:hover {
 
 /* Responsive */
 
-@media only screen and (max-width:766px) {
+@media only screen and (max-width: 766px) {
+
 	.news {
-		width: 70%;
+		text-align: center;
+	}
+
+	.news-nav {
+		margin-top: 20px;
+	}
+
+	.news-view {
+		margin-top: 25px;
+		text-align: center;
+	}
+
+	.news-img {
+		margin-top: 15px;
+	}
+
+	.news-card .carousel-control-prev, .news-card .carousel-control-next {
+		width: 20%;
+	}
+
+	.read-more {
+		float: right;
+	}
+
+	.upcoming-events {
+		text-align: center;
+	}
+
+	.upcoming-events-nav {
+		margin: 25px 0px 15px;
+	}
+
+	.upcoming-events-card .carousel-control-prev, .upcoming-events-card .carousel-control-next {
+		width: 20%;
 	}
 
 	.carousel-control-prev, .carousel-control-next {
 		width: 15%;
 	}
 
+	.quick-links {
+		text-align: center;
+	}
+
+	.quick-links-nav {
+		margin: 25px 0px 15px;
+	}
+
+	.gallery {
+		text-align: center;
+	}
+
+	.gallery-nav {
+		margin: 25px 0px 15px;
+	}
+
+	.portfolio-item .item {
+		width: 47%;
+	}
+
+	.emirate-news {
+		text-align: center;
+	}
+
+	.emirate-news-nav {
+		margin: 25px 0px 15px;
+	}
+
 	.events-desc {
 		padding-top: 10px;
 		text-align: center;
@@ -16771,7 +16820,7 @@ a.read-more:hover {
 	
 }
 
-@media only screen and (min-width:767px) and (max-width:1023px) {
+@media only screen and (min-width: 767px) and (max-width: 1023px) {
 
 	.events-desc {
 		padding-top: 10px;
@@ -16786,10 +16835,39 @@ a.read-more:hover {
 	.headlines-more {
 		padding-top: 30px;
 	}
+
+	.news-view {
+		margin: auto 0;
+		text-align: right;
+	}
+
+	.upcoming-events-nav .carousel-control-prev, .upcoming-events-nav .carousel-control-next {
+		width: 40%;
+	}
+
+	.discount-card {
+		height: 212px;
+	}
+
+	.gift-text {
+		padding: 15px 0;
+	}
+
+	.quick-links-nav .carousel-control-prev, .quick-links-nav .carousel-control-next {
+		width: 40%;
+	}
+
+	.gallery-nav .carousel-control-prev, .gallery-nav .carousel-control-next {
+		width: 40%;
+	}
+
+	.emirate-news-nav .carousel-control-prev, .emirate-news-nav .carousel-control-next {
+		width: 40%;
+	}
 	
 }
 
-@media only screen and (min-width:1024px) and (max-width:1439px) {
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
 
 	.events-desc {
 		padding-top: 10px;
@@ -16804,16 +16882,55 @@ a.read-more:hover {
 	.headlines-more {
 		padding-top: 30px;
 	}
+
+	.news-view {
+		margin: auto 0;
+		text-align: right;
+	}
+
+	.upcoming-events-nav .carousel-control-prev, .upcoming-events-nav .carousel-control-next {
+		width: 40%;
+	}
+
+	.discount-card {
+		height: 212px;
+	}
+
+	.gift-text {
+		padding: 15px 0;
+	}
+
+	.quick-links-nav .carousel-control-prev, .quick-links-nav .carousel-control-next {
+		width: 40%;
+	}
+
+	.gallery-nav .carousel-control-prev, .gallery-nav .carousel-control-next {
+		width: 40%;
+	}
+
+	.emirate-news-nav .carousel-control-prev, .emirate-news-nav .carousel-control-next {
+		width: 40%;
+	}
 	
 }
 
-@media only screen and (min-width:1440px) and (max-width:1599px) {
+@media only screen and (min-width: 1440px) and (max-width: 1599px) {
+
 	.user {
 		width: 125px;
 	}
 
 	.news-img {
 		height: 223px;
+	}
+
+	.news-view {
+		margin: auto 0;
+		text-align: right;
+	}
+
+	.read-more {
+		float: right;
 	}
 
 	.profile-card{
@@ -16833,6 +16950,10 @@ a.read-more:hover {
 		padding-top: 40px;
 	}
 
+	.upcoming-events-nav .carousel-control-prev, .upcoming-events-nav .carousel-control-next {
+		width: 45%;
+	}
+
 	.event-date {
 		font-size: 33px;
 	}
@@ -16843,6 +16964,10 @@ a.read-more:hover {
 
 	.card.qlinks-card {
 		height: 415px;
+	}
+
+	.quick-links-nav .carousel-control-prev, .quick-links-nav .carousel-control-next {
+		width: 40%;
 	}
 
 	.quicklinks-row {
@@ -16861,9 +16986,27 @@ a.read-more:hover {
 	.events-card {
 		height: 325px;
 	}
+
+	.gallery-nav .carousel-control-prev, .gallery-nav .carousel-control-next {
+		width: 40%;
+	}
+
+	.emirate-news-nav .carousel-control-prev, .emirate-news-nav .carousel-control-next {
+		width: 75%;
+	}
 }
 
-@media only screen and (min-width:1600px) {
+@media only screen and (min-width: 1600px) {
+
+	.news-view {
+		margin: auto 0;
+		float: right;
+	}
+
+	.read-more {
+		float: right;
+	}
+
 	.user {
 		width: 190px;
 	}
@@ -16929,5 +17072,17 @@ a.read-more:hover {
 		color: #77765a;
 		font-size: 37px;
 		margin-bottom: 0px;
+	}
+
+	.profile-card {
+		height: 359px;
+	}
+
+	.qlinks-card {
+		height: 470px;
+	}
+
+	.gallery-card {
+		height: 470px;
 	}
 }

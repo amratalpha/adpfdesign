@@ -844,10 +844,10 @@
                             <div class="card news-card">
                                 <div class="card-header">
                                     <div class="row">
-                                        <div class="col-sm-9">
+                                        <div class="col-sm-12 col-md-9">
                                             <h3 class="news mb-0">News</h3>
                                         </div>
-                                        <div class="col-sm-1">
+                                        <div class="col-sm-12 col-md-1 news-nav">
                                             <button class="carousel-control-prev" type="button" data-bs-target="#carouselA" data-bs-slide="prev">
                                                 <i class='bx bx-chevron-left'></i>
                                             </button>
@@ -855,8 +855,8 @@
                                                 <i class='bx bx-chevron-right'></i>
                                             </button>
                                         </div>
-                                        <div class="col-sm-2 my-auto float-end">
-                                            <a class="read-more" href="news.html">View All</a>
+                                        <div class="col-sm-12 col-md-2 news-view">
+                                            <a class="view-all" href="news.html">View All</a>
                                         </div>
                                     </div>
                                 </div>
@@ -865,7 +865,6 @@
                                         <div class="col-sm-12">
                                             <div id="carouselA" class="carousel slide carouselBoth" data-bs-ride="carousel" data-bs-interval="false">
                                                 <div class="carousel-inner px-2">
-                                                    
                                                     <div class="carousel-item active">
                                                         <div class="row mt-2">
                                                             <div class="col-sm-12 col-md-6">
@@ -938,13 +937,17 @@
                                         <div class="card upcoming-events-card">
                                             <div class="card-header">
                                                 <div class="row">
-                                                    <h3 class="upcoming-events mb-0">Upcoming Events</h3>
-                                                    <button class="carousel-control-prev" type="button" data-bs-target="#events" data-bs-slide="prev">
-                                                        <i class='bx bx-chevron-left'></i>
-                                                    </button>
-                                                    <button class="carousel-control-next" type="button" data-bs-target="#events" data-bs-slide="next">
-                                                        <i class='bx bx-chevron-right'></i>
-                                                    </button>
+                                                    <div class="col-sm-12 col-md-10">
+                                                        <h3 class="upcoming-events mb-0">Upcoming Events</h3>
+                                                    </div>
+                                                    <div class="col-sm-12 col-md-2 upcoming-events-nav">
+                                                        <button class="carousel-control-prev" type="button" data-bs-target="#events" data-bs-slide="prev">
+                                                            <i class='bx bx-chevron-left'></i>
+                                                        </button>
+                                                        <button class="carousel-control-next" type="button" data-bs-target="#events" data-bs-slide="next">
+                                                            <i class='bx bx-chevron-right'></i>
+                                                        </button>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="card-body">
@@ -999,7 +1002,7 @@
 
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <div class="card ">
+                                        <div class="card discount-card">
                                             <div class="card-body">
                                                 <div class="d-flex justify-content-center gift-box">
                                                     <div class="text-center">
@@ -1013,7 +1016,7 @@
                                     </div>
 
                                     <div class="col-md-6">
-                                        <div class="card">
+                                        <div class="card coming-soon-card">
                                             <div class="card-body">
                                                 <div class="text-center">
                                                     <h3 class="coming">Coming Soon</h3>
@@ -1034,13 +1037,17 @@
                                     <div class="card qlinks-card">
                                         <div class="card-header">
                                             <div class="row">
-                                                <h3 class="quick-links mb-0">Quick Links</h3>
-                                                <button class="carousel-control-prev" type="button" data-bs-target="#quicklinks" data-bs-slide="prev">
-                                                    <i class='bx bx-chevron-left'></i>
-                                                </button>
-                                                <button class="carousel-control-next" type="button" data-bs-target="#quicklinks" data-bs-slide="next">
-                                                    <i class='bx bx-chevron-right'></i>
-                                                </button>
+                                                <div class="col-sm-12 col-md-10">
+                                                    <h3 class="quick-links mb-0">Quick Links</h3>
+                                                </div>
+                                                <div class="col-sm-12 col-md-2 quick-links-nav">
+                                                    <button class="carousel-control-prev" type="button" data-bs-target="#quicklinks" data-bs-slide="prev">
+                                                        <i class='bx bx-chevron-left'></i>
+                                                    </button>
+                                                    <button class="carousel-control-next" type="button" data-bs-target="#quicklinks" data-bs-slide="next">
+                                                        <i class='bx bx-chevron-right'></i>
+                                                    </button>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="card-body">
@@ -1132,13 +1139,17 @@
                                     <div class="card gallery-card">
                                         <div class="card-header">
                                             <div class="row">
-                                                <h3 class="gallery mb-0">Gallery</h3>
-                                                <button class="carousel-control-prev" type="button" data-bs-target="#gallery" data-bs-slide="prev">
-                                                    <i class='bx bx-chevron-left'></i>
-                                                </button>
-                                                <button class="carousel-control-next" type="button" data-bs-target="#gallery" data-bs-slide="next">
-                                                    <i class='bx bx-chevron-right'></i>
-                                                </button>
+                                                <div class="col-sm-12 col-md-10">
+                                                    <h3 class="gallery mb-0">Gallery</h3>
+                                                </div>
+                                                <div class="col-sm-12 col-md-2 gallery-nav">
+                                                    <button class="carousel-control-prev" type="button" data-bs-target="#gallery" data-bs-slide="prev">
+                                                        <i class='bx bx-chevron-left'></i>
+                                                    </button>
+                                                    <button class="carousel-control-next" type="button" data-bs-target="#gallery" data-bs-slide="next">
+                                                        <i class='bx bx-chevron-right'></i>
+                                                    </button>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="card-body">
@@ -1183,43 +1194,33 @@
                                                         <div class="carousel-item">
                                                             <div class="portfolio-item">
                                                                 <div class="item gallery">
-                                                                    <a href="assets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
-                                                                    <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
+                                                                    <a href="assets/images/news/building.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                                                                    <img class="img-fluid" src="assets/images/news/building.jpg" alt="">
                                                                     </a>
                                                                 </div>
                                                                 <div class="item gallery">
-                                                                    <a href="assets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
-                                                                        <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
+                                                                    <a href="assets/images/news/building.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                                                                        <img class="img-fluid" src="assets/images/news/building.jpg" alt="">
                                                                     </a>
                                                                 </div>
                                                                 <div class="item gallery">
-                                                                    <a href="assets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
-                                                                        <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
+                                                                    <a href="assets/images/news/building.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                                                                        <img class="img-fluid" src="assets/images/news/building.jpg" alt="">
                                                                     </a>
                                                                 </div>
                                                                 <div class="item gallery">
-                                                                    <a href="assets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
-                                                                        <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
+                                                                    <a href="assets/images/news/building.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                                                                        <img class="img-fluid" src="assets/images/news/building.jpg" alt="">
                                                                     </a>
                                                                 </div>
                                                                 <div class="item gallery">
-                                                                    <a href="assets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
-                                                                        <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
+                                                                    <a href="assets/images/news/building.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                                                                        <img class="img-fluid" src="assets/images/news/building.jpg" alt="">
                                                                     </a>
                                                                 </div>
                                                                 <div class="item gallery">
-                                                                    <a href="assets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
-                                                                        <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
-                                                                    </a>
-                                                                </div>
-                                                                <div class="item gallery">
-                                                                    <a href="assets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
-                                                                        <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
-                                                                    </a>
-                                                                </div>
-                                                                <div class="item gallery">
-                                                                    <a href="aassets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
-                                                                        <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
+                                                                    <a href="assets/images/news/building.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                                                                        <img class="img-fluid" src="assets/images/news/building.jpg" alt="">
                                                                     </a>
                                                                 </div>
                                                             </div>
@@ -1228,43 +1229,33 @@
                                                         <div class="carousel-item">
                                                             <div class="portfolio-item">
                                                                 <div class="item gallery">
-                                                                    <a href="assets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
-                                                                    <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
+                                                                    <a href="assets/images/news/building.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                                                                    <img class="img-fluid" src="assets/images/news/building.jpg" alt="">
                                                                     </a>
                                                                 </div>
                                                                 <div class="item gallery">
-                                                                    <a href="assets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
-                                                                        <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
+                                                                    <a href="assets/images/news/building.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                                                                        <img class="img-fluid" src="assets/images/news/building.jpg" alt="">
                                                                     </a>
                                                                 </div>
                                                                 <div class="item gallery">
-                                                                    <a href="assets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
-                                                                        <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
+                                                                    <a href="assets/images/news/building.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                                                                        <img class="img-fluid" src="assets/images/news/building.jpg" alt="">
                                                                     </a>
                                                                 </div>
                                                                 <div class="item gallery">
-                                                                    <a href="assets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
-                                                                        <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
+                                                                    <a href="assets/images/news/building.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                                                                        <img class="img-fluid" src="assets/images/news/building.jpg" alt="">
                                                                     </a>
                                                                 </div>
                                                                 <div class="item gallery">
-                                                                    <a href="assets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
-                                                                        <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
+                                                                    <a href="assets/images/news/building.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                                                                        <img class="img-fluid" src="assets/images/news/building.jpg" alt="">
                                                                     </a>
                                                                 </div>
                                                                 <div class="item gallery">
-                                                                    <a href="assets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
-                                                                        <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
-                                                                    </a>
-                                                                </div>
-                                                                <div class="item gallery">
-                                                                    <a href="assets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
-                                                                        <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
-                                                                    </a>
-                                                                </div>
-                                                                <div class="item gallery">
-                                                                    <a href="aassets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
-                                                                        <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
+                                                                    <a href="assets/images/news/building.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                                                                        <img class="img-fluid" src="assets/images/news/building.jpg" alt="">
                                                                     </a>
                                                                 </div>
                                                             </div>
@@ -1285,10 +1276,10 @@
                             <div class="card emirate-news-card">
                                 <div class="card-header">
                                     <div class="row">
-                                        <div class="col-sm-12 col-md-11">
+                                        <div class="col-sm-12 col-md-10">
                                             <h3 class="emirate-news mb-0">Emirate News</h3>
                                         </div>
-                                        <div class="col-sm-12 col-md-1">
+                                        <div class="col-sm-12 col-md-2 emirate-news-nav">
                                             <button class="carousel-control-prev" type="button" data-bs-target="#emiratenews" data-bs-slide="prev">
                                                 <i class='bx bx-chevron-left'></i>
                                             </button>
