@@ -16353,9 +16353,9 @@ a.read-more:hover {
 }
 
 .portfolio-item .item{
-	width: 48%;
+	/* width: 32%; */
 	float: left;
-	margin: 0px 3px 3px;
+	margin: 3px;
 }
 
 .emirate-news-card .card-header {
@@ -16934,7 +16934,7 @@ a.read-more:hover {
 	}
 
 	.profile-card{
-		height: 323px;
+		height: 335px;
 	}
 
 	.headlines {
@@ -16947,7 +16947,7 @@ a.read-more:hover {
 	}
 
 	.headlines-more {
-		padding-top: 40px;
+		padding-top: 20px;
 	}
 
 	.upcoming-events-nav .carousel-control-prev, .upcoming-events-nav .carousel-control-next {
@@ -16996,7 +16996,7 @@ a.read-more:hover {
 	}
 }
 
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: 1600px) and (max-width: 1919px) {
 
 	.news-view {
 		margin: auto 0;
@@ -17104,5 +17104,120 @@ a.read-more:hover {
 
 	.emirate-news-nav .carousel-control-prev, .emirate-news-nav .carousel-control-next {
 		width: 75%;
+	}
+}
+
+@media only screen and (min-width: 1920px) {
+
+	.news-view {
+		margin-top: 5px;
+		text-align: right;
+	}
+
+	.news-card .carousel-control-prev, .news-card .carousel-control-next {
+		width: 85%;
+	}
+
+	.read-more {
+		float: right;
+	}
+
+	.user {
+		width: 190px;
+	}
+
+	.upcoming-events-nav .carousel-control-prev, .upcoming-events-nav .carousel-control-next {
+		width: 55%;
+	}
+
+	.headlines {
+		width: 100%;
+	}
+
+	.headlines-date {
+		padding-top: 20px;
+		margin-bottom: 0px;
+	}
+
+	.headlines-more {
+		padding-top: 60px;
+	}
+
+	.event-date {
+		font-size: 37px;
+	}
+
+	.events-desc {
+		padding-top: 20px;
+	}
+
+	.quick-links-nav .carousel-control-prev, .quick-links-nav .carousel-control-next {
+		width: 55%;
+	}
+
+	.quicklinks-row {
+		padding-top: 30px;
+	}
+
+	.quicklinks-row p {
+		margin-bottom: 0.65rem;
+	}
+
+	.qlinks-card {
+		height: 470px;
+	}
+
+	.name {
+		padding-top: 40px;
+		text-align: center;
+	}
+
+	.gift-icon {
+		width: 80px;
+		display: flex;
+		margin: 0 auto;
+	}
+
+	.gift-text {
+		padding: 18px 0;
+		font-size: 26px;
+	}
+
+	.day {
+		color: #77765a;
+		font-size: 70px;
+		margin-bottom: 0px;
+	}
+
+	.days {
+		color: #77765a;
+		font-size: 25px;
+		margin-bottom: 0px;
+	}
+
+	.time {
+		color: #77765a;
+		font-size: 37px;
+		margin-bottom: 0px;
+	}
+
+	.profile-card {
+		height: 347px;
+	}
+
+	.gallery-card {
+		height: 470px;
+	}
+
+	.gallery-nav .carousel-control-prev, .gallery-nav .carousel-control-next {
+		width: 55%;
+	}
+
+	.emirate-news-nav .carousel-control-prev, .emirate-news-nav .carousel-control-next {
+		width: 75%;
+	}
+
+	.gallery img {
+		width: 135px;
 	}
 }
