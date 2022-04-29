@@ -16353,7 +16353,7 @@ a.read-more:hover {
 }
 
 .portfolio-item .item{
-	/* width: 32%; */
+	width: 32%;
 	float: left;
 	margin: 3px;
 }
@@ -16529,16 +16529,11 @@ a.read-more:hover {
 .department-msg-card {
 	background: #77765a;
 	border-radius: 15px;
-	height: 413px;
 }
 
 .department-msg-card .card-header {
 	background: #77765a;
 	border-radius: 15px 15px 0px 0px;
-}
-
-.tip-card {
-	height: 413px;
 }
 
 .tip-heading {
@@ -16561,10 +16556,6 @@ a.read-more:hover {
 	text-transform: uppercase;
 	font-weight: bold;
 	color: #77765a;
-}
-
-.depquicklinks {
-    padding: 25px 0px;
 }
 
 .quick-links-card {
@@ -17217,7 +17208,34 @@ a.read-more:hover {
 		width: 75%;
 	}
 
-	.gallery img {
+	/* .gallery img {
 		width: 135px;
+	} */
+
+	.dept-news-card .carousel-control-prev, .dept-news-card .carousel-control-next {
+		width: 85%;
+	}
+
+	.dept-quick-links-nav .carousel-control-prev, .dept-quick-links-nav .carousel-control-next {
+		width: 55%;
+	}
+
+	.department-msg-card {
+		background: #77765a;
+		border-radius: 15px;
+		height: 410px;
+	}
+	
+	.department-msg-card .card-header {
+		background: #77765a;
+		border-radius: 15px 15px 0px 0px;
+	}
+	
+	.tip-card {
+		height: 410px;
+	}
+
+	.dept-events-card {
+		height: 339px;
 	}
 }
