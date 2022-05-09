@@ -271,6 +271,10 @@ body {
 	transition: all .1s ease-out;
 }
 
+.nav-item {
+    margin: 5px 0px;
+}
+
 #page-topbar.topbar-shadow {
 	-webkit-box-shadow: 0 1px 2px rgba(56,65,74,.15);
 	box-shadow: 0 1px 2px rgba(56,65,74,.15);
@@ -741,7 +745,8 @@ body {
 }
 
 .page-content {
-	padding: calc(70px + 1.5rem) calc(1.5rem / 2) 60px calc(1.5rem / 2);
+	/* padding: calc(70px + 1.5rem) calc(1.5rem / 2) 60px calc(1.5rem / 2); */
+	padding: calc(0px + 1.5rem) calc(1.5rem / 2) 80px calc(1.5rem / 2);
 }
 
 .navbar-menu {
@@ -8533,7 +8538,7 @@ a,button {
 	color: rgba(255,255,255,.5);
 }
 
-.scroller {
+/* .scroller {
 	padding: 0.4rem;
 	overflow-y: auto;
 	scrollbar-color: #77765a #F5F5F5;
@@ -8550,7 +8555,7 @@ a,button {
 
 .scroller::-webkit-scrollbar-track
 {
-	/* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); */
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
 	border-radius: 10px;
 	background-color: #F5F5F5;
 }
@@ -8566,7 +8571,7 @@ a,button {
 	border-radius: 10px;
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
 	background-color: #77765a;
-}
+} */
 
 [data-simplebar] {
 	position: relative;
@@ -16171,6 +16176,10 @@ span.flatpickr-weekday {
 
 /* Custom */
 
+.menu-dropdown ul li a.active {
+    background: #6a8e36 !important;
+}
+
 /* Home */
 
 .card {
@@ -16748,6 +16757,74 @@ a.read-more:hover {
 
 .file-man-box:hover .file-close {
     visibility: visible
+}
+
+.boximageicon-seo {
+    padding: 10px;
+    margin-right: 25px;
+    background: #fff;
+    border-radius: 5px;
+    font-size: 20px;
+    border: 1px solid #d4f0ff;
+	display: table-cell;
+	height: 150px;
+	width: 150px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.tab-body {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    border: 1px solid #d4f0ff;
+}
+
+.boxseo-data h3 {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+}
+
+.fade.in {
+    opacity: 1;
+}
+
+.bullets {
+    margin: 20px 0 0;
+}
+
+.bullets li {
+    margin-bottom: 15px;
+	list-style: none;
+}
+
+.mdi-account, .mdi-lightbulb-on, .mdi-bullseye-arrow, .mdi-hand-extended {
+    display: block;
+	font-size: 40px;
+}
+
+.about {
+	border-bottom: 1px solid transparent;
+}
+
+.about li {
+	margin: 0 10px;
+}
+
+.values-tb th:nth-child(even), .values-tb th:nth-child(odd){
+	background: #648147;
+	color: #fff !important;
+}
+
+.about li a.active{
+    background: green !important;
+    color: #fff !important;
+}
+
+.about li a:hover {
+    background: green !important;
+    color: #fff !important;
 }
 
 /* Responsive */

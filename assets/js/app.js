@@ -80,9 +80,9 @@
 		}
 	}
 
-	// function f() {
-	// 	"vertical" == document.documentElement.getAttribute("data-layout") && (document.getElementById("two-column-menu").innerHTML = "", document.querySelector(".navbar-menu").innerHTML = i, document.getElementById("scrollbar").setAttribute("data-simplebar", ""), document.getElementById("navbar-nav").setAttribute("data-simplebar", ""), document.getElementById("scrollbar").classList.add("h-100")), "twocolumn" == document.documentElement.getAttribute("data-layout") && (document.getElementById("scrollbar").removeAttribute("data-simplebar"), document.getElementById("scrollbar").classList.remove("h-100")), "horizontal" == document.documentElement.getAttribute("data-layout") && L()
-	// }
+	function f() {
+		"vertical" == document.documentElement.getAttribute("data-layout") && (document.getElementById("two-column-menu").innerHTML = "", document.querySelector(".navbar-menu").innerHTML = i, document.getElementById("scrollbar").setAttribute("data-simplebar", ""), document.getElementById("navbar-nav").setAttribute("data-simplebar", ""), document.getElementById("scrollbar").classList.add("h-100")), "twocolumn" == document.documentElement.getAttribute("data-layout") && (document.getElementById("scrollbar").removeAttribute("data-simplebar"), document.getElementById("scrollbar").classList.remove("h-100")), "horizontal" == document.documentElement.getAttribute("data-layout") && L()
+	}
 
 	function h() {
 		feather.replace();
