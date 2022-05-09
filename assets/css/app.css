@@ -16913,6 +16913,14 @@ a.read-more:hover {
 	.headlines-more {
 		padding-top: 30px;
 	}
+
+	.who-we-are, .what-we-do, .our-vision, .our-mission, .our-values {
+		margin-top: 1rem !important;
+	}
+
+	.tab-body {
+		margin: 1rem 10px 0px;
+	}
 	
 }
 
@@ -16968,6 +16976,14 @@ a.read-more:hover {
 
 	.emirate-news-nav .carousel-control-prev, .emirate-news-nav .carousel-control-next {
 		width: 40%;
+	}
+
+	.our-mission, .our-values {
+		margin-top: 1rem !important;
+	}
+
+	.tab-body {
+		margin: 1rem 10px 0px;
 	}
 	
 }
@@ -17028,6 +17044,10 @@ a.read-more:hover {
 
 	.emirate-news-nav .carousel-control-prev, .emirate-news-nav .carousel-control-next {
 		width: 40%;
+	}
+
+	.tab-body {
+		margin: 1rem 10px 0px;
 	}
 	
 }
@@ -17150,6 +17170,10 @@ a.read-more:hover {
 		width: 80%;
 		padding-right: 45px;
 	}
+
+	.our-vision, .our-mission, .our-values {
+		margin-top: 1rem !important;
+	}
 }
 
 @media only screen and (min-width: 1600px) and (max-width: 1919px) {
@@ -17268,6 +17292,10 @@ a.read-more:hover {
 
 	.emirate-news-nav .carousel-control-prev, .emirate-news-nav .carousel-control-next {
 		width: 75%;
+	}
+
+	.our-mission, .our-values {
+		margin-top: 1rem !important;
 	}
 }
 
@@ -17389,10 +17417,6 @@ a.read-more:hover {
 		width: 32%;
 	}
 
-	/* .gallery img {
-		width: 135px;
-	} */
-
 	.dept-news-card .carousel-control-prev, .dept-news-card .carousel-control-next {
 		width: 85%;
 	}
@@ -17418,5 +17442,9 @@ a.read-more:hover {
 
 	.dept-events-card {
 		height: 339px;
+	}
+
+	.our-mission, .our-values {
+		margin-top: 1rem !important;
 	}
 }
