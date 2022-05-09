@@ -16907,7 +16907,6 @@ a.read-more:hover {
 
 	.headlines-date {
 		padding-top: 16px;
-		margin-bottom: 0px;
 	}
 
 	.headlines-more {
@@ -16938,11 +16937,14 @@ a.read-more:hover {
 
 	.headlines-date {
 		padding-top: 16px;
-		margin-bottom: 0px;
 	}
 
 	.headlines-more {
 		padding-top: 30px;
+	}
+
+	.read-more {
+		float: right;
 	}
 
 	.news-view {
@@ -17002,7 +17004,6 @@ a.read-more:hover {
 
 	.headlines-date {
 		padding-top: 16px;
-		margin-bottom: 0px;
 	}
 
 	.headlines-more {
@@ -17023,7 +17024,7 @@ a.read-more:hover {
 	}
 
 	.discount-card {
-		height: 212px;
+		height: 213px;
 	}
 
 	.gift-text {
@@ -17077,7 +17078,7 @@ a.read-more:hover {
 	}
 
 	.profile-card{
-		height: 323px;
+		height: 315px;
 	}
 
 	.profile {
@@ -17088,9 +17089,12 @@ a.read-more:hover {
 		width: 100%;
 	}
 
+	.headlines-text {
+		padding-top: 15px;
+	}
+
 	.headlines-date {
-		padding-top: 16px;
-		margin-bottom: 0px;
+		padding-top: 15px;
 	}
 
 	.headlines-more {
@@ -17192,7 +17196,7 @@ a.read-more:hover {
 	}
 
 	.user {
-		width: 190px;
+		width: 125px;
 	}
 
 	.upcoming-events-nav .carousel-control-prev, .upcoming-events-nav .carousel-control-next {
@@ -17205,11 +17209,10 @@ a.read-more:hover {
 
 	.headlines-date {
 		padding-top: 20px;
-		margin-bottom: 0px;
 	}
 
 	.headlines-more {
-		padding-top: 60px;
+		padding-top: 30px;
 	}
 
 	.events-detail {
@@ -17275,7 +17278,7 @@ a.read-more:hover {
 	}
 
 	.profile-card {
-		height: 359px;
+		height: 295px;
 	}
 
 	.portfolio-item .item{
@@ -17315,7 +17318,7 @@ a.read-more:hover {
 	}
 
 	.user {
-		width: 190px;
+		width: 160px;
 	}
 
 	.upcoming-events-nav .carousel-control-prev, .upcoming-events-nav .carousel-control-next {
@@ -17326,9 +17329,12 @@ a.read-more:hover {
 		width: 100%;
 	}
 
+	.headlines-text {
+		padding-top: 35px;
+	}
+
 	.headlines-date {
-		padding-top: 20px;
-		margin-bottom: 0px;
+		padding-top: 35px;
 	}
 
 	.headlines-more {
