@@ -1008,8 +1008,8 @@ body {
 }
 
 .main-logo {
-	margin: 5px 0px;
-	width: 180px;
+	margin: 20px 0px 0px;
+    width: 150px;
 }
 
 .logo .logo-sm {
@@ -1441,6 +1441,7 @@ body {
 
 [data-layout=vertical][data-sidebar=dark] .navbar-nav .nav-link {
 	color: #77765a;
+	border-radius: 10px;
 }
 
 [data-layout=vertical][data-sidebar=dark] .navbar-nav .nav-link.active {
@@ -1475,7 +1476,12 @@ body {
 	color: #fff !important;
 	background-color: #77765a;
 	border-radius: 10px;
-	/* margin-top: 10px; */
+}
+
+[data-layout=vertical][data-sidebar=dark] .navbar-nav .nav-link:focus {
+	color: #fff !important;
+	background-color: #77765a;
+	border-radius: 10px;
 }
 
 [data-layout=vertical][data-sidebar=dark] .navbar-nav .nav-link:hover .icon-dual {
@@ -16180,6 +16186,10 @@ span.flatpickr-weekday {
     background: #6a8e36 !important;
 }
 
+.menu-dropdown ul li a:hover {
+    background: #6a8e36 !important;
+}
+
 /* Home */
 
 .card {
@@ -16205,6 +16215,19 @@ i.bx.bx-chevron-right {
     border-radius: 50px;
 }
 
+.news-card .carousel-control-prev i, .news-card .carousel-control-next i {
+	border: 1px solid transparent;
+	font-size: 25px;
+}
+
+.news-card .carousel .carousel-control {
+	visibility: hidden;
+}
+
+.news-card .carousel:hover .carousel-control {
+	visibility: visible;
+}
+
 .news-img {
 	border-radius: 15px;
 }
@@ -16215,6 +16238,24 @@ i.bx.bx-chevron-right {
 
 .news {
 	font-weight: bold;
+}
+
+.headlines {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-webkit-line-clamp: 1;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	white-space: normal;
+}
+
+.headlines-text {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-webkit-line-clamp: 3;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	white-space: normal;
 }
 
 .view {
@@ -16487,6 +16528,10 @@ a.read-more:hover {
 	color: #77765a;
 }
 
+.news-headlines a {
+	color: #77765a;
+}
+
 /*------------------------------ vertical bootstrap slider----------------------------*/
 
 .carousel-inner> .vertical.carousel-item-next ,
@@ -16546,6 +16591,12 @@ a.read-more:hover {
 
 .social-links:hover {
 	color: #77765a;
+}
+
+/* Department Page */
+
+.dept-news-card .card-header, .tip-card .card-header, .dept-qlinks-card .card-header, .dept-events-card .card-header {
+	border-radius: 15px 15px 0px 0px;
 }
 
 .department-nav {
@@ -16610,6 +16661,19 @@ a.read-more:hover {
 .quick-links-card .bx-chevron-left, .quick-links-card .bx-chevron-right {
 	color: #fff !important;
     border: 1px solid #fff !important;
+}
+
+.dept-news-card .carousel-control-prev i, .dept-news-card .carousel-control-next i {
+	border: 1px solid transparent;
+	font-size: 25px;
+}
+
+.dept-news-card .carousel .carousel-control {
+	visibility: hidden;
+}
+
+.dept-news-card .carousel:hover .carousel-control {
+	visibility: visible;
 }
 
 .department-news {
@@ -16765,7 +16829,7 @@ a.read-more:hover {
     background: #fff;
     border-radius: 5px;
     font-size: 20px;
-    border: 1px solid #d4f0ff;
+    border: 1px solid #6a8e36;
 	display: table-cell;
 	height: 150px;
 	width: 150px;
@@ -16777,7 +16841,7 @@ a.read-more:hover {
     background-color: #fff;
     border-radius: 5px;
     padding: 20px;
-    border: 1px solid #d4f0ff;
+    border: 1px solid #6a8e36;
 }
 
 .boxseo-data h3 {
@@ -16818,12 +16882,12 @@ a.read-more:hover {
 }
 
 .about li a.active{
-    background: green !important;
+    background: #6a8e36 !important;
     color: #fff !important;
 }
 
 .about li a:hover {
-    background: green !important;
+    background: #6a8e36 !important;
     color: #fff !important;
 }
 
@@ -16936,11 +17000,11 @@ a.read-more:hover {
 	}
 
 	.headlines-date {
-		padding-top: 16px;
+		padding-top: 8px;
 	}
 
 	.headlines-more {
-		padding-top: 30px;
+		padding-top: 8px;
 	}
 
 	.read-more {
@@ -17002,12 +17066,16 @@ a.read-more:hover {
 		text-align: center;
 	}
 
+	.headlines-text {
+		padding-top: 20px;
+	}
+
 	.headlines-date {
-		padding-top: 16px;
+		padding-top: 20px;
 	}
 
 	.headlines-more {
-		padding-top: 30px;
+		padding-top: 37px;
 	}
 
 	.news-view {
@@ -17060,8 +17128,7 @@ a.read-more:hover {
 	}
 
 	.news-card .carousel-control-prev, .news-card .carousel-control-next {
-		width: 80%;
-    	padding-right: 45px;
+		width: 0%;
 	}
 
 	.news-img {
@@ -17090,11 +17157,11 @@ a.read-more:hover {
 	}
 
 	.headlines-text {
-		padding-top: 15px;
+		padding-top: 27px;
 	}
 
 	.headlines-date {
-		padding-top: 15px;
+		padding-top: 27px;
 	}
 
 	.headlines-more {
@@ -17171,8 +17238,7 @@ a.read-more:hover {
 	}
 
 	.dept-news-card .carousel-control-prev, .dept-news-card .carousel-control-next {
-		width: 80%;
-		padding-right: 45px;
+		width: 0%;
 	}
 
 	.our-vision, .our-mission, .our-values {
@@ -17338,7 +17404,7 @@ a.read-more:hover {
 	}
 
 	.headlines-more {
-		padding-top: 60px;
+		padding-top: 50px;
 	}
 
 	.events-detail {
