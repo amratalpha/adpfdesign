@@ -19,7 +19,9 @@
     <!-- App CSS-->
     <link href="assets/css/app.css" rel="stylesheet" type="text/css" />
     <!-- Custom CSS-->
-    <link href="assets/css/custom.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/custom.css" rel="stylesheet" type="text/css" />
+    <!-- Responsive CSS-->
+    <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
     
 
 </head>
@@ -28,9 +30,7 @@
 
     <!-- Begin page -->
     <div id="layout-wrapper">
-        <div class="banner">
-            <img src="assets/images/banner.jpg" class="img-fluid" alt="banner">
-        </div>
+        <div class="banner"></div>
         
         <!-- ========== App Menu ========== -->
         <div class="app-menu navbar-menu">
@@ -435,19 +435,12 @@
                                     </div>
                                 </div>
                             </form>
-    
-                            <div class="ms-1 header-item">
-                                <span class="text-start ms-xl-2">
-                                    <span class="d-none d-xl-inline-block ms-1 fw-medium user-name-text">Welcome Back, Amrat Nandial</span>
-                                    <span class="d-none d-xl-block ms-1 fs-12 text-muted user-name-sub-text"><i class='bx bxs-circle'></i> TIME IN 8:12 AM</span>
-                                </span>
-                            </div>
-    
                         </div>
-    
+
                         <div class="d-flex align-items-center">
-    
-                            <div class="dropdown d-md-none topbar-head-dropdown header-item">
+                            <a href="indexar.html" type="button" class="btn btn-primary btn-ar">AR</a>
+
+                            <div class="dropdown d-md-none topbar-head-dropdown header-item ms-3">
                                 <button type="button" class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle"
                                     id="page-header-search-dropdown" data-bs-toggle="dropdown" aria-haspopup="true"
                                     aria-expanded="false">
@@ -468,16 +461,16 @@
                                 </div>
                             </div>
     
-                            <div class="dropdown topbar-head-dropdown ms-1 header-item">
+                            <div class="dropdown topbar-head-dropdown ms-3 header-item">
                                 <button type="button" class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle"
                                     id="page-header-notifications-dropdown" data-bs-toggle="dropdown" aria-haspopup="true"
                                     aria-expanded="false">
                                     <i class='bx bxs-bell fs-18'></i>
-                                    <span
-                                        class="position-absolute topbar-badge fs-10 translate-middle badge rounded-pill bg-danger">3<span
-                                            class="visually-hidden">unread messages</span></span>
+                                    <!-- <span class="position-absolute topbar-badge fs-10 translate-middle badge rounded-pill bg-danger">3
+                                        <span class="visually-hidden">unread messages</span>
+                                    </span> -->
                                 </button>
-                                <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
+                                <!-- <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
                                     aria-labelledby="page-header-notifications-dropdown">
     
                                     <div class="dropdown-head bg-primary bg-pattern rounded-top">
@@ -765,10 +758,10 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
     
-                            <div class="ms-1 header-item">
+                            <div class="ms-3 header-item">
                                 <button type="button" class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle">
                                     <i class='bx bx-time-five fs-18'></i>
                                 </button>
@@ -783,6 +776,7 @@
                                     </span>
                                 </button>
                                 <!-- <div class="dropdown-menu dropdown-menu-end">
+                                    
                                     <h6 class="dropdown-header">Welcome Anna!</h6>
                                     <a class="dropdown-item" href="pages-profile.html"><i
                                             class="mdi mdi-account-circle text-muted fs-16 align-middle me-1"></i> <span
@@ -811,6 +805,12 @@
                                             class="mdi mdi-logout text-muted fs-16 align-middle me-1"></i> <span
                                             class="align-middle" data-key="t-logout">Logout</span></a>
                                 </div> -->
+                            </div>
+                            <div class="ms-1 header-item">
+                                <span class="text-start ms-xl-2">
+                                    <span class="d-none d-xl-inline-block ms-1 fw-medium user-name-text">Welcome Back, Amrat Nandial</span>
+                                    <span class="d-none d-xl-block ms-1 fs-12 text-muted user-name-sub-text"><i class='bx bxs-circle'></i> TIME IN 8:12 AM</span>
+                                </span>
                             </div>
                         </div>
                     </div>
@@ -847,7 +847,7 @@
                                         <div class="col-sm-12 col-md-2 my-auto">
                                             <img class="d-block img-fluid news-img2" src="assets/images/news/building.jpg" alt="First slide">
                                         </div>
-                                        <div class="col-sm-12 col-md-9 my-auto">
+                                        <div class="col-sm-12 col-md-9 news-details">
                                             <h4 class="news-headlines"><a href="news-detail.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h4>
                                             <p class="news-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
                                             <a class="news-read-more" href="#">Read More</a>
@@ -866,7 +866,7 @@
                                         <div class="col-sm-12 col-md-2 my-auto">
                                             <img class="d-block img-fluid news-img2" src="assets/images/news/building.jpg" alt="First slide">
                                         </div>
-                                        <div class="col-sm-12 col-md-9 my-auto">
+                                        <div class="col-sm-12 col-md-9 news-details">
                                             <h4 class="news-headlines"><a href="news-detail.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h4>
                                             <p class="news-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
                                             <a class="news-read-more" href="#">Read More</a>
@@ -885,7 +885,7 @@
                                         <div class="col-sm-12 col-md-2 my-auto">
                                             <img class="d-block img-fluid news-img2" src="assets/images/news/building.jpg" alt="First slide">
                                         </div>
-                                        <div class="col-sm-12 col-md-9 my-auto">
+                                        <div class="col-sm-12 col-md-9 news-details">
                                             <h4 class="news-headlines"><a href="news-detail.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h4>
                                             <p class="news-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
                                             <a class="news-read-more" href="#">Read More</a>
@@ -904,7 +904,7 @@
                                         <div class="col-sm-12 col-md-2 my-auto">
                                             <img class="d-block img-fluid news-img2" src="assets/images/news/building.jpg" alt="First slide">
                                         </div>
-                                        <div class="col-sm-12 col-md-9 my-auto">
+                                        <div class="col-sm-12 col-md-9 news-details">
                                             <h4 class="news-headlines"><a href="news-detail.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h4>
                                             <p class="news-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
                                             <a class="news-read-more" href="#">Read More</a>
@@ -923,7 +923,7 @@
                                         <div class="col-sm-12 col-md-2 my-auto">
                                             <img class="d-block img-fluid news-img2" src="assets/images/news/building.jpg" alt="First slide">
                                         </div>
-                                        <div class="col-sm-12 col-md-9 my-auto">
+                                        <div class="col-sm-12 col-md-9 news-details">
                                             <h4 class="news-headlines"><a href="news-detail.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h4>
                                             <p class="news-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
                                             <a class="news-read-more" href="#">Read More</a>
@@ -942,7 +942,7 @@
                                         <div class="col-sm-12 col-md-2 my-auto">
                                             <img class="d-block img-fluid news-img2" src="assets/images/news/building.jpg" alt="First slide">
                                         </div>
-                                        <div class="col-sm-12 col-md-9 my-auto">
+                                        <div class="col-sm-12 col-md-9 news-details">
                                             <h4 class="news-headlines"><a href="news-detail.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h4>
                                             <p class="news-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
                                             <a class="news-read-more" href="#">Read More</a>
@@ -961,7 +961,7 @@
                                         <div class="col-sm-12 col-md-2 my-auto">
                                             <img class="d-block img-fluid news-img2" src="assets/images/news/building.jpg" alt="First slide">
                                         </div>
-                                        <div class="col-sm-12 col-md-9 my-auto">
+                                        <div class="col-sm-12 col-md-9 news-details">
                                             <h4 class="news-headlines"><a href="news-detail.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h4>
                                             <p class="news-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
                                             <a class="news-read-more" href="#">Read More</a>
@@ -980,7 +980,7 @@
                                         <div class="col-sm-12 col-md-2 my-auto">
                                             <img class="d-block img-fluid news-img2" src="assets/images/news/building.jpg" alt="First slide">
                                         </div>
-                                        <div class="col-sm-12 col-md-9 my-auto">
+                                        <div class="col-sm-12 col-md-9 news-details">
                                             <h4 class="news-headlines"><a href="news-detail.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h4>
                                             <p class="news-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
                                             <a class="news-read-more" href="#">Read More</a>
@@ -999,7 +999,7 @@
                                         <div class="col-sm-12 col-md-2 my-auto">
                                             <img class="d-block img-fluid news-img2" src="assets/images/news/building.jpg" alt="First slide">
                                         </div>
-                                        <div class="col-sm-12 col-md-9 my-auto">
+                                        <div class="col-sm-12 col-md-9 news-details">
                                             <h4 class="news-headlines"><a href="news-detail.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h4>
                                             <p class="news-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
                                             <a class="news-read-more" href="#">Read More</a>
@@ -1015,15 +1015,15 @@
                                                 <span aria-hidden="true">&laquo;</span>
                                             </a>
                                         </li>
-                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">...</a></li>
+                                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
                                         <li class="page-item"><a class="page-link" href="#">4</a></li>
-                                        <li class="page-item active"><a class="page-link" href="#">5</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">5</a></li>
                                         <li class="page-item"><a class="page-link" href="#">6</a></li>
                                         <li class="page-item"><a class="page-link" href="#">7</a></li>
                                         <li class="page-item"><a class="page-link" href="#">8</a></li>
                                         <li class="page-item"><a class="page-link" href="#">...</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">30</a></li>
                                         <li class="page-item">
                                             <a class="page-link" href="#" aria-label="Next">
                                                 <span aria-hidden="true">&raquo;</span>

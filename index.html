@@ -21,7 +21,9 @@
     <!-- App CSS-->
     <link href="assets/css/app.css" rel="stylesheet" type="text/css" />
     <!-- Custom CSS-->
-    <link href="assets/css/custom.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/custom.css" rel="stylesheet" type="text/css" />
+    <!-- Responsive CSS-->
+    <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
     <!-- Magnific Popup CSS-->
     <link href="assets/libs/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css" />
     
@@ -32,9 +34,7 @@
 
     <!-- Begin page -->
     <div id="layout-wrapper">
-        <div class="banner">
-            <img src="assets/images/banner.jpg" class="img-fluid" alt="banner">
-        </div>
+        <div class="banner"></div>
         
         <!-- ========== App Menu ========== -->
         <div class="app-menu navbar-menu">
@@ -439,19 +439,12 @@
                                     </div>
                                 </div>
                             </form>
-    
-                            <div class="ms-1 header-item">
-                                <span class="text-start ms-xl-2">
-                                    <span class="d-none d-xl-inline-block ms-1 fw-medium user-name-text">Welcome Back, Amrat Nandial</span>
-                                    <span class="d-none d-xl-block ms-1 fs-12 text-muted user-name-sub-text"><i class='bx bxs-circle'></i> TIME IN 8:12 AM</span>
-                                </span>
-                            </div>
-    
                         </div>
-    
+
                         <div class="d-flex align-items-center">
-    
-                            <div class="dropdown d-md-none topbar-head-dropdown header-item">
+                            <a href="indexar.html" type="button" class="btn btn-primary btn-ar">AR</a>
+
+                            <div class="dropdown d-md-none topbar-head-dropdown header-item ms-3">
                                 <button type="button" class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle"
                                     id="page-header-search-dropdown" data-bs-toggle="dropdown" aria-haspopup="true"
                                     aria-expanded="false">
@@ -472,16 +465,16 @@
                                 </div>
                             </div>
     
-                            <div class="dropdown topbar-head-dropdown ms-1 header-item">
+                            <div class="dropdown topbar-head-dropdown ms-3 header-item">
                                 <button type="button" class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle"
                                     id="page-header-notifications-dropdown" data-bs-toggle="dropdown" aria-haspopup="true"
                                     aria-expanded="false">
                                     <i class='bx bxs-bell fs-18'></i>
-                                    <span
-                                        class="position-absolute topbar-badge fs-10 translate-middle badge rounded-pill bg-danger">3<span
-                                            class="visually-hidden">unread messages</span></span>
+                                    <!-- <span class="position-absolute topbar-badge fs-10 translate-middle badge rounded-pill bg-danger">3
+                                        <span class="visually-hidden">unread messages</span>
+                                    </span> -->
                                 </button>
-                                <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
+                                <!-- <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
                                     aria-labelledby="page-header-notifications-dropdown">
     
                                     <div class="dropdown-head bg-primary bg-pattern rounded-top">
@@ -769,10 +762,10 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
     
-                            <div class="ms-1 header-item">
+                            <div class="ms-3 header-item">
                                 <button type="button" class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle">
                                     <i class='bx bx-time-five fs-18'></i>
                                 </button>
@@ -817,6 +810,12 @@
                                             class="align-middle" data-key="t-logout">Logout</span></a>
                                 </div> -->
                             </div>
+                            <div class="ms-1 header-item">
+                                <span class="text-start ms-xl-2">
+                                    <span class="d-none d-xl-inline-block ms-1 fw-medium user-name-text">Welcome Back, Amrat Nandial</span>
+                                    <span class="d-none d-xl-block ms-1 fs-12 text-muted user-name-sub-text"><i class='bx bxs-circle'></i> TIME IN 8:12 AM</span>
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -851,11 +850,13 @@
                                                                 <p class="headlines-date mb-0">01 March 2022</p>
                                                                 <div class="headlines-more">
                                                                     <p class="like mb-0"><i class="mdi mdi-thumb-up"></i> 382</p>
+                                                                    <p class="comment mb-0"><a href="news-detail.html"><i class="mdi mdi-comment-multiple"></i> 20</a></p>
+                                                                    <p class="share mb-0"><i class="mdi mdi-share-variant"></i></p>
                                                                     <a class="read-more mb-0" href="news-detail.html">Read More</a>
                                                                 </div>
                                                             </div>
                                                             <div class="col-sm-12 col-md-6">
-                                                                <img class="d-block img-fluid news-img" src="assets/images/news/news-img.jpg" alt="First slide">
+                                                                <img class="d-block img-fluid news-img" src="assets/images/news/building.jpg" alt="First slide">
                                                             </div>
                                                         </div>
                                                     </div>
@@ -867,11 +868,13 @@
                                                                 <p class="headlines-date mb-0">01 March 2022</p>
                                                                 <div class="headlines-more">
                                                                     <p class="like mb-0"><i class="mdi mdi-thumb-up"></i> 382</p>
+                                                                    <p class="comment mb-0"><a href="news-detail.html"><i class="mdi mdi-comment-multiple"></i> 20</a></p>
+                                                                    <p class="share mb-0"><i class="mdi mdi-share-variant"></i></p>
                                                                     <a class="read-more mb-0" href="news-detail.html">Read More</a>
                                                                 </div>
                                                             </div>
                                                             <div class="col-sm-12 col-md-6">
-                                                                <img class="d-block img-fluid news-img" src="assets/images/news/laptop.jpg" alt="First slide">
+                                                                <img class="d-block img-fluid news-img" src="assets/images/news/building.jpg" alt="First slide">
                                                             </div>
                                                         </div>
                                                     </div>
@@ -883,11 +886,13 @@
                                                                 <p class="headlines-date mb-0">01 March 2022</p>
                                                                 <div class="headlines-more">
                                                                     <p class="like mb-0"><i class="mdi mdi-thumb-up"></i> 382</p>
+                                                                    <p class="comment mb-0"><a href="news-detail.html"><i class="mdi mdi-comment-multiple"></i> 20</a></p>
+                                                                    <p class="share mb-0"><i class="mdi mdi-share-variant"></i></p>
                                                                     <a class="read-more mb-0" href="news-detail.html">Read More</a>
                                                                 </div>
                                                             </div>
                                                             <div class="col-sm-12 col-md-6">
-                                                                <img class="d-block img-fluid news-img" src="assets/images/news/self-employed.jpg" alt="First slide">
+                                                                <img class="d-block img-fluid news-img" src="assets/images/news/building.jpg" alt="First slide">
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1145,148 +1150,193 @@
                                                 <div id="gallery" class="carousel slide" data-ride="carousel" data-bs-interval="false">
                                                     <div class="carousel-inner">
                                                         <div class="carousel-item active">
-                                                            <div class="portfolio-item">
-                                                                <div class="item gallery">
-                                                                    <a href="assets/images/news/news.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
-                                                                        <img class="img-fluid" src="assets/images/news/news.jpg" alt="">
+                                                            <div class="portfolio-item row">
+                                                                <div class="item col-md-4 col-6 col-sm">
+                                                                    <a href="assets/images/news/building.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                                                                        <img class="img-fluid" src="assets/images/news/building.jpg" alt="">
                                                                     </a>
                                                                 </div>
-                                                                <div class="item gallery">
-                                                                    <a href="assets/images/news/ZIA09035.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-                                                                        <img class="img-fluid" src="assets/images/news/ZIA09035.jpg" alt="">
+                                                                <div class="item col-md-4 col-6 col-sm">
+                                                                    <a href="assets/images/news/building.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                                                                        <img class="img-fluid" src="assets/images/news/building.jpg" alt="">
                                                                     </a>
                                                                 </div>
-                                                                <div class="item gallery">
-                                                                    <a href="assets/images/news/ZIA09868.jpg" class="fancylight popup-btn" data-fancybox-group="light">  
-                                                                        <img class="img-fluid" src="assets/images/news/ZIA09868.jpg" alt="">
+                                                                <div class="item col-md-4 col-6 col-sm">
+                                                                    <a href="assets/images/news/building.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                                                                        <img class="img-fluid" src="assets/images/news/building.jpg" alt="">
                                                                     </a>
                                                                 </div>
-                                                                <div class="item gallery">
-                                                                    <a href="assets/images/news/news.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
-                                                                        <img class="img-fluid" src="assets/images/news/news.jpg" alt="">
+                                                                <div class="item col-md-4 col-6 col-sm">
+                                                                    <a href="assets/images/news/building.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                                                                        <img class="img-fluid" src="assets/images/news/building.jpg" alt="">
                                                                     </a>
                                                                 </div>
-                                                                <div class="item gallery">
-                                                                    <a href="assets/images/news/ZIA09035.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-                                                                        <img class="img-fluid" src="assets/images/news/ZIA09035.jpg" alt="">
+                                                                <div class="item col-md-4 col-6 col-sm">
+                                                                    <a href="assets/images/news/building.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                                                                        <img class="img-fluid" src="assets/images/news/building.jpg" alt="">
                                                                     </a>
                                                                 </div>
-                                                                <div class="item gallery">
-                                                                    <a href="assets/images/news/ZIA09868.jpg" class="fancylight popup-btn" data-fancybox-group="light">  
-                                                                        <img class="img-fluid" src="assets/images/news/ZIA09868.jpg" alt="">
+                                                                <div class="item col-md-4 col-6 col-sm">
+                                                                    <a href="assets/images/news/building.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                                                                        <img class="img-fluid" src="assets/images/news/building.jpg" alt="">
                                                                     </a>
                                                                 </div>
-                                                                <div class="item gallery">
-                                                                    <a href="assets/images/news/news.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
-                                                                        <img class="img-fluid" src="assets/images/news/news.jpg" alt="">
+                                                                <div class="item col-md-4 col-6 col-sm">
+                                                                    <a href="assets/images/news/building.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                                                                        <img class="img-fluid" src="assets/images/news/building.jpg" alt="">
                                                                     </a>
                                                                 </div>
-                                                                <div class="item gallery">
-                                                                    <a href="assets/images/news/ZIA09035.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-                                                                        <img class="img-fluid" src="assets/images/news/ZIA09035.jpg" alt="">
+                                                                <div class="item col-md-4 col-6 col-sm">
+                                                                    <a href="assets/images/news/building.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                                                                        <img class="img-fluid" src="assets/images/news/building.jpg" alt="">
                                                                     </a>
                                                                 </div>
-                                                                <div class="item gallery">
-                                                                    <a href="assets/images/news/ZIA09868.jpg" class="fancylight popup-btn" data-fancybox-group="light">  
-                                                                        <img class="img-fluid" src="assets/images/news/ZIA09868.jpg" alt="">
+                                                                <div class="item col-md-4 col-6 col-sm">
+                                                                    <a href="assets/images/news/building.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                                                                        <img class="img-fluid" src="assets/images/news/building.jpg" alt="">
                                                                     </a>
                                                                 </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="carousel-item">
-                                                            <div class="portfolio-item">
-                                                                <div class="item gallery">
-                                                                    <a href="assets/images/news/news.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
-                                                                        <img class="img-fluid" src="assets/images/news/news.jpg" alt="">
+                                                                <div class="item col-md-4 col-6 col-sm">
+                                                                    <a href="assets/images/news/building.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                                                                        <img class="img-fluid" src="assets/images/news/building.jpg" alt="">
                                                                     </a>
                                                                 </div>
-                                                                <div class="item gallery">
-                                                                    <a href="assets/images/news/ZIA09035.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-                                                                        <img class="img-fluid" src="assets/images/news/ZIA09035.jpg" alt="">
+                                                                <div class="item col-md-4 col-6 col-sm">
+                                                                    <a href="assets/images/news/building.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                                                                        <img class="img-fluid" src="assets/images/news/building.jpg" alt="">
                                                                     </a>
                                                                 </div>
-                                                                <div class="item gallery">
-                                                                    <a href="assets/images/news/ZIA09868.jpg" class="fancylight popup-btn" data-fancybox-group="light">  
-                                                                        <img class="img-fluid" src="assets/images/news/ZIA09868.jpg" alt="">
-                                                                    </a>
-                                                                </div>
-                                                                <div class="item gallery">
-                                                                    <a href="assets/images/news/news.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
-                                                                        <img class="img-fluid" src="assets/images/news/news.jpg" alt="">
-                                                                    </a>
-                                                                </div>
-                                                                <div class="item gallery">
-                                                                    <a href="assets/images/news/ZIA09035.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-                                                                        <img class="img-fluid" src="assets/images/news/ZIA09035.jpg" alt="">
-                                                                    </a>
-                                                                </div>
-                                                                <div class="item gallery">
-                                                                    <a href="assets/images/news/ZIA09868.jpg" class="fancylight popup-btn" data-fancybox-group="light">  
-                                                                        <img class="img-fluid" src="assets/images/news/ZIA09868.jpg" alt="">
-                                                                    </a>
-                                                                </div>
-                                                                <div class="item gallery">
-                                                                    <a href="assets/images/news/news.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
-                                                                        <img class="img-fluid" src="assets/images/news/news.jpg" alt="">
-                                                                    </a>
-                                                                </div>
-                                                                <div class="item gallery">
-                                                                    <a href="assets/images/news/ZIA09035.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-                                                                        <img class="img-fluid" src="assets/images/news/ZIA09035.jpg" alt="">
-                                                                    </a>
-                                                                </div>
-                                                                <div class="item gallery">
-                                                                    <a href="assets/images/news/ZIA09868.jpg" class="fancylight popup-btn" data-fancybox-group="light">  
-                                                                        <img class="img-fluid" src="assets/images/news/ZIA09868.jpg" alt="">
+                                                                <div class="item col-md-4 col-6 col-sm">
+                                                                    <a href="assets/images/news/building.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                                                                        <img class="img-fluid" src="assets/images/news/building.jpg" alt="">
                                                                     </a>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="carousel-item">
-                                                            <div class="portfolio-item">
-                                                                <div class="item gallery">
-                                                                    <a href="assets/images/news/news.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
-                                                                        <img class="img-fluid" src="assets/images/news/news.jpg" alt="">
+                                                            <div class="portfolio-item row">
+                                                                <div class="item col-md-4 col-6 col-sm">
+                                                                    <a href="assets/images/news/building.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                                                                        <img class="img-fluid" src="assets/images/news/building.jpg" alt="">
                                                                     </a>
                                                                 </div>
-                                                                <div class="item gallery">
-                                                                    <a href="assets/images/news/ZIA09035.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-                                                                        <img class="img-fluid" src="assets/images/news/ZIA09035.jpg" alt="">
+                                                                <div class="item col-md-4 col-6 col-sm">
+                                                                    <a href="assets/images/news/building.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                                                                        <img class="img-fluid" src="assets/images/news/building.jpg" alt="">
                                                                     </a>
                                                                 </div>
-                                                                <div class="item gallery">
-                                                                    <a href="assets/images/news/ZIA09868.jpg" class="fancylight popup-btn" data-fancybox-group="light">  
-                                                                        <img class="img-fluid" src="assets/images/news/ZIA09868.jpg" alt="">
+                                                                <div class="item col-md-4 col-6 col-sm">
+                                                                    <a href="assets/images/news/building.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                                                                        <img class="img-fluid" src="assets/images/news/building.jpg" alt="">
                                                                     </a>
                                                                 </div>
-                                                                <div class="item gallery">
-                                                                    <a href="assets/images/news/news.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
-                                                                        <img class="img-fluid" src="assets/images/news/news.jpg" alt="">
+                                                                <div class="item col-md-4 col-6 col-sm">
+                                                                    <a href="assets/images/news/building.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                                                                        <img class="img-fluid" src="assets/images/news/building.jpg" alt="">
                                                                     </a>
                                                                 </div>
-                                                                <div class="item gallery">
-                                                                    <a href="assets/images/news/ZIA09035.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-                                                                        <img class="img-fluid" src="assets/images/news/ZIA09035.jpg" alt="">
+                                                                <div class="item col-md-4 col-6 col-sm">
+                                                                    <a href="assets/images/news/building.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                                                                        <img class="img-fluid" src="assets/images/news/building.jpg" alt="">
                                                                     </a>
                                                                 </div>
-                                                                <div class="item gallery">
-                                                                    <a href="assets/images/news/ZIA09868.jpg" class="fancylight popup-btn" data-fancybox-group="light">  
-                                                                        <img class="img-fluid" src="assets/images/news/ZIA09868.jpg" alt="">
+                                                                <div class="item col-md-4 col-6 col-sm">
+                                                                    <a href="assets/images/news/building.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                                                                        <img class="img-fluid" src="assets/images/news/building.jpg" alt="">
                                                                     </a>
                                                                 </div>
-                                                                <div class="item gallery">
-                                                                    <a href="assets/images/news/news.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
-                                                                        <img class="img-fluid" src="assets/images/news/news.jpg" alt="">
+                                                                <div class="item col-md-4 col-6 col-sm">
+                                                                    <a href="assets/images/news/building.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                                                                        <img class="img-fluid" src="assets/images/news/building.jpg" alt="">
                                                                     </a>
                                                                 </div>
-                                                                <div class="item gallery">
-                                                                    <a href="assets/images/news/ZIA09035.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-                                                                        <img class="img-fluid" src="assets/images/news/ZIA09035.jpg" alt="">
+                                                                <div class="item col-md-4 col-6 col-sm">
+                                                                    <a href="assets/images/news/building.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                                                                        <img class="img-fluid" src="assets/images/news/building.jpg" alt="">
                                                                     </a>
                                                                 </div>
-                                                                <div class="item gallery">
-                                                                    <a href="assets/images/news/ZIA09868.jpg" class="fancylight popup-btn" data-fancybox-group="light">  
-                                                                        <img class="img-fluid" src="assets/images/news/ZIA09868.jpg" alt="">
+                                                                <div class="item col-md-4 col-6 col-sm">
+                                                                    <a href="assets/images/news/building.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                                                                        <img class="img-fluid" src="assets/images/news/building.jpg" alt="">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="item col-md-4 col-6 col-sm">
+                                                                    <a href="assets/images/news/building.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                                                                        <img class="img-fluid" src="assets/images/news/building.jpg" alt="">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="item col-md-4 col-6 col-sm">
+                                                                    <a href="assets/images/news/building.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                                                                        <img class="img-fluid" src="assets/images/news/building.jpg" alt="">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="item col-md-4 col-6 col-sm">
+                                                                    <a href="assets/images/news/building.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                                                                        <img class="img-fluid" src="assets/images/news/building.jpg" alt="">
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <div class="portfolio-item row">
+                                                                <div class="item col-md-4 col-6 col-sm">
+                                                                    <a href="assets/images/news/building.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                                                                        <img class="img-fluid" src="assets/images/news/building.jpg" alt="">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="item col-md-4 col-6 col-sm">
+                                                                    <a href="assets/images/news/building.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                                                                        <img class="img-fluid" src="assets/images/news/building.jpg" alt="">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="item col-md-4 col-6 col-sm">
+                                                                    <a href="assets/images/news/building.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                                                                        <img class="img-fluid" src="assets/images/news/building.jpg" alt="">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="item col-md-4 col-6 col-sm">
+                                                                    <a href="assets/images/news/building.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                                                                        <img class="img-fluid" src="assets/images/news/building.jpg" alt="">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="item col-md-4 col-6 col-sm">
+                                                                    <a href="assets/images/news/building.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                                                                        <img class="img-fluid" src="assets/images/news/building.jpg" alt="">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="item col-md-4 col-6 col-sm">
+                                                                    <a href="assets/images/news/building.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                                                                        <img class="img-fluid" src="assets/images/news/building.jpg" alt="">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="item col-md-4 col-6 col-sm">
+                                                                    <a href="assets/images/news/building.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                                                                        <img class="img-fluid" src="assets/images/news/building.jpg" alt="">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="item col-md-4 col-6 col-sm">
+                                                                    <a href="assets/images/news/building.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                                                                        <img class="img-fluid" src="assets/images/news/building.jpg" alt="">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="item col-md-4 col-6 col-sm">
+                                                                    <a href="assets/images/news/building.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                                                                        <img class="img-fluid" src="assets/images/news/building.jpg" alt="">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="item col-md-4 col-6 col-sm">
+                                                                    <a href="assets/images/news/building.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                                                                        <img class="img-fluid" src="assets/images/news/building.jpg" alt="">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="item col-md-4 col-6 col-sm">
+                                                                    <a href="assets/images/news/building.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                                                                        <img class="img-fluid" src="assets/images/news/building.jpg" alt="">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="item col-md-4 col-6 col-sm">
+                                                                    <a href="assets/images/news/building.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                                                                        <img class="img-fluid" src="assets/images/news/building.jpg" alt="">
                                                                     </a>
                                                                 </div>
                                                             </div>

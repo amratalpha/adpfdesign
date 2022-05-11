@@ -21,7 +21,9 @@
     <!-- App CSS-->
     <link href="assets/css/app.css" rel="stylesheet" type="text/css" />
     <!-- Custom CSS-->
-    <link href="assets/css/custom.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/custom.css" rel="stylesheet" type="text/css" />
+    <!-- Responsive CSS-->
+    <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
     
 
 </head>
@@ -30,9 +32,7 @@
 
     <!-- Begin page -->
     <div id="layout-wrapper">
-        <div class="banner">
-            <img src="assets/images/banner.jpg" class="img-fluid" alt="banner">
-        </div>
+        <div class="banner"></div>
         
         <!-- ========== App Menu ========== -->
         <div class="app-menu navbar-menu">
@@ -437,14 +437,7 @@
                                     </div>
                                 </div>
                             </form>
-    
-                            <div class="ms-1 header-item">
-                                <span class="text-start ms-xl-2">
-                                    <span class="d-none d-xl-inline-block ms-1 fw-medium user-name-text">Welcome Back, Amrat Nandial</span>
-                                    <span class="d-none d-xl-block ms-1 fs-12 text-muted user-name-sub-text"><i class='bx bxs-circle'></i> TIME IN 8:12 AM</span>
-                                </span>
-                            </div>
-    
+        
                         </div>
     
                         <div class="d-flex align-items-center">
@@ -475,11 +468,11 @@
                                     id="page-header-notifications-dropdown" data-bs-toggle="dropdown" aria-haspopup="true"
                                     aria-expanded="false">
                                     <i class='bx bxs-bell fs-18'></i>
-                                    <span
-                                        class="position-absolute topbar-badge fs-10 translate-middle badge rounded-pill bg-danger">3<span
-                                            class="visually-hidden">unread messages</span></span>
+                                    <!-- <span class="position-absolute topbar-badge fs-10 translate-middle badge rounded-pill bg-danger">3
+                                        <span class="visually-hidden">unread messages</span>
+                                    </span> -->
                                 </button>
-                                <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
+                                <!-- <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
                                     aria-labelledby="page-header-notifications-dropdown">
     
                                     <div class="dropdown-head bg-primary bg-pattern rounded-top">
@@ -767,7 +760,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
     
                             <div class="ms-1 header-item">
@@ -815,116 +808,132 @@
                                             class="align-middle" data-key="t-logout">Logout</span></a>
                                 </div> -->
                             </div>
+                            <div class="ms-1 header-item">
+                                <span class="text-start ms-xl-2">
+                                    <span class="d-none d-xl-inline-block ms-1 fw-medium user-name-text">Welcome Back, Amrat Nandial</span>
+                                    <span class="d-none d-xl-block ms-1 fs-12 text-muted user-name-sub-text"><i class='bx bxs-circle'></i> TIME IN 8:12 AM</span>
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </header>
             <div class="page-content">
                 <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-xl-4">
-                            <ul class="nav nav-tabs about">
-                                <li class="who-we-are">
-                                    <a data-bs-toggle="tab" href="#who" class="boximageicon-seo zoomed active">
-                                        <i class="mdi mdi-account"></i>
-                                        Who We Are?
-                                    </a>
-                                </li>
-                                <li class="what-we-do">
-                                    <a data-bs-toggle="tab" href="#what" class="boximageicon-seo zoomed">
-                                        <i class="mdi mdi-account"></i>
-                                        What we do?
-                                    </a>
-                                </li>
-                                <li class="our-vision">
-                                    <a data-bs-toggle="tab" href="#vision" class="boximageicon-seo zoomed">
-                                        <i class="mdi mdi-lightbulb-on"></i>
-                                        Our Vision
-                                    </a>
-                                </li>
-                                <li class="our-mission">
-                                    <a data-bs-toggle="tab" href="#mission" class="boximageicon-seo zoomed">
-                                        <i class="mdi mdi-bullseye-arrow"></i>
-                                        Our Mission
-                                    </a>
-                                </li>
-                                <li class="our-values">
-                                    <a data-bs-toggle="tab" href="#values" class="boximageicon-seo zoomed">
-                                        <i class="mdi mdi-hand-extended"></i>
-                                        Our Values
-                                    </a>
-                                </li>
-                            </ul>
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="about-us mb-0">About Us</h3>
                         </div>
-                        <div class="col-xl-8">
-                            <div class="tab-content tab-body">
-                                <div id="who" class="tab-pane active">
-                                    <div class="boxseo-data text-left">
-                                        <h3 class="font-size-24 mt-0">Who We Are?</h3>
-                                        <p class="mt-4">The Abu Dhabi Pension Fund (ADPF) is an important Abu Dhabi Government entity. The Fund was founded in 2000 to manage contributions, pensions and end-of-service benefits for UAE nationals working in or retired from the government and private sectors in the Emirate of Abu Dhabi and their beneficiaries.</p>
-                                    </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-xl-12">
+                                    <ul class="nav nav-tabs about justify-content-center">
+                                        <li class="who-we-are">
+                                            <a data-bs-toggle="tab" href="#who" class="boximageicon-seo zoomed active">
+                                                <i class="mdi mdi-account"></i>
+                                                Who We Are?
+                                            </a>
+                                        </li>
+                                        <li class="what-we-do">
+                                            <a data-bs-toggle="tab" href="#what" class="boximageicon-seo zoomed">
+                                                <i class="mdi mdi-account"></i>
+                                                What we do?
+                                            </a>
+                                        </li>
+                                        <li class="our-vision">
+                                            <a data-bs-toggle="tab" href="#vision" class="boximageicon-seo zoomed">
+                                                <i class="mdi mdi-lightbulb-on"></i>
+                                                Our Vision
+                                            </a>
+                                        </li>
+                                        <li class="our-mission">
+                                            <a data-bs-toggle="tab" href="#mission" class="boximageicon-seo zoomed">
+                                                <i class="mdi mdi-bullseye-arrow"></i>
+                                                Our Mission
+                                            </a>
+                                        </li>
+                                        <li class="our-values">
+                                            <a data-bs-toggle="tab" href="#values" class="boximageicon-seo zoomed">
+                                                <i class="mdi mdi-hand-extended"></i>
+                                                Our Values
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </div>
-                                <div id="what" class="tab-pane fade">
-                                    <div class="boxseo-data text-left">
-                                        <h3 class="font-size-24 mt-0">What do we do?</h3>
-                                        <ul class="bullets">
-                                            <li><i class='bx bxs-right-arrow'></i> We collect pension contributions from eligible employed UAE nationals and their employers, as well as the annual contributions from the government.</li>
-                                            <li><i class='bx bxs-right-arrow'></i> We manage the resulting financial assets through careful, wise and long-term investment strategies, to ensure that all due pensions and benefits are delivered to eligible customers when they become entitled to receive them.</li>
-                                            <li><i class='bx bxs-right-arrow'></i> We assist and advise Abu Dhabi government on strategies and policies for social insurance and retirement provision to help ensure that the Fund fulfills its mandate and the government achieves its objectives.</li>
-                                            <li><i class='bx bxs-right-arrow'></i> We support Abu Dhabi government vision for an open, sustainable and global economy, a confident and secure future for all Abu Dhabi citizens.</li>
-                                            <li><i class='bx bxs-right-arrow'></i> We pay pensions and end-of-service benefits to eligible contributors when these payments are due.</li>
-                                            <li><i class='bx bxs-right-arrow'></i> We monitor the annual status of our pensioners and beneficiaries through the Annual Declaration process, to ensure that they continue to receive their payments and to protect the interests of all the Fund’s stakeholders.</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div id="vision" class="tab-pane fade">
-                                    <div class="boxseo-data text-left">
-                                        <h3 class="font-size-24 mt-0">Our Vision</h3>
-                                        <p class="mt-4">Excellence in services provision and financial sustainability by optimizing the best utilization of capabilities and resources.</p>
-                                    </div>
-                                </div>
-                                <div id="mission" class="tab-pane fade">
-                                    <div class="boxseo-data text-left">
-                                        <h3 class="font-size-24 mt-0">Our Mission</h3>
-                                        <p class="mt-4">An Investment Pension Fund devoted to offer exceptional and sustainable services to secure a decent life for citizens by ensuring financial sustainability through the collection, management, and investment of contributions.</p>
-                                    </div>
-                                </div>
-                                <div id="values" class="tab-pane fade">
-                                    <div class="boxseo-data text-left">
-                                        <h3 class="font-size-24 mt-0">Our Values</h3>
-                                        <table class="table table-striped table-bordered mt-3 mb-0 values-tb">
-                                            <tbody>
-                                                <tr>
-                                                    <th>Excellence:</th>
-                                                    <td>Applying high standards of excellence to our accomplishments and outcomes to ensure professionalism and high performance. Taking into consideration the exchange of information and knowledge with our stakeholders/partners as an essential element in our culture, to achieve both customer satisfaction and high-level quality.</td>
-                                                </tr>
-                                                <tr>
-                                                    <th>Accountability</th>
-                                                    <td>Employees are held accountable for their job roles, completing their given tasks, and working with the one-team spirit. Alongside maintaining confidentially of information according to the rules, regulations, and laws in force in the Fund.</td>
-                                                </tr>
-                                                <tr>
-                                                    <th>Transparency:</th>
-                                                    <td>Employees should be encouraged to communicate honestly without barriers and to apply justice& fairness in their everyday life at work with those around them. In addition, employees should be fair in distributing the rights and duties without discrimination while maintaining clarity and credibility in mechanisms, procedures, laws, and information, in which indeed will ensure building bridges of trust between employees.</td>
-                                                </tr>
-                                                <tr>
-                                                    <th>Sustainability:</th>
-                                                    <td>Adopting long-term sustainable investment policies to ensure financial sustainability, in addition to employing modern technologies to ensure the permanent development of the business environment while preserving the surrounding.</td>
-                                                </tr>
-                                                <tr>
-                                                    <th>Respect:</th>
-                                                    <td>Employees are committed to enhance the culture of respect that is found in our national identity, by respecting different cultures and preserving human dignity</td>
-                                                </tr>
-                                                <tr>
-                                                    <th>Creativity & Innovation:</th>
-                                                    <td>To ensure the establishment of a culture filled with creativity and innovation; employees should be encouraged to take rational risks to generate ideas that are outside the ordinary framework to create positive changes and generate more progress & development to the Fund.</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-xl-12">
+                                    <div class="tab-content tab-body">
+                                        <div id="who" class="tab-pane active">
+                                            <div class="boxseo-data text-left">
+                                                <h3 class="font-size-24 mt-0">Who We Are?</h3>
+                                                <p class="mt-4">The Abu Dhabi Pension Fund (ADPF) is an important Abu Dhabi Government entity. The Fund was founded in 2000 to manage contributions, pensions and end-of-service benefits for UAE nationals working in or retired from the government and private sectors in the Emirate of Abu Dhabi and their beneficiaries.</p>
+                                            </div>
+                                        </div>
+                                        <div id="what" class="tab-pane fade">
+                                            <div class="boxseo-data text-left">
+                                                <h3 class="font-size-24 mt-0">What do we do?</h3>
+                                                <ul class="bullets">
+                                                    <li><i class='bx bxs-right-arrow'></i> We collect pension contributions from eligible employed UAE nationals and their employers, as well as the annual contributions from the government.</li>
+                                                    <li><i class='bx bxs-right-arrow'></i> We manage the resulting financial assets through careful, wise and long-term investment strategies, to ensure that all due pensions and benefits are delivered to eligible customers when they become entitled to receive them.</li>
+                                                    <li><i class='bx bxs-right-arrow'></i> We assist and advise Abu Dhabi government on strategies and policies for social insurance and retirement provision to help ensure that the Fund fulfills its mandate and the government achieves its objectives.</li>
+                                                    <li><i class='bx bxs-right-arrow'></i> We support Abu Dhabi government vision for an open, sustainable and global economy, a confident and secure future for all Abu Dhabi citizens.</li>
+                                                    <li><i class='bx bxs-right-arrow'></i> We pay pensions and end-of-service benefits to eligible contributors when these payments are due.</li>
+                                                    <li><i class='bx bxs-right-arrow'></i> We monitor the annual status of our pensioners and beneficiaries through the Annual Declaration process, to ensure that they continue to receive their payments and to protect the interests of all the Fund’s stakeholders.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div id="vision" class="tab-pane fade">
+                                            <div class="boxseo-data text-left">
+                                                <h3 class="font-size-24 mt-0">Our Vision</h3>
+                                                <p class="mt-4">Excellence in services provision and financial sustainability by optimizing the best utilization of capabilities and resources.</p>
+                                            </div>
+                                        </div>
+                                        <div id="mission" class="tab-pane fade">
+                                            <div class="boxseo-data text-left">
+                                                <h3 class="font-size-24 mt-0">Our Mission</h3>
+                                                <p class="mt-4">An Investment Pension Fund devoted to offer exceptional and sustainable services to secure a decent life for citizens by ensuring financial sustainability through the collection, management, and investment of contributions.</p>
+                                            </div>
+                                        </div>
+                                        <div id="values" class="tab-pane fade">
+                                            <div class="boxseo-data text-left">
+                                                <h3 class="font-size-24 mt-0">Our Values</h3>
+                                                <table class="table table-striped table-bordered mt-3 mb-0 values-tb">
+                                                    <tbody>
+                                                        <tr>
+                                                            <th>Excellence:</th>
+                                                            <td>Applying high standards of excellence to our accomplishments and outcomes to ensure professionalism and high performance. Taking into consideration the exchange of information and knowledge with our stakeholders/partners as an essential element in our culture, to achieve both customer satisfaction and high-level quality.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Accountability</th>
+                                                            <td>Employees are held accountable for their job roles, completing their given tasks, and working with the one-team spirit. Alongside maintaining confidentially of information according to the rules, regulations, and laws in force in the Fund.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Transparency:</th>
+                                                            <td>Employees should be encouraged to communicate honestly without barriers and to apply justice& fairness in their everyday life at work with those around them. In addition, employees should be fair in distributing the rights and duties without discrimination while maintaining clarity and credibility in mechanisms, procedures, laws, and information, in which indeed will ensure building bridges of trust between employees.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Sustainability:</th>
+                                                            <td>Adopting long-term sustainable investment policies to ensure financial sustainability, in addition to employing modern technologies to ensure the permanent development of the business environment while preserving the surrounding.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Respect:</th>
+                                                            <td>Employees are committed to enhance the culture of respect that is found in our national identity, by respecting different cultures and preserving human dignity</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Creativity & Innovation:</th>
+                                                            <td>To ensure the establishment of a culture filled with creativity and innovation; employees should be encouraged to take rational risks to generate ideas that are outside the ordinary framework to create positive changes and generate more progress & development to the Fund.</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    
                 </div>
             </div>
             <footer class="footer">

@@ -23,7 +23,9 @@
     <!-- App CSS-->
     <link href="assets/css/app.css" rel="stylesheet" type="text/css" />
     <!-- Custom CSS-->
-    <link href="assets/css/custom.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/custom.css" rel="stylesheet" type="text/css" />
+    <!-- Responsive CSS-->
+    <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
     
     
 
@@ -33,9 +35,7 @@
 
     <!-- Begin page -->
     <div id="layout-wrapper">
-        <div class="banner">
-            <img src="assets/images/banner.jpg" class="img-fluid" alt="banner">
-        </div>
+        <div class="banner"></div>
         
         <!-- ========== App Menu ========== -->
         <div class="app-menu navbar-menu">
@@ -440,19 +440,12 @@
                                     </div>
                                 </div>
                             </form>
-    
-                            <div class="ms-1 header-item">
-                                <span class="text-start ms-xl-2">
-                                    <span class="d-none d-xl-inline-block ms-1 fw-medium user-name-text">Welcome Back, Amrat Nandial</span>
-                                    <span class="d-none d-xl-block ms-1 fs-12 text-muted user-name-sub-text"><i class='bx bxs-circle'></i> TIME IN 8:12 AM</span>
-                                </span>
-                            </div>
-    
                         </div>
-    
+
                         <div class="d-flex align-items-center">
-    
-                            <div class="dropdown d-md-none topbar-head-dropdown header-item">
+                            <a href="indexar.html" type="button" class="btn btn-primary btn-ar">AR</a>
+
+                            <div class="dropdown d-md-none topbar-head-dropdown header-item ms-3">
                                 <button type="button" class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle"
                                     id="page-header-search-dropdown" data-bs-toggle="dropdown" aria-haspopup="true"
                                     aria-expanded="false">
@@ -473,16 +466,16 @@
                                 </div>
                             </div>
     
-                            <div class="dropdown topbar-head-dropdown ms-1 header-item">
+                            <div class="dropdown topbar-head-dropdown ms-3 header-item">
                                 <button type="button" class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle"
                                     id="page-header-notifications-dropdown" data-bs-toggle="dropdown" aria-haspopup="true"
                                     aria-expanded="false">
                                     <i class='bx bxs-bell fs-18'></i>
-                                    <span
-                                        class="position-absolute topbar-badge fs-10 translate-middle badge rounded-pill bg-danger">3<span
-                                            class="visually-hidden">unread messages</span></span>
+                                    <!-- <span class="position-absolute topbar-badge fs-10 translate-middle badge rounded-pill bg-danger">3
+                                        <span class="visually-hidden">unread messages</span>
+                                    </span> -->
                                 </button>
-                                <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
+                                <!-- <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
                                     aria-labelledby="page-header-notifications-dropdown">
     
                                     <div class="dropdown-head bg-primary bg-pattern rounded-top">
@@ -770,10 +763,10 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
     
-                            <div class="ms-1 header-item">
+                            <div class="ms-3 header-item">
                                 <button type="button" class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle">
                                     <i class='bx bx-time-five fs-18'></i>
                                 </button>
@@ -818,6 +811,12 @@
                                             class="align-middle" data-key="t-logout">Logout</span></a>
                                 </div> -->
                             </div>
+                            <div class="ms-1 header-item">
+                                <span class="text-start ms-xl-2">
+                                    <span class="d-none d-xl-inline-block ms-1 fw-medium user-name-text">Welcome Back, Amrat Nandial</span>
+                                    <span class="d-none d-xl-block ms-1 fs-12 text-muted user-name-sub-text"><i class='bx bxs-circle'></i> TIME IN 8:12 AM</span>
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -860,7 +859,7 @@
             <div class="page-content">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-xxl-4">
+                        <div class="col-xxl-8">
                             <div class="card department-msg-card">
                                 <div class="card-header">
                                     <h3 class="text-white mb-0">Department Message</h3>
@@ -872,117 +871,13 @@
                                 </div>
                             </div>
                         </div>
+                        
                         <div class="col-xxl-4">
-                            <div class="card tip-card">
+                            <div class="card org-chart-card">
                                 <div class="card-header">
-                                    <h3 class="tip-heading mb-0">Tip of the day</h3>
+                                    <h3 class="org-chart mb-0">Organization Chart</h3>
                                 </div>
                                 <div class="card-body">
-                                    <div class="row">
-                                        <p class="tip-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                                        <p class="tip-name mb-0">atif hanif</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xxl-4">
-                            <div class="card dept-qlinks-card">
-                                <div class="card-header">
-                                    <div class="row">
-                                        <div class="col-sm-12 col-md-10">
-                                            <h3 class="quick-links mb-0">Quick Links</h3>
-                                        </div>
-                                        <div class="col-sm-12 col-md-2 quick-links-nav">
-                                            <button class="carousel-control-prev" type="button" data-bs-target="#quicklinks" data-bs-slide="prev">
-                                                <i class='bx bx-chevron-left'></i>
-                                            </button>
-                                            <button class="carousel-control-next" type="button" data-bs-target="#quicklinks" data-bs-slide="next">
-                                                <i class='bx bx-chevron-right'></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-body">
-                                    <div id="quicklinks" class="carousel slide" data-ride="carousel" data-bs-interval="false">
-                                        <div class="carousel-inner px-2">
-                                            <div class="carousel-item active">
-                                                <div class="row quicklinks-row">
-                                                    <div class="col-4 text-center">
-                                                        <img src="assets/images/icons/school-material.png" class="quicklinks-icons">
-                                                        <p class="pt-1">HR Services</p>
-                                                    </div>
-                                                    <div class="col-4 text-center">
-                                                        <img src="assets/images/icons/school-material.png" class="quicklinks-icons">
-                                                        <p class="pt-1">HR Loans</p>
-                                                    </div>
-                                                    <div class="col-4 text-center">
-                                                        <img src="assets/images/icons/line-chart.png" class="quicklinks-icons">
-                                                        <p class="pt-1">CCD Services</p>
-                                                    </div>
-                                                </div>
-                                                <div class="row quicklinks-row">
-                                                    <div class="col-4 text-center">
-                                                        <img src="assets/images/icons/line-chart.png" class="quicklinks-icons">
-                                                        <p class="pt-1">GS Services</p>
-                                                    </div>
-                                                    <div class="col-4 text-center">
-                                                        <img src="assets/images/icons/school-material.png" class="quicklinks-icons">
-                                                        <p class="pt-1">Legal Services</p>
-                                                    </div>
-                                                    <div class="col-4 text-center">
-                                                        <img src="assets/images/icons/line-chart.png" class="quicklinks-icons">
-                                                        <p class="pt-1">BED Services</p>
-                                                    </div>
-                                                </div>
-                                                <div class="row quicklinks-row">
-                                                    <div class="col-4 text-center"></div>
-                                                    <div class="col-4 text-center">
-                                                        <img src="assets/images/icons/line-chart.png" class="quicklinks-icons">
-                                                        <p class="pt-1">Finance Services</p>
-                                                    </div>
-                                                    <div class="col-4 text-center"></div>
-                                                </div>
-                                            </div>
-                                            <div class="carousel-item">
-                                                <div class="row quicklinks-row">
-                                                    <div class="col-4 text-center">
-                                                        <img src="assets/images/icons/school-material.png" class="quicklinks-icons">
-                                                        <p class="pt-1">PMO Services</p>
-                                                    </div>
-                                                    <div class="col-4 text-center">
-                                                        <img src="assets/images/icons/line-chart.png" class="quicklinks-icons">
-                                                        <p class="pt-1">ECD Services</p>
-                                                    </div>
-                                                    <div class="col-4 text-center">
-                                                        <img src="assets/images/icons/line-chart.png" class="quicklinks-icons">
-                                                        <p class="pt-1">IT Services</p>
-                                                    </div>
-                                                </div>
-                                                <div class="row quicklinks-row">
-                                                    <div class="col-4 text-center">
-                                                        <img src="assets/images/icons/school-material.png" class="quicklinks-icons">
-                                                        <p class="pt-1">EHS Services</p>
-                                                    </div>
-                                                    <div class="col-4 text-center">
-                                                        <img src="assets/images/icons/line-chart.png" class="quicklinks-icons">
-                                                        <p class="pt-1">CHD Services</p>
-                                                    </div>
-                                                    <div class="col-4 text-center">
-                                                        <img src="assets/images/icons/school-material.png" class="quicklinks-icons">
-                                                        <p class="pt-1">HR Training Services</p>
-                                                    </div>
-                                                </div>
-                                                <div class="row quicklinks-row">
-                                                    <div class="col-4 text-center"></div>
-                                                    <div class="col-4 text-center">
-                                                        <img src="assets/images/icons/line-chart.png" class="quicklinks-icons">
-                                                        <p class="pt-1">Procurement Services</p>
-                                                    </div>
-                                                    <div class="col-4 text-center"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -1016,11 +911,13 @@
                                                                 <p class="headlines-date mb-0">01 March 2022</p>
                                                                 <div class="headlines-more">
                                                                     <p class="like mb-0"><i class="mdi mdi-thumb-up"></i> 382</p>
+                                                                    <p class="comment mb-0"><a href="news-detail.html"><i class="mdi mdi-comment-multiple"></i> 20</a></p>
+                                                                    <p class="share mb-0"><i class="mdi mdi-share-variant"></i></p>
                                                                     <a class="read-more mb-0" href="news-detail.html">Read More</a>
                                                                 </div>
                                                             </div>
                                                             <div class="col-sm-12 col-md-6">
-                                                                <img class="d-block img-fluid news-img" src="assets/images/news/news-img.jpg" alt="First slide">
+                                                                <img class="d-block img-fluid news-img" src="assets/images/news/building.jpg" alt="First slide">
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1032,11 +929,13 @@
                                                                 <p class="headlines-date mb-0">01 March 2022</p>
                                                                 <div class="headlines-more">
                                                                     <p class="like mb-0"><i class="mdi mdi-thumb-up"></i> 382</p>
+                                                                    <p class="comment mb-0"><a href="news-detail.html"><i class="mdi mdi-comment-multiple"></i> 20</a></p>
+                                                                    <p class="share mb-0"><i class="mdi mdi-share-variant"></i></p>
                                                                     <a class="read-more mb-0" href="news-detail.html">Read More</a>
                                                                 </div>
                                                             </div>
                                                             <div class="col-sm-12 col-md-6">
-                                                                <img class="d-block img-fluid news-img" src="assets/images/news/laptop.jpg" alt="First slide">
+                                                                <img class="d-block img-fluid news-img" src="assets/images/news/building.jpg" alt="First slide">
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1048,11 +947,13 @@
                                                                 <p class="headlines-date mb-0">01 March 2022</p>
                                                                 <div class="headlines-more">
                                                                     <p class="like mb-0"><i class="mdi mdi-thumb-up"></i> 382</p>
+                                                                    <p class="comment mb-0"><a href="news-detail.html"><i class="mdi mdi-comment-multiple"></i> 20</a></p>
+                                                                    <p class="share mb-0"><i class="mdi mdi-share-variant"></i></p>
                                                                     <a class="read-more mb-0" href="news-detail.html">Read More</a>
                                                                 </div>
                                                             </div>
                                                             <div class="col-sm-12 col-md-6">
-                                                                <img class="d-block img-fluid news-img" src="assets/images/news/self-employed.jpg" alt="First slide">
+                                                                <img class="d-block img-fluid news-img" src="assets/images/news/building.jpg" alt="First slide">
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1074,66 +975,11 @@
                             <div class="card dept-events-card">
                                 <div class="card-header">
                                     <div class="row">
-                                        <h3 class="upcoming-events mb-0">Upcoming Events</h3>
+                                        <h3 class="upcoming-events mb-0">Document Library</h3>
                                     </div>
                                 </div>
                                 <div class="card-body">
-                                    <div class="dep-event">
-                                        <div class="row">
-                                            <div class="col-sm-12 col-md-12 col-lg-3">
-                                                <p class="event-date">20</p>
-                                                <div class="event-month">Aug</div>
-                                            </div>
-                                            <div class="col-sm-12 col-md-12 col-lg-9 events-desc">
-                                                <p class="event-headlines">Abu Dhabi Pension Fund Approves Its 2021 Plan</p>
-                                                <p class="event-place">Abu Dhabi</p>
-                                            </div>
-                                        </div>
-                                        <hr class="dep-hr">
-                                        <div class="row">
-                                            <div class="col-sm-12 col-md-12 col-lg-3">
-                                                <p class="event-date">20</p>
-                                                <div class="event-month">Aug</div>
-                                            </div>
-                                            <div class="col-sm-12 col-md-12 col-lg-9 events-desc">
-                                                <p class="event-headlines">Abu Dhabi Pension Fund Approves Its 2021 Plan</p>
-                                                <p class="event-place">Abu Dhabi</p>
-                                            </div>
-                                        </div>
-                                        <hr class="dep-hr">
-                                        <div class="row">
-                                            <div class="col-sm-12 col-md-12 col-lg-3">
-                                                <p class="event-date">20</p>
-                                                <div class="event-month">Aug</div>
-                                            </div>
-                                            <div class="col-sm-12 col-md-12 col-lg-9 events-desc">
-                                                <p class="event-headlines">Abu Dhabi Pension Fund Approves Its 2021 Plan</p>
-                                                <p class="event-place">Abu Dhabi</p>
-                                            </div>
-                                        </div>
-                                        <hr class="dep-hr">
-                                        <div class="row">
-                                            <div class="col-sm-12 col-md-12 col-lg-3">
-                                                <p class="event-date">20</p>
-                                                <div class="event-month">Aug</div>
-                                            </div>
-                                            <div class="col-sm-12 col-md-12 col-lg-9 events-desc">
-                                                <p class="event-headlines">Abu Dhabi Pension Fund Approves Its 2021 Plan</p>
-                                                <p class="event-place">Abu Dhabi</p>
-                                            </div>
-                                        </div>
-                                        <hr class="dep-hr">
-                                        <div class="row">
-                                            <div class="col-sm-12 col-md-12 col-lg-3">
-                                                <p class="event-date">20</p>
-                                                <div class="event-month">Aug</div>
-                                            </div>
-                                            <div class="col-sm-12 col-md-12 col-lg-9 events-desc">
-                                                <p class="event-headlines">Abu Dhabi Pension Fund Approves Its 2021 Plan</p>
-                                                <p class="event-place">Abu Dhabi</p>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    
                                 </div> 
                             </div>
                         </div>
