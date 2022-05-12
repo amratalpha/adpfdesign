@@ -792,7 +792,7 @@
 
 }
 
-@media only screen and (min-width: 1920px) {
+@media only screen and (min-width: 1920px) and (max-width: 2559px) {
 
 	.news-view {
 		margin-top: 5px;
@@ -900,6 +900,167 @@
 	.profile-card {
 		height: 315px;
 	}
+
+	.gallery-card {
+		height: 470px;
+	}
+
+	/* .portfolio-item .item {
+		padding-right: 5px;
+		padding-left: 5px;
+	} */
+
+	.portfolio-item img {
+		width: 130px;
+	}
+
+	.gallery-nav .carousel-control-prev, .gallery-nav .carousel-control-next {
+		width: 55%;
+	}
+
+	.emirate-news-nav .carousel-control-prev, .emirate-news-nav .carousel-control-next {
+		width: 75%;
+	}
+
+	/* .portfolio-item .item{
+		width: 32%;
+	} */
+
+	.dept-news-card .carousel-control-prev, .dept-news-card .carousel-control-next {
+		width: 85%;
+	}
+
+	.dept-quick-links-nav .carousel-control-prev, .dept-quick-links-nav .carousel-control-next {
+		width: 55%;
+	}
+
+	.department-msg-card {
+		background: #77765a;
+		border-radius: 15px;
+		height: 250px;
+	}
+	
+	.department-msg-card .card-header {
+		background: #77765a;
+		border-radius: 15px 15px 0px 0px;
+	}
+	
+	.dept-events-card {
+		height: 339px;
+	}
+
+}
+
+@media only screen and (min-width: 2560px) {
+
+	.news-view {
+		margin-top: 5px;
+		text-align: right;
+	}
+
+	.news-card .carousel-control-prev, .news-card .carousel-control-next {
+		width: 0%;
+	}
+
+	.read-more {
+		float: right;
+	}
+
+    /* .news-img {
+		height: 223px;
+	} */
+
+	.profile-card {
+		height: 568px;
+	}
+
+	.user {
+		width: 300px;
+	}
+
+	.upcoming-events-nav .carousel-control-prev, .upcoming-events-nav .carousel-control-next {
+		width: 55%;
+	}
+
+	.headlines {
+		width: 100%;
+	}
+
+	.headlines-text {
+		padding-top: 28px;
+	}
+
+	.headlines-date {
+		padding-top: 35px;
+	}
+
+	.headlines-more {
+		padding-top: 28px;
+	}
+
+	.events-detail {
+		padding-top: 8px;
+	}
+
+	.event-date {
+		font-size: 37px;
+	}
+
+	.events-desc {
+		padding-top: 20px;
+	}
+
+	.quick-links-nav .carousel-control-prev, .quick-links-nav .carousel-control-next {
+		width: 55%;
+	}
+
+	.quicklinks-row {
+		padding-top: 30px;
+	}
+
+	.quicklinks-row p {
+		margin-bottom: 0.65rem;
+	}
+
+	.qlinks-card {
+		height: 470px;
+	}
+
+	.name {
+		padding-top: 65px;
+		text-align: center;
+	}
+
+	.gift-icon {
+		width: 80px;
+		display: flex;
+		margin: 0 auto;
+	}
+
+	.gift-text {
+		padding: 18px 0;
+		font-size: 26px;
+	}
+
+	.day {
+		color: #77765a;
+		font-size: 70px;
+		margin-bottom: 0px;
+	}
+
+	.days {
+		color: #77765a;
+		font-size: 25px;
+		margin-bottom: 0px;
+	}
+
+	.time {
+		color: #77765a;
+		font-size: 37px;
+		margin-bottom: 0px;
+	}
+
+	
 
 	.gallery-card {
 		height: 470px;

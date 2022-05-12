@@ -19,7 +19,7 @@ a:hover {
 .banner {
 	background-image: url(../images/banner.png);
 	background-size: cover;
-	height: 250px;
+	height: 350px;
 	background-position: center center;
 }
 
@@ -35,6 +35,17 @@ a:hover {
 }
 
 /* Home */
+
+.btn-ar {
+	background-color: #fff;
+	color: #77765a;
+	border-color: transparent;
+	height: 42px;
+    width: 42px;
+	border-radius: 50% !important;
+	text-align: center;
+	padding: 10px;
+}
 
 .card {
     border-radius: 15px;
@@ -261,6 +272,39 @@ a.read-more:hover {
 	margin-bottom: 10px;
 }
 
+/*------------------------------ vertical bootstrap slider----------------------------*/
+
+.carousel-inner> .vertical.carousel-item-next ,
+.carousel-inner > .vertical.active.carousel-item-right{ 
+    transform: translate3d(0, 100%, 0);
+	-webkit-transform: translate3d(0, 100%, 0);
+	-ms-transform: translate3d(0, 100%, 0);
+	-moz-transform: translate3d(0, 100%, 0);
+	-o-transform: translate3d(0, 100%, 0); 
+	top: 0;
+    
+}
+.carousel-inner > .vertical.carousel-item-prev ,
+.carousel-inner > .vertical.active.carousel-item-left{ 
+    transform: translate3d(0,-100%, 0);
+	-webkit-transform: translate3d(0,-100%, 0); 
+	-moz-transform: translate3d(0,-100%, 0);
+	-ms-transform: translate3d(0,-100%, 0);
+	-o-transform: translate3d(0,-100%, 0);
+	top: 0;
+    
+}
+.carousel-inner > .vertical.next.carousel-item-left ,
+.carousel-inner > .vertical.carousel-item-prev.carousel-item-right ,
+.carousel-inner > .vertical.active{
+    transform:translate3d(0,0,0);
+	-webkit-transform:translate3d(0,0,0);
+	-ms-transform:translate3d(0,0,0);;
+	-moz-transform:translate3d(0,0,0);
+	-o-transform:translate3d(0,0,0);
+	top:0;
+}
+
 /* */
 
 .form-check-input:checked {
@@ -405,46 +449,6 @@ a.read-more:hover {
 	color: #77765a;
 }
 
-/*------------------------------ vertical bootstrap slider----------------------------*/
-
-.carousel-inner> .vertical.carousel-item-next ,
-.carousel-inner > .vertical.active.carousel-item-right{ 
-    transform: translate3d(0, 100%, 0);
-	-webkit-transform: translate3d(0, 100%, 0);
-	-ms-transform: translate3d(0, 100%, 0);
-	-moz-transform: translate3d(0, 100%, 0);
-	-o-transform: translate3d(0, 100%, 0); 
-	top: 0;
-    
-}
-.carousel-inner > .vertical.carousel-item-prev ,
-.carousel-inner > .vertical.active.carousel-item-left{ 
-    transform: translate3d(0,-100%, 0);
-	-webkit-transform: translate3d(0,-100%, 0); 
-	-moz-transform: translate3d(0,-100%, 0);
-	-ms-transform: translate3d(0,-100%, 0);
-	-o-transform: translate3d(0,-100%, 0);
-	top: 0;
-    
-}
-.carousel-inner > .vertical.next.carousel-item-left ,
-.carousel-inner > .vertical.carousel-item-prev.carousel-item-right ,
-.carousel-inner > .vertical.active{
-    transform:translate3d(0,0,0);
-	-webkit-transform:translate3d(0,0,0);
-	-ms-transform:translate3d(0,0,0);;
-	-moz-transform:translate3d(0,0,0);
-	-o-transform:translate3d(0,0,0);
-	top:0;
-}
-
-.hightlight-text {
-	margin-top: 25px;
-	border-left: 5px solid #77765a;
-	padding-left: 20px;
-	width: 70%;
-}
-
 .bx.bxs-quote-left {
 	font-size: 35px;
 	color: #77765a;
@@ -453,17 +457,41 @@ a.read-more:hover {
 	padding-top: 25px;
 }
 
-.footer .nav-link {
-    padding: 0 1rem;
+/* News Detail */
+
+.date {
+	font-size: 11px;
 }
 
-.social-links {
-	color: #77765a;
-	font-size: 20px;
+.comment-text {
+	font-size: 12px;
 }
 
-.social-links:hover {
-	color: #77765a;
+.fs-12 {
+	font-size: 12px;
+}
+
+.shadow-none {
+	box-shadow: none;
+}
+
+.comments {
+	background-color: #77765a;
+	color: #fff;
+	padding: 5px 10px;
+}
+
+.user-name {
+	color: #000;
+}
+
+.textarea {
+	resize: none;
+}
+
+.user-img {
+	width: 50px;
+    height: 50px;
 }
 
 /* Department Page */
@@ -708,7 +736,7 @@ a.read-more:hover {
     background: #fff;
     border-radius: 5px;
     font-size: 20px;
-    border: 1px solid #6a8e36;
+    border: 1px solid #77765a;
 	display: table-cell;
 	height: 160px;
 	width: 180px;
@@ -720,7 +748,7 @@ a.read-more:hover {
     background-color: #fff;
     border-radius: 5px;
     padding: 20px;
-    border: 1px solid #6a8e36;
+    border: 1px solid #77765a;
 }
 
 .boxseo-data h3 {
@@ -761,11 +789,26 @@ a.read-more:hover {
 }
 
 .about li a.active{
-    background: #6a8e36 !important;
+    background: #77765a !important;
     color: #fff !important;
 }
 
 .about li a:hover {
-    background: #6a8e36 !important;
+    background: #77765a !important;
     color: #fff !important;
+}
+
+/* Footer */
+
+.footer .nav-link {
+    padding: 0 1rem;
+}
+
+.social-links {
+	color: #77765a;
+	font-size: 20px;
+}
+
+.social-links:hover {
+	color: #77765a;
 }
