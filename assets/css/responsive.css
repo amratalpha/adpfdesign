@@ -654,6 +654,10 @@
 		width: 0%;
 	}
 
+	.org-chart-card {
+		height: 250px;
+	}
+
 }
 
 @media only screen and (min-width: 1600px) and (max-width: 1919px) {
@@ -790,6 +794,10 @@
 		height: 250px;
 	}
 
+	.org-chart-card {
+		height: 250px;
+	}
+
 }
 
 @media only screen and (min-width: 1920px) and (max-width: 2559px) {
@@ -809,6 +817,7 @@
 
     .news-img {
 		height: 223px;
+		width: 100%;
 	}
 
 	.user {
@@ -946,12 +955,20 @@
 	}
 	
 	.dept-events-card {
-		height: 339px;
+		height: 315px;
+	}
+
+	.org-chart-card {
+		height: 250px;
 	}
 
 }
 
 @media only screen and (min-width: 2560px) {
+
+	.banner {
+		height: 550px;
+	}
 
 	.news-view {
 		margin-top: 5px;
@@ -966,16 +983,17 @@
 		float: right;
 	}
 
-    /* .news-img {
+    .news-img {
 		height: 223px;
-	} */
+		width: 100%;
+	}
 
 	.profile-card {
-		height: 568px;
+		height: 315px;
 	}
 
 	.user {
-		width: 300px;
+		width: 135px;
 	}
 
 	.upcoming-events-nav .carousel-control-prev, .upcoming-events-nav .carousel-control-next {
@@ -1107,7 +1125,10 @@
 	}
 	
 	.dept-events-card {
-		height: 339px;
+		height: 315px;
 	}
 
+	.org-chart-card {
+		height: 250px;
+	}
 }
