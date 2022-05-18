@@ -35,7 +35,7 @@
 
 @media (min-width:768px) {
 	.topbar-user {
-		background-color: var(--vz-topbar-user-bg);
+		background-color: transparent;
 	}
 }
 
@@ -411,6 +411,10 @@
 	.tab-body {
 		margin: 1rem 10px 0px;
 	}
+
+	.dept-news-card .carousel-control-prev, .dept-news-card .carousel-control-next {
+		width: 0%;
+	}
 	
 }
 
@@ -469,6 +473,10 @@
 
 	.emirate-news-nav .carousel-control-prev, .emirate-news-nav .carousel-control-next {
 		width: 40%;
+	}
+
+	.dept-news-card .carousel-control-prev, .dept-news-card .carousel-control-next {
+		width: 0%;
 	}
 	
 }
@@ -936,7 +944,7 @@
 	}
 
 	.emirate-news-nav .carousel-control-prev, .emirate-news-nav .carousel-control-next {
-		width: 75%;
+		width: 65%;
 	}
 
 	/* .portfolio-item .item{
@@ -944,7 +952,7 @@
 	} */
 
 	.dept-news-card .carousel-control-prev, .dept-news-card .carousel-control-next {
-		width: 85%;
+		width: 0%;
 	}
 
 	.dept-shortcuts-nav .carousel-control-prev, .dept-shortcuts-nav .carousel-control-next {
@@ -1116,7 +1124,7 @@
 	} */
 
 	.dept-news-card .carousel-control-prev, .dept-news-card .carousel-control-next {
-		width: 85%;
+		width: 0%;
 	}
 
 	.dept-shortcuts-nav .carousel-control-prev, .dept-shortcuts-nav .carousel-control-next {
