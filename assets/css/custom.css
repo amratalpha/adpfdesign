@@ -71,8 +71,9 @@ i.bx.bx-chevron-right {
 }
 
 .news-card .carousel-control-prev i, .news-card .carousel-control-next i {
-	border: 1px solid transparent;
-	font-size: 25px;
+	border: 1px solid #77765a;
+    border-radius: 50px;
+	font-size: 20px;
 }
 
 .news-card .carousel .carousel-control {
@@ -267,8 +268,7 @@ a.read-more:hover {
 	padding: 10px 15px;
 }
 
-.portfolio-item .item{
-	float: left;
+.portfolio-item .item {
 	margin-bottom: 10px;
 }
 
@@ -294,6 +294,17 @@ a.read-more:hover {
 
 .emirate-news {
 	font-weight: bold;
+}
+
+.copy-input {
+	width: 77%;
+	height: 31px;
+}
+
+.copy-btn {
+	line-height: 1;
+	width: 20%;
+	margin-left: 3%
 }
 
 /*------------------------------ vertical bootstrap slider----------------------------*/
