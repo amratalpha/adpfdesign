@@ -1194,13 +1194,15 @@ body {
 }
 
 [data-layout=vertical][data-sidebar=dark] .navbar-nav .nav-link {
-	color: #77765a;
+	/* color: #77765a; */
+	color: #6a8e36;
 	border-radius: 10px;
 }
 
 [data-layout=vertical][data-sidebar=dark] .navbar-nav .nav-link.active {
 	color: #fff !important;
-	background-color: #77765a;
+	/* background-color: #77765a; */
+	background-color: #6a8e36 ;
 	border-radius: 10px;
 }
 
@@ -1253,7 +1255,8 @@ body {
 }
 
 [data-layout=vertical][data-sidebar=dark] .navbar-nav .nav-sm .nav-link {
-	color: #77765a;
+	/* color: #77765a; */
+	color: #6a8e36;
 }
 
 [data-layout=vertical][data-sidebar=dark] .navbar-nav .nav-sm .nav-link:before {

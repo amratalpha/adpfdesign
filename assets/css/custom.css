@@ -9,11 +9,13 @@ a:hover {
 }
 
 .menu-dropdown ul li a.active {
-    background: #6a8e36 !important;
+    /* background: #6a8e36 !important; */
+	background: #dadada !important;
 }
 
 .menu-dropdown ul li a:hover {
-    background: #6a8e36 !important;
+    /* background: #6a8e36 !important; */
+	background: #dadada !important;
 }
 
 .banner {
