@@ -664,29 +664,43 @@ a.read-more:hover {
 
 /* About Us Page */
 
+.nav-tabs {
+    border-bottom: 1px solid transparent;
+}
+
 .about-us {
     font-weight: bold;
+}
+
+.about {
+	border-bottom: 1px solid transparent;
+	padding: 20px 0px;
+	background: #e8ece4;
+}
+
+.about li {
+	margin: 0 20px;
+	transition: all 0.3s ease-in-out;
 }
 
 .boximageicon-seo {
     padding: 10px;
     margin-right: 25px;
-    background: #fff;
     border-radius: 5px;
     font-size: 20px;
-    border: 1px solid #77765a;
 	display: table-cell;
 	height: 160px;
-	width: 180px;
+	width: 160px;
 	text-align: center;
 	vertical-align: middle;
+	background-color: #fff;
+	color: #000 !important;
 }
 
 .tab-body {
     background-color: #fff;
     border-radius: 5px;
     padding: 20px;
-    border: 1px solid #77765a;
 }
 
 .boxseo-data h3 {
@@ -713,27 +727,19 @@ a.read-more:hover {
 	font-size: 40px;
 }
 
-.about {
-	border-bottom: 1px solid transparent;
-}
-
-.about li {
-	margin: 0 10px;
-}
-
-.values-tb th:nth-child(even), .values-tb th:nth-child(odd){
-	background: #648147;
-	color: #fff !important;
-}
-
 .about li a.active{
-    background: #77765a !important;
+    background: #4d6340 !important;
     color: #fff !important;
 }
 
 .about li a:hover {
-    background: #77765a !important;
+    background: #4d6340 !important;
     color: #fff !important;
+	border: 1px solid transparent;
+}
+
+.about li:hover {
+    transform: scale(1.2);
 }
 
 /* Footer */
