@@ -317,7 +317,7 @@
 
 /* Responsive */
 
-@media only screen and (max-width: 766px) {
+@media only screen and (max-width: 767px) {
 
 	.news {
 		text-align: center;
@@ -430,6 +430,11 @@
 		margin: 0 auto;
 		display: block;
 	}
+
+	.source-btn {
+		width: 100%;
+		height: 96px;
+	}
 	
 }
 
@@ -493,6 +498,11 @@
 
 	.dept-news-card .carousel-control-prev, .dept-news-card .carousel-control-next {
 		width: 0%;
+	}
+
+	.source-btn {
+		width: 100%;
+		height: 77px;
 	}
 	
 }
@@ -567,6 +577,10 @@
 		width: 0%;
 	}
 
+	.source-btn {
+		width: 110px;
+		height: 96px;
+	}
 }
 
 @media only screen and (min-width: 1440px) and (max-width: 1599px) {
@@ -688,6 +702,11 @@
 
 	.org-chart-card {
 		height: 250px;
+	}
+
+	.source-btn {
+		width: 110px;
+		height: 96px;
 	}
 
 }
