@@ -435,6 +435,16 @@
 		width: 100%;
 		height: 96px;
 	}
+
+	.service-btn {
+		width: 124px;
+    	height: 135px;
+	}
+
+	.dept-btn {
+		height: 57px;
+		width: 124px;
+	}
 	
 }
 
@@ -503,6 +513,16 @@
 	.source-btn {
 		width: 100%;
 		height: 77px;
+	}
+
+	.service-btn {
+		width: 145px;
+    	height: 135px;
+	}
+
+	.dept-btn {
+		height: 57px;
+		width: 145px;
 	}
 	
 }
@@ -580,6 +600,16 @@
 	.source-btn {
 		width: 110px;
 		height: 96px;
+	}
+
+	.service-btn {
+		width: 131px;
+    	height: 135px;
+	}
+
+	.dept-btn {
+		height: 77px;
+		width: 92px;
 	}
 }
 
@@ -705,8 +735,18 @@
 	}
 
 	.source-btn {
-		width: 110px;
+		width: 121px;
 		height: 96px;
+	}
+
+	.service-btn {
+		width: 170px;
+    	height: 135px;
+	}
+
+	.dept-btn {
+		height: 57px;
+		width: 122px;
 	}
 
 }
@@ -847,6 +887,16 @@
 
 	.org-chart-card {
 		height: 250px;
+	}
+
+	.source-btn {
+		width: 141px;
+		height: 77px;
+	}
+
+	.service-btn {
+		width: 197px;
+    	height: 96px;
 	}
 
 }
@@ -1019,6 +1069,21 @@
 
 	.org-chart-card {
 		height: 250px;
+	}
+
+	.source-btn {
+		width: 180px;
+		height: 57px;
+	}
+
+	.service-btn {
+		width: 247px;
+		height: 77px;
+	}
+
+	.dept-btn {
+		height: 38px;
+		width: 158px;
 	}
 
 }
