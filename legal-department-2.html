@@ -26,7 +26,7 @@
     <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
     <!-- Select 2 CSS-->
     <link href="assets/css/select2.min.css" rel="stylesheet" type="text/css" />
-
+    
 </head>
 
 <body>
@@ -804,379 +804,144 @@
             <div class="page-content">
                 <div class="container-fluid">
                     <div class="row text-center">
-                        <div class="col-sm-12">
+                        <div class="col-sm-12 col-md-3">
                             <h4 class="pb-2">Category</h4>
-                            <button type="button" class="btn btn-primary cat-btn">Decree</button>
-                            <button type="button" class="btn btn-primary cat-btn">Resolution/ Decision</button>
-                            <button type="button" class="btn btn-primary cat-btn mt-2 mt-md-0">Law</button>
-                            <button type="button" class="btn btn-primary cat-btn mt-2 mt-md-0">Circular</button>
-                            <button type="button" class="btn btn-primary cat-btn mt-2 mt-md-0">Legal Advice</button>                      
+                            <select class="category" name="category" multiple="multiple">
+                                <option value="decree">Decree</option>
+                                <option value="resolution-decision">Resolution/ Decision</option>
+                                <option value="law">Law</option>
+                                <option value="circular">Circular</option>
+                                <option value="legal-advice">Legal Advice</option>  
+                            </select>                
                         </div>
-                    </div>
-                    <div class="row mt-5">
-                        <div class="col-md-6">
+                        <div class="col-sm-12 col-md-3">
                             <h4 class="pb-2 text-center">Department</h4>
-                            <div class="row">
-                                <div class="col-6 col-sm-3 col-md-6 col-lg-3">
-                                    <button type="button" class="btn btn-primary dept-btn">HR Services</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-6 col-lg-3">
-                                    <button type="button" class="btn btn-primary dept-btn">HR Loans</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-6 col-lg-3 mt-2 mt-md-2 mt-lg-0 mt-xl-0">
-                                    <button type="button" class="btn btn-primary dept-btn">CCD Services</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-6 col-lg-3 mt-2 mt-md-2 mt-lg-0 mt-xl-0">
-                                    <button type="button" class="btn btn-primary dept-btn">GS Services</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-6 col-lg-3 mt-2 mt-md-2 mt-lg-2 mt-xl-2 mt-xxl-2">
-                                    <button type="button" class="btn btn-primary dept-btn">Legal Services</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-6 col-lg-3 mt-2 mt-md-2 mt-lg-2 mt-xl-2 mt-xxl-2">
-                                    <button type="button" class="btn btn-primary dept-btn">BED Services</button> 
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-6 col-lg-3 mt-2 mt-md-2 mt-lg-2 mt-xl-2 mt-xxl-2">
-                                    <button type="button" class="btn btn-primary dept-btn">Finance Services</button> 
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-6 col-lg-3 mt-2 mt-md-2 mt-lg-2 mt-xl-2 mt-xxl-2">
-                                    <button type="button" class="btn btn-primary dept-btn">PMO Services</button> 
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-6 col-lg-3 mt-2 mt-md-2 mt-lg-2 mt-xl-2 mt-xxl-2">
-                                    <button type="button" class="btn btn-primary dept-btn">ECD Services</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-6 col-lg-3 mt-2 mt-md-2 mt-lg-2 mt-xl-2 mt-xxl-2">
-                                    <button type="button" class="btn btn-primary dept-btn">IT Services</button> 
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-6 col-lg-3 mt-2 mt-md-2 mt-lg-2 mt-xl-2 mt-xxl-2">
-                                    <button type="button" class="btn btn-primary dept-btn">EHS Services</button> 
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-6 col-lg-3 mt-2 mt-md-2 mt-lg-2 mt-xl-2 mt-xxl-2">
-                                    <button type="button" class="btn btn-primary dept-btn">CHD Services</button> 
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-6 col-lg-3 mt-2 mt-md-2 mt-lg-2 mt-xl-2 mt-xxl-2">
-                                    <button type="button" class="btn btn-primary dept-btn">HR Training Services</button> 
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-6 col-lg-3 mt-2 mt-md-2 mt-lg-2 mt-xl-2 mt-xxl-2">
-                                    <button type="button" class="btn btn-primary dept-btn">Procurement Services</button> 
-                                </div>
-                            </div>
+                            <select class="department" name="department" multiple="multiple">
+                                <option value="her-services">HR Services</option> 
+                                <option value="hr-loans">HR Loans</option> 
+                                <option value="ccd-services">CCD Services</option> 
+                                <option value="gs-services">GS Services</option> 
+                                <option value="legal-services">Legal Services</option> 
+                                <option value="bed-services">BED Services</option>  
+                                <option value="finance-cervices">Finance Services</option>  
+                                <option value="pmo-services">PMO Services</option>  
+                                <option value="ecd-services">ECD Services</option> 
+                                <option value="it-services">IT Services</option>  
+                                <option value="ehs-services">EHS Services</option>  
+                                <option value="chd-services">CHD Services</option>  
+                                <option value="hr-training-services">HR Training Services</option>  
+                                <option value="procurement-services">Procurement Services</option>  
+                            </select>                
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-sm-12 col-md-3">
                             <h4 class="pb-2 text-center">Topic Source</h4>
-                            <div class="row">
-                                <div class="col-6 col-sm-3 col-md-6 col-lg-3">
-                                    <button type="button" class="btn btn-primary source-btn">Government of Dubai</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-6 col-lg-3">
-                                    <button type="button" class="btn btn-primary source-btn">Entity</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-6 col-lg-3 mt-2 mt-md-2 mt-lg-0">
-                                    <button type="button" class="btn btn-primary source-btn">Permanent Technical Committee</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-6 col-lg-3 mt-2 mt-md-2 mt-lg-0">
-                                    <button type="button" class="btn btn-primary source-btn">Management Committee</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-6 col-lg-3 mt-2 mt-md-2 mt-lg-2 mt-xl-2 mt-xxl-2">
-                                    <button type="button" class="btn btn-primary source-btn">Financial Committee</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-6 col-lg-3 mt-2 mt-md-2 mt-lg-2 mt-xl-2 mt-xxl-2">
-                                    <button type="button" class="btn btn-primary source-btn">Procurement Division</button> 
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-6 col-lg-3 mt-2 mt-md-2 mt-lg-2 mt-xl-2 mt-xxl-2">
-                                    <button type="button" class="btn btn-primary source-btn">Department of Finance</button> 
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-6 col-lg-3 mt-2 mt-md-2 mt-lg-2 mt-xl-2 mt-xxl-2">
-                                    <button type="button" class="btn btn-primary source-btn">Government of Abu Dhabi</button> 
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-6 col-lg-3 mt-2 mt-md-2 mt-lg-2 mt-xl-2 mt-xxl-2">
-                                    <button type="button" class="btn btn-primary source-btn">Executive Council</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-6 col-lg-3 mt-2 mt-md-2 mt-lg-2 mt-xl-2 mt-xxl-2">
-                                    <button type="button" class="btn btn-primary source-btn">Medical Committee </button> 
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-6 col-lg-3 mt-2 mt-md-2 mt-lg-2 mt-xl-2 mt-xxl-2">
-                                    <button type="button" class="btn btn-primary source-btn">Government of Sharjah</button> 
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-6 col-lg-3 mt-2 mt-md-2 mt-lg-2 mt-xl-2 mt-xxl-2">
-                                    <button type="button" class="btn btn-primary source-btn">Legal & Legislation Division </button> 
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-6 col-lg-3 mt-2 mt-md-2 mt-lg-2 mt-xl-2 mt-xxl-2">
-                                    <button type="button" class="btn btn-primary source-btn">Managing Director Office</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-6 col-lg-3 mt-2 mt-md-2 mt-lg-2 mt-xl-2 mt-xxl-2">
-                                    <button type="button" class="btn btn-primary source-btn">Director General Office</button> 
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-6 col-lg-3 mt-2 mt-md-2 mt-lg-2 mt-xl-2 mt-xxl-2">
-                                    <button type="button" class="btn btn-primary source-btn">Customer Happiness Division</button> 
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-6 col-lg-3 mt-2 mt-md-2 mt-lg-2 mt-xl-2 mt-xxl-2">
-                                    <button type="button" class="btn btn-primary source-btn">Abu Dhabi Pension Fund</button> 
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-6 col-lg-3 mt-2 mt-md-2 mt-lg-2 mt-xl-2 mt-xxl-2">
-                                    <button type="button" class="btn btn-primary source-btn">Federal Law</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-6 col-lg-3 mt-2 mt-md-2 mt-lg-2 mt-xl-2 mt-xxl-2">
-                                    <button type="button" class="btn btn-primary source-btn">Employer and Member Services Sector</button> 
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-6 col-lg-3 mt-2 mt-md-2 mt-lg-2 mt-xl-2 mt-xxl-2">
-                                    <button type="button" class="btn btn-primary source-btn">Grievance Committee (Pension Affairs)</button> 
-                                </div>
-                            </div>
-                        </div>   
-                    </div>
-                    <div class="row mt-5">
-                        <div class="col-sm-12">
-                            <h4 class="pb-2 text-center">Service</h4>
-                            <div class="row">
-                                <div class="col-6 col-sm-3 col-md-3 col-lg-2">
-                                    <button type="button" class="btn btn-primary service-btn">Entity Category</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-3 col-lg-2">
-                                    <button type="button" class="btn btn-primary service-btn">Contradiction of Service Terms</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-3 col-lg-2 mt-2 mt-md-0 mt-lg-0">
-                                    <button type="button" class="btn btn-primary service-btn">Family Support Deduction</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-3 col-lg-2 mt-2 mt-md-0 mt-lg-0">
-                                    <button type="button" class="btn btn-primary service-btn">Addition of Contributions Nominal Term</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-3 col-lg-2 mt-2 mt-md-2 mt-lg-0">
-                                    <button type="button" class="btn btn-primary service-btn">Active Member Transfer</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-3 col-lg-2 mt-2 mt-md-2 mt-lg-0">
-                                    <button type="button" class="btn btn-primary service-btn">Benefits Transfer to Another Bank Account</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-3 col-lg-2 mt-2 mt-md-2 mt-lg-2">
-                                    <button type="button" class="btn btn-primary service-btn">Pension Settlement</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-3 col-lg-2 mt-2 mt-md-2 mt-lg-2">
-                                    <button type="button" class="btn btn-primary service-btn">Employees Services</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-3 col-lg-2 mt-2 mt-md-2 mt-lg-2">
-                                    <button type="button" class="btn btn-primary service-btn">Nominal Service Term Purchase</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-3 col-lg-2 mt-2 mt-md-2 mt-lg-2">
-                                    <button type="button" class="btn btn-primary service-btn">Services Addition for Military Officials</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-3 col-lg-2 mt-2 mt-md-2 mt-lg-2">
-                                    <button type="button" class="btn btn-primary service-btn">Summary</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-3 col-lg-2 mt-2 mt-md-2 mt-lg-2">
-                                    <button type="button" class="btn btn-primary service-btn">Active Member Registration</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-3 col-lg-2 mt-2 mt-md-2 mt-lg-2">
-                                    <button type="button" class="btn btn-primary service-btn">Contributions Collection</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-3 col-lg-2 mt-2 mt-md-2 mt-lg-2">
-                                    <button type="button" class="btn btn-primary service-btn">Cost Calculation</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-3 col-lg-2 mt-2 mt-md-2 mt-lg-2">
-                                    <button type="button" class="btn btn-primary service-btn">Case Study</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-3 col-lg-2 mt-2 mt-md-2 mt-lg-2">
-                                    <button type="button" class="btn btn-primary service-btn">Service Addition</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-3 col-lg-2 mt-2 mt-md-2 mt-lg-2">
-                                    <button type="button" class="btn btn-primary service-btn">Transaction</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-3 col-lg-2 mt-2 mt-md-2 mt-lg-2">
-                                    <button type="button" class="btn btn-primary service-btn">Entity Registration</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-3 col-lg-2 mt-2 mt-md-2 mt-lg-2">
-                                    <button type="button" class="btn btn-primary service-btn">Update Entity Data</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-3 col-lg-2 mt-2 mt-md-2 mt-lg-2">
-                                    <button type="button" class="btn btn-primary service-btn">Installment of Personnel Transfer Amounts</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-3 col-lg-2 mt-2 mt-md-2 mt-lg-2">
-                                    <button type="button" class="btn btn-primary service-btn">Studies</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-3 col-lg-2 mt-2 mt-md-2 mt-lg-2">
-                                    <button type="button" class="btn btn-primary service-btn">Employee Benefits</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-3 col-lg-2 mt-2 mt-md-2 mt-lg-2">
-                                    <button type="button" class="btn btn-primary service-btn">Active Member Registration</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-3 col-lg-2 mt-2 mt-md-2 mt-lg-2">
-                                    <button type="button" class="btn btn-primary service-btn">Update Active Member Data</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-3 col-lg-2 mt-2 mt-md-2 mt-lg-2">
-                                    <button type="button" class="btn btn-primary service-btn">Installment of Additional Amounts</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-3 col-lg-2 mt-2 mt-md-2 mt-lg-2">
-                                    <button type="button" class="btn btn-primary service-btn">Disbursement of End of Service Lump Sum Benefits</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-3 col-lg-2 mt-2 mt-md-2 mt-lg-2">
-                                    <button type="button" class="btn btn-primary service-btn">Deduction from Pension/ Benefits</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-3 col-lg-2 mt-2 mt-md-2 mt-lg-2">
-                                    <button type="button" class="btn btn-primary service-btn">Disbursement of Trainees Benefits</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-3 col-lg-2 mt-2 mt-md-2 mt-lg-2">
-                                    <button type="button" class="btn btn-primary service-btn">Pensioners Advantages</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-3 col-lg-2 mt-2 mt-md-2 mt-lg-2">
-                                    <button type="button" class="btn btn-primary service-btn">Trainees Registration</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-3 col-lg-2 mt-2 mt-md-2 mt-lg-2">
-                                    <button type="button" class="btn btn-primary service-btn">Work Instructions</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-3 col-lg-2 mt-2 mt-md-2 mt-lg-2">
-                                    <button type="button" class="btn btn-primary service-btn">Court Deduction</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-3 col-lg-2 mt-2 mt-md-2 mt-lg-2">
-                                    <button type="button" class="btn btn-primary service-btn">Benefits Disbursement</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-3 col-lg-2 mt-2 mt-md-2 mt-lg-2">
-                                    <button type="button" class="btn btn-primary service-btn">Service Term</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-3 col-lg-2 mt-2 mt-md-2 mt-lg-2">
-                                    <button type="button" class="btn btn-primary service-btn">People of Determination Registration</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-3 col-lg-2 mt-2 mt-md-2 mt-lg-2">
-                                    <button type="button" class="btn btn-primary service-btn">Service Termination by A Disciplinary Decision</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-3 col-lg-2 mt-2 mt-md-2 mt-lg-2">
-                                    <button type="button" class="btn btn-primary service-btn">Deduction of Service Addition Cost from the Benefits</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-3 col-lg-2 mt-2 mt-md-2 mt-lg-2">
-                                    <button type="button" class="btn btn-primary service-btn">Organizational Structure & Occupational Empowerment/ Delegation of Authorities</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-3 col-lg-2 mt-2 mt-md-2 mt-lg-2">
-                                    <button type="button" class="btn btn-primary service-btn">Administrative Instructions</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-3 col-lg-2 mt-2 mt-md-2 mt-lg-2">
-                                    <button type="button" class="btn btn-primary service-btn">Pension Disbursement</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-3 col-lg-2 mt-2 mt-md-2 mt-lg-2">
-                                    <button type="button" class="btn btn-primary service-btn">Judicial Officer</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-3 col-lg-2 mt-2 mt-md-2 mt-lg-2">
-                                    <button type="button" class="btn btn-primary service-btn">Contracts & Agreements Audit</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-3 col-lg-2 mt-2 mt-md-2 mt-lg-2">
-                                    <button type="button" class="btn btn-primary service-btn">Agreements & Memorandums of Understanding</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-3 col-lg-2 mt-2 mt-md-2 mt-lg-2">
-                                    <button type="button" class="btn btn-primary service-btn">Legal Classification</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-3 col-lg-2 mt-2 mt-md-2 mt-lg-2">
-                                    <button type="button" class="btn btn-primary service-btn">Entity Deduction</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-3 col-lg-2 mt-2 mt-md-2 mt-lg-2">
-                                    <button type="button" class="btn btn-primary service-btn">Deducting Less Than One Year/ Old</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-3 col-lg-2 mt-2 mt-md-2 mt-lg-2">
-                                    <button type="button" class="btn btn-primary service-btn">Decisions of the Permanent Technical Committee</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-3 col-lg-2 mt-2 mt-md-2 mt-lg-2">
-                                    <button type="button" class="btn btn-primary service-btn">Legal Memorandums</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-3 col-lg-2 mt-2 mt-md-2 mt-lg-2">
-                                    <button type="button" class="btn btn-primary service-btn">Contradiction of Service Terms</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-3 col-lg-2 mt-2 mt-md-2 mt-lg-2">
-                                    <button type="button" class="btn btn-primary service-btn">Entities Classification</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-3 col-lg-2 mt-2 mt-md-2 mt-lg-2">
-                                    <button type="button" class="btn btn-primary service-btn">Projects</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-3 col-lg-2 mt-2 mt-md-2 mt-lg-2">
-                                    <button type="button" class="btn btn-primary service-btn">Nominal Term Purchase</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-3 col-lg-2 mt-2 mt-md-2 mt-lg-2">
-                                    <button type="button" class="btn btn-primary service-btn">Addition of Nominal Contributions Term</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-3 col-lg-2 mt-2 mt-md-2 mt-lg-2">
-                                    <button type="button" class="btn btn-primary service-btn">Pension Settlement</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-3 col-lg-2 mt-2 mt-md-2 mt-lg-2">
-                                    <button type="button" class="btn btn-primary service-btn">Response to Entities Enquiries</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-3 col-lg-2 mt-2 mt-md-2 mt-lg-2">
-                                    <button type="button" class="btn btn-primary service-btn">Personnel Transfer Cancellation</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-3 col-lg-2 mt-2 mt-md-2 mt-lg-2">
-                                    <button type="button" class="btn btn-primary service-btn">Benefits Transfer to Another Bank Account</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-3 col-lg-2 mt-2 mt-md-2 mt-lg-2">
-                                    <button type="button" class="btn btn-primary service-btn">Pensionable Salary</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-3 col-lg-2 mt-2 mt-md-2 mt-lg-2">
-                                    <button type="button" class="btn btn-primary service-btn">Unduly Disbursed Amounts</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-3 col-lg-2 mt-2 mt-md-2 mt-lg-2">
-                                    <button type="button" class="btn btn-primary service-btn">Recruitment</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-3 col-lg-2 mt-2 mt-md-2 mt-lg-2">
-                                    <button type="button" class="btn btn-primary service-btn">Investigation</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-3 col-lg-2 mt-2 mt-md-2 mt-lg-2">
-                                    <button type="button" class="btn btn-primary service-btn">Entity Closure</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-3 col-lg-2 mt-2 mt-md-2 mt-lg-2">
-                                    <button type="button" class="btn btn-primary service-btn">Inheritance</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-3 col-lg-2 mt-2 mt-md-2 mt-lg-2">
-                                    <button type="button" class="btn btn-primary service-btn">Highest Share Entitlement</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-3 col-lg-2 mt-2 mt-md-2 mt-lg-2">
-                                    <button type="button" class="btn btn-primary service-btn">Work Injury</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-3 col-lg-2 mt-2 mt-md-2 mt-lg-2">
-                                    <button type="button" class="btn btn-primary service-btn">Amendments</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-3 col-lg-2 mt-2 mt-md-2 mt-lg-2">
-                                    <button type="button" class="btn btn-primary service-btn">Governance & Organization</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-3 col-lg-2 mt-2 mt-md-2 mt-lg-2">
-                                    <button type="button" class="btn btn-primary service-btn">Grievances</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-3 col-lg-2 mt-2 mt-md-2 mt-lg-2">
-                                    <button type="button" class="btn btn-primary service-btn">Incentives & Rewards</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-3 col-lg-2 mt-2 mt-md-2 mt-lg-2">
-                                    <button type="button" class="btn btn-primary service-btn">Medical Fitness</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-3 col-lg-2 mt-2 mt-md-2 mt-lg-2">
-                                    <button type="button" class="btn btn-primary service-btn">Acceleration</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-3 col-lg-2 mt-2 mt-md-2 mt-lg-2">
-                                    <button type="button" class="btn btn-primary service-btn">Time & Attendance</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-3 col-lg-2 mt-2 mt-md-2 mt-lg-2">
-                                    <button type="button" class="btn btn-primary service-btn">Beneficiaries</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-3 col-lg-2 mt-2 mt-md-2 mt-lg-2">
-                                    <button type="button" class="btn btn-primary service-btn">Training</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-3 col-lg-2 mt-2 mt-md-2 mt-lg-2">
-                                    <button type="button" class="btn btn-primary service-btn">Combining Two Pensions or More</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-3 col-lg-2 mt-2 mt-md-2 mt-lg-2">
-                                    <button type="button" class="btn btn-primary service-btn">Contradiction & Duplication in Service Terms</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-3 col-lg-2 mt-2 mt-md-2 mt-lg-2">
-                                    <button type="button" class="btn btn-primary service-btn">Legal Cases</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-3 col-lg-2 mt-2 mt-md-2 mt-lg-2">
-                                    <button type="button" class="btn btn-primary service-btn">Personnel Transfer Cancellation</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-3 col-lg-2 mt-2 mt-md-2 mt-lg-2">
-                                    <button type="button" class="btn btn-primary service-btn">Installment of Personnel Transfer Amounts</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-3 col-lg-2 mt-2 mt-md-2 mt-lg-2">
-                                    <button type="button" class="btn btn-primary service-btn">Committees & Work Teams</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-3 col-lg-2 mt-2 mt-md-2 mt-lg-2">
-                                    <button type="button" class="btn btn-primary service-btn">Awareness & Guidance</button>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-3 col-lg-2 mt-2 mt-md-2 mt-lg-2">
-                                    <button type="button" class="btn btn-primary service-btn">Inspection & Compliance</button>
-                                </div>
-                            </div>
+                            <select class="source" name="source" multiple="multiple">
+                                <option value="gov-dubai">Government of Dubai</option> 
+                                <option value="entitiy">Entity</option> 
+                                <option value="permanent-committee">Permanent Technical Committee</option> 
+                                <option value="management-committee">Management Committee</option> 
+                                <option value="financial-committee">Financial Committee</option>
+                                <option value="procurement-division">Procurement Division</option>
+                                <option value="department-finance">Department of Finance</option>
+                                <option value="gov-abudhabi">Government of Abu Dhabi</option>
+                                <option value="executive-council">Executive Council</option> 
+                                <option value="medical-committee">Medical Committee </option>  
+                                <option value="gov-sharjah">Government of Sharjah</option>  
+                                <option value="legam">Legal & Legislation Division </option>  
+                                <option value="mdo">Managing Director Office</option> 
+                                <option value="gdo">Director General Office</option>  
+                                <option value="chd">Customer Happiness Division</option>  
+                                <option value="abpf">Abu Dhabi Pension Fund</option>  
+                                <option value="fl">Federal Law</option> 
+                                <option value="emss">Employer and Member Services Sector</option>  
+                                <option value="gc">Grievance Committee (Pension Affairs)</option>   
+                            </select>                
+                        </div>
+                        <div class="col-sm-12 col-md-3">
+                            <h4 class="pb-2 text-center">Services</h4>
+                            <select class="services" name="services" multiple="multiple">
+                                <option value="en-cat">Entity Category</option>
+                                <option value="cont-der-term">Contradiction of Service Terms</option>
+                                <option value="familsup-ded">Family Support Deduction</option>
+                                <option value="additiocont-nomial-term">Addition of Contributions Nominal Term</option>
+                                <option value="active-mem-tr">Active Member Transfer</option>
+                                <option value="benefits-tr">Benefits Transfer to Another Bank Account</option>
+                                <option value="pen-set">Pension Settlement</option>
+                                <option value="emp-ser">Employees Services</option>
+                                <option value="nom-ser-term-pur">Nominal Service Term Purchase</option>
+                                <option value="ser-add">Services Addition for Military Officials</option>
+                                <option value="summary">Summary</option>
+                                <option value="active-mem-reg">Active Member Registration</option>
+                                <option value="cont-coll">Contributions Collection</option>
+                                <option value="cost-calc">Cost Calculation</option>
+                                <option value="case-study">Case Study</option>
+                                <option value="ser-add">Service Addition</option>
+                                <option value="transaction">Transaction</option>
+                                <option value="en-reg">Entity Registration</option>
+                                <option value="up-ent-data">Update Entity Data</option>
+                                <option value="ins-pe-tr-am">Installment of Personnel Transfer Amounts</option>
+                                <option value="studies">Studies</option>
+                                <option value="emp-ben">Employee Benefits</option>
+                                <option value="ip-ac-mem=data">Update Active Member Data</option>
+                                <option value="ins-add-am">Installment of Additional Amounts</option>
+                                <option value="dis-ser-lump-sum-ebn">Disbursement of End of Service Lump Sum Benefits</option>
+                                <option value="ded-pen-ben">Deduction from Pension/ Benefits</option>
+                                <option value="dis-tr-ben">Disbursement of Trainees Benefits</option>
+                                <option value="pen-adv">Pensioners Advantages</option>
+                                <option value="tr-reg">Trainees Registration</option>
+                                <option value="work-ins">Work Instructions</option>
+                                <option value="court-ded">Court Deduction</option>
+                                <option value="ben-disb">Benefits Disbursement</option>
+                                <option value="service-term">Service Term</option>
+                                <option value="pe-det-reg">People of Determination Registration</option>
+                                <option value="ser-ter-dis-dec">Service Termination by A Disciplinary Decision</option>
+                                <option value="ded-ser-add-cost-ben">Deduction of Service Addition Cost from the Benefits</option>
+                                <option value="org-str-occ">Organizational Structure & Occupational Empowerment/ Delegation of Authorities</option>
+                                <option value="admin-ins">Administrative Instructions</option>
+                                <option value="pen-disb">Pension Disbursement</option>
+                                <option value="jid-off">Judicial Officer</option>
+                                <option value="con-agree-aud">Contracts & Agreements Audit</option>
+                                <option value="agree-mem-under">Agreements & Memorandums of Understanding</option>
+                                <option value="leg-class">Legal Classification</option>
+                                <option value="ent-ded">Entity Deduction</option>
+                                <option value="ded-less">Deducting Less Than One Year/ Old</option>
+                                <option value="dec-per-tech-comm">Decisions of the Permanent Technical Committee</option>
+                                <option value="leg-memor">Legal Memorandums</option>
+                                <option value="ent-class">Entities Classification</option>
+                                <option value="projetcs">Projects</option>
+                                <option value="nom-term-purc">Nominal Term Purchase</option>
+                                <option value="add-nom-cont-term">Addition of Nominal Contributions Term</option>
+                                <option value="res-ent-enq">Response to Entities Enquiries</option>
+                                <option value="per-tra-cancel">Personnel Transfer Cancellation</option>
+                                <option value="pen-salary">Pensionable Salary</option>
+                                <option value="und-disb-am">Unduly Disbursed Amounts</option>
+                                <option value="recruitment">Recruitment</option>
+                                <option value="investigation">Investigation</option>
+                                <option value="entity-closure">Entity Closure</option>
+                                <option value="inheritance">Inheritance</option>
+                                <option value="high-share-entit">Highest Share Entitlement</option>
+                                <option value="work-injury">Work Injury</option>
+                                <option value="amendments">Amendments</option>
+                                <option value="gover-org">Governance & Organization</option>
+                                <option value="grievances">Grievances</option>
+                                <option value="onc-rewards">Incentives & Rewards</option>
+                                <option value="medical-fitness">Medical Fitness</option>
+                                <option value="acceleration">Acceleration</option>
+                                <option value="time-attendace">Time & Attendance</option>
+                                <option value="beneficiaries">Beneficiaries</option>
+                                <option value="training">Training</option>
+                                <option value="comb-pens">Combining Two Pensions or More</option>
+                                <option value="cont-dup-ser-term">Contradiction & Duplication in Service Terms</option>
+                                <option value="legal-cases">Legal Cases</option>
+                                <option value="per-tra-cancel">Personnel Transfer Cancellation</option>
+                                <option value="ins-per-tra-amounts">Installment of Personnel Transfer Amounts</option>
+                                <option value="comm-work-teams">Committees & Work Teams</option>
+                                <option value="awar-guid">Awareness & Guidance</option>
+                                <option value="insp-comp">Inspection & Compliance</option> 
+                            </select>                
                         </div>
                     </div>
+                    
                     <div class="row mt-5">
                         <div class="table-responsive">
                             <table class="table table-bordered dept-table">
@@ -1271,10 +1036,19 @@
     <script src="assets/libs/feather-icons/feather.min.js"></script>
     <script src="assets/js/pages/plugins/lord-icon-2.1.0.js"></script>
     <script src="assets/js/plugins.js"></script>
-    <!-- App Js -->
+    <!-- App js -->
     <script src="assets/js/app.js"></script>
     <!-- Select2 JS -->
     <script src="assets/js/select2.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('.category').select2();
+            $('.department').select2();
+            $('.source').select2();
+            $('.services').select2();
+        });
+    </script>
     
 </body>
 

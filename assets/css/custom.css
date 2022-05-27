@@ -810,6 +810,19 @@ a.read-more:hover {
     color: #fff;
 }
 
+/* */
+
+.select2.select2-container.select2-container--default {
+    width: 100% !important;
+    max-width: 100%;
+}
+
+span.selection {
+    text-align: left;
+}
+
+/* */
+
 /* Footer */
 
 .footer .nav-link {
