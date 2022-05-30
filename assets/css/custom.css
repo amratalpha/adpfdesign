@@ -812,6 +812,11 @@ a.read-more:hover {
 
 /* */
 
+.services-col {
+	height: 350px;
+	overflow-x: scroll;
+}
+
 .select2.select2-container.select2-container--default {
     width: 100% !important;
     max-width: 100%;
