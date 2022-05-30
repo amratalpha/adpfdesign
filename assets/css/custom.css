@@ -38,6 +38,11 @@ a:hover {
     border-color: #698f37;
 }
 
+.btn-check:focus+.btn-primary, .btn-primary:focus {
+	background-color: #77765a;
+	border-color: #77765a;
+}
+
 /* Home */
 
 .btn-ar {

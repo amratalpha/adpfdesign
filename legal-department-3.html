@@ -806,7 +806,14 @@
                         <div class="col-sm-12 col-md-12 col-lg-6">
                             <div class="card category-card">
                                 <div class="card-header">
-                                    <h4 class="fw-bold mb-0">Category</h4>
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-10 my-auto">
+                                            <h4 class="fw-bold mb-0">Category</h4>
+                                        </div>
+                                        <div class="col-sm-12 col-md-2 upcoming-events-nav">
+                                            <button type='button' class="btn btn-primary">Clear</button>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="card-body">
                                     <div class="form-check form-check-inline">
@@ -836,7 +843,14 @@
                         <div class="col-sm-12 col-md-12 col-lg-6">
                             <div class="card dep-card">
                                 <div class="card-header">
-                                    <h4 class="fw-bold mb-0">Department</h4>
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-10 my-auto">
+                                            <h4 class="fw-bold mb-0">Department</h4>
+                                        </div>
+                                        <div class="col-sm-12 col-md-2 upcoming-events-nav">
+                                            <button type='button' class="btn btn-primary">Clear</button>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="card-body">
                                     <div class="form-check form-check-inline">
@@ -904,7 +918,14 @@
                         <div class="col-sm-12 col-md-12 col-lg-6">
                             <div class="card topic-source-card">
                                 <div class="card-header">
-                                    <h4 class="fw-bold mb-0">Topic Source</h4>
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-10 my-auto">
+                                            <h4 class="fw-bold mb-0">Topic Source</h4>
+                                        </div>
+                                        <div class="col-sm-12 col-md-2 upcoming-events-nav">
+                                            <button type='button' class="btn btn-primary">Clear</button>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="card-body">
                                     <div class="form-check form-check-inline">
@@ -990,7 +1011,14 @@
                         <div class="col-sm-12 col-md-12 col-lg-6">
                             <div class="card services-card">
                                 <div class="card-header">
-                                    <h4 class="fw-bold mb-0">Service</h4>
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-10 my-auto">
+                                            <h4 class="fw-bold mb-0">Service</h4>
+                                        </div>
+                                        <div class="col-sm-12 col-md-2 upcoming-events-nav">
+                                            <button type='button' class="btn btn-primary">Clear</button>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="card-body scroller">
                                     <div class="form-check form-check-inline">
@@ -1414,6 +1442,13 @@
     <script src="assets/js/plugins.js"></script>
     <!-- App js -->
     <script src="assets/js/app.js"></script>
+
+    <script>
+        function uncheckAll() {
+            $("input[type='checkbox']:checked").prop("checked", false)
+        }
+            $(':button').on('click', uncheckAll)
+    </script>
     
 </body>
 
