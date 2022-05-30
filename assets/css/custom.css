@@ -821,10 +821,14 @@ a.read-more:hover {
 	border-radius: 15px 15px 0px 0px;
 }
 
+.clear {
+    float: right;
+	padding-bottom: 0px;
+}
+
 .category-card .card-header {
 	border-radius: 15px 15px 0px 0px;
 }
-
 
 .dep-card .card-header {
 	border-radius: 15px 15px 0px 0px;
