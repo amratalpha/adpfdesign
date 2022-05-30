@@ -817,13 +817,14 @@ a.read-more:hover {
 
 /* */
 
+.eservices-card {
+	border-radius: 15px 15px 0px 0px;
+}
+
 .category-card .card-header {
 	border-radius: 15px 15px 0px 0px;
 }
 
-.category-card .card-body {
-	height: 150px;
-}
 
 .dep-card .card-header {
 	border-radius: 15px 15px 0px 0px;
@@ -851,7 +852,6 @@ span.selection {
 }
 
 .scroller {
-	height: 327px;
 	margin-right: 5px;
 	overflow-y: auto;
 	scrollbar-color: #77765a #F5F5F5;
