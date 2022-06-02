@@ -749,6 +749,15 @@ a.read-more:hover {
 
 /* E-Services */
 
+
+.eservices-box .card {
+	box-shadow: 0 0 31px -5px rgba(0,0,0,.14);
+}
+
+.eservices-box .card:hover {
+	transform: scale(1.05);
+}
+
 .icon-box {
 	width: 100px;
 	height: 100px;
@@ -776,15 +785,14 @@ a.read-more:hover {
 	padding-top: 10px;
 	color: #4d6340;
 	margin-bottom: 0px;
+	text-align: center;
 }
 
 .icons-box {
 	width: 100px;
 	height: 100px;
-	background-color: #fff;
 	display: block;
     margin: 0 auto;
-	border: 1px solid #4d6340;
 	position: relative;
 }
 
@@ -798,12 +806,12 @@ a.read-more:hover {
     bottom: 0;
 }
 
-.eservices-box {
+/* .eservices-box {
 	border: 1px solid #4d6340;
 	margin: 0 5px;
 	padding: 25px 10px;
 	width: 350px;
-}
+} */
 
 .icon-links:hover .icon-box {
 	border: 2px solid #4d6340;
