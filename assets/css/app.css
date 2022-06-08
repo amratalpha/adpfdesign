@@ -258,6 +258,8 @@ File: Main Css File
 body {
 	background-color: #f6f6f6;
 	font-family: roboto;
+	color: #000;
+	font-weight: normal;
 }
 
 #page-topbar {
