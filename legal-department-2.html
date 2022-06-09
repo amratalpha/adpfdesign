@@ -25,7 +25,14 @@
     <!-- Responsive CSS-->
     <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
     <!-- Select 2 CSS-->
-    <link href="assets/css/select2.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/libs/select2/select2.min.css" rel="stylesheet" type="text/css" />
+    <!-- DataTables CSS-->
+    <link href="assets/libs/datatables/css/datatables.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/libs/datatables/css/dataTables.bootstrap5.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/libs/datatables/css/buttons.dataTables.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/libs/datatables/css/buttons.bootstrap5.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/libs/datatables/css/responsive.bootstrap5.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/libs/datatables/css/scroller.bootstrap5.min.css" rel="stylesheet" type="text/css" />
     
 </head>
 
@@ -892,7 +899,7 @@
                     
                     <div class="row mt-3">
                         <div class="table-responsive">
-                            <table class="table table-bordered dept-table">
+                            <table class="table table-bordered dept-table" id="table">
                                 <thead>
                                     <tr>
                                         <th>Link</th>
@@ -977,8 +984,8 @@
     </button>
 
     <!-- JAVASCRIPT -->
+    <script src="assets/libs/jquery/jquery-3.6.0.min.js"></script>
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/libs/jquery/jquery.min.js"></script>
     <script src="assets/libs/simplebar/simplebar.min.js"></script>
     <script src="assets/libs/node-waves/waves.min.js"></script>
     <script src="assets/libs/feather-icons/feather.min.js"></script>
@@ -986,8 +993,18 @@
     <script src="assets/js/plugins.js"></script>
     <!-- App js -->
     <script src="assets/js/app.js"></script>
+    <!-- DataTables JS-->
+    <script src="assets/libs/datatables/js/datatables.min.js"></script>
+    <script src="assets/libs/datatables/js/dataTables.bootstrap5.min.js"></script>
+    <script src="assets/libs/datatables/js/buttons.dataTables.min.js"></script>
+    <script src="assets/libs/datatables/js/buttons.html5.min.js"></script>
+    <script src="assets/libs/datatables/js/buttons.bootstrap5.min.js"></script>
+    <script src="assets/libs/datatables/js/buttons.print.min.js"></script>
+    <script src="assets/libs/datatables/js/jszip.min.js"></script>
+    <script src="assets/libs/datatables/js/responsive.bootstrap5.min.js"></script>
+    <script src="assets/libs/datatables/js/scroller.bootstrap5.min.js"></script>
     <!-- Select2 JS -->
-    <script src="assets/js/select2.min.js"></script>
+    <script src="assets/libs/select2/select2.min.js"></script>
 
     <script>
         $(document).ready(function() {
@@ -995,6 +1012,18 @@
             $('.department').select2();
             $('.source').select2();
             $('.services').select2();
+        });
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            $('#table').DataTable({
+                "bProcessing": true,
+                "bPaginate": true,
+                "sPaginationType": "full_numbers",
+                dom: "<'row'<'col-sm-4'l><'col-sm-4'B><'col-sm-4'f>>" + "<'row'<'col-sm-12'tr>>" + "<'row'<'col-sm-5'i><'col-sm-7'p>>",
+                buttons: [ 'copy', 'csv', 'excel', 'print' ],
+            });
         });
     </script>
     
