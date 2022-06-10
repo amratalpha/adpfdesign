@@ -1,0 +1,1756 @@
+﻿<!doctype html>
+<html lang="en" data-layout="vertical" data-topbar="light" data-sidebar="dark" data-sidebar-size="lg">
+
+<head>
+
+    <meta charset="utf-8" />
+    <title>Abu Dhabi Pension Fund</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+    <meta content="Themesbrand" name="author" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.png">
+    <!-- Glightbox CSS -->
+    <link rel="stylesheet" href="assets/libs/glightbox/css/glightbox.min.css">
+    <!-- Layout config Js -->
+    <script src="assets/js/layout.js"></script>
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- Icons CSS -->
+    <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
+    <!-- App CSS-->
+    <link href="assets/css/app.css" rel="stylesheet" type="text/css" />
+    <!-- Custom CSS-->
+    <link href="assets/css/custom.css" rel="stylesheet" type="text/css" />
+    <!-- Responsive CSS-->
+    <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
+    <!-- Select 2 CSS-->
+    <link href="assets/libs/select2/select2.min.css" rel="stylesheet" type="text/css" />
+    <!-- DataTables CSS-->
+    <!-- <link href="assets/libs/datatables/css/datatables.min.css" rel="stylesheet" type="text/css" /> -->
+    <link href="assets/libs/datatables/css/dataTables.bootstrap5.min.css" rel="stylesheet" type="text/css" />
+    <!-- <link href="assets/libs/datatables/css/buttons.dataTables.min.css" rel="stylesheet" type="text/css" /> -->
+    <link href="assets/libs/datatables/css/buttons.bootstrap5.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/libs/datatables/css/responsive.bootstrap5.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/libs/datatables/css/scroller.bootstrap5.min.css" rel="stylesheet" type="text/css" />
+    <!--Date Range Slider CSS-->
+    <link href="assets/css/rzslider.css" rel="stylesheet" type="text/css" />
+
+
+    <script data-require="angular.js@1.6.0" data-semver="1.6.0" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.js"></script>
+    <script data-require="ui-bootstrap@*" data-semver="2.2.0" src="https://cdn.rawgit.com/angular-ui/bootstrap/gh-pages/ui-bootstrap-tpls-2.2.0.js"></script>
+
+</head>
+
+<body ng-app="dateRangeDemo" ng-controller="dateRangeCtrl">
+
+    <!-- Begin page -->
+    <div id="layout-wrapper">
+        <div class="banner"></div>
+
+        <!-- ========== App Menu ========== -->
+        <div class="app-menu navbar-menu">
+            <!-- LOGO -->
+            <div class="navbar-brand-box">
+                <!-- Dark Logo-->
+                <a href="index.html" class="logo logo-dark">
+                    <span class="logo-sm">
+                        <img src="assets/images/favicon.png" alt="favicon" height="22">
+                    </span>
+                    <span class="logo-lg">
+                        <img src="assets/images/pension-logo.png" alt="Logo" class="main-logo img-fluid">
+                    </span>
+                </a>
+                <!-- Light Logo-->
+                <a href="index.html" class="logo logo-light">
+                    <span class="logo-sm">
+                        <img src="assets/images/favicon.png" alt="favicon" height="22">
+                    </span>
+                    <span class="logo-lg">
+                        <img src="assets/images/pension-logo.png" alt="Logo" class="main-logo img-fluid">
+                    </span>
+                </a>
+                <button type="button" class="btn btn-sm p-0 fs-20 header-item float-end btn-vertical-sm-hover"
+                        id="vertical-hover">
+                    <i class="ri-record-circle-line"></i>
+                </button>
+            </div>
+
+            <div id="scrollbar" class="h-100 scroller">
+                <div class="container-fluid">
+
+                    <div id="two-column-menu"></div>
+                    <ul class="navbar-nav" id="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="index.html">
+                                <i class="mdi mdi-home"></i>
+                                <span data-key="t-dashboards">Homepage</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="about-us.html">
+                                <i class="mdi mdi-information"></i>
+                                <span data-key="t-news">About Us</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="#department" data-bs-toggle="collapse" role="button"
+                               aria-expanded="false" aria-controls="department">
+                                <i class="mdi mdi-office-building"></i>
+                                <span data-key="t-news">Division/Department</span>
+                            </a>
+                            <div class="collapse menu-dropdown" id="department">
+                                <ul class="nav nav-sm flex-column">
+                                    <li class="nav-item">
+                                        <a href="department.html" class="nav-link" data-key="t-analytics">DG Office</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link" data-key="t-analytics">Audit and Risk Management</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link" data-key="t-analytics">Quality and Excellence</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link" data-key="t-analytics">Strategy Office</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link" data-key="t-analytics">Corporate Communication</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link" data-key="t-analytics">Pensions and Benefits Dept.</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link" data-key="t-analytics">Investment Dept.</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link" data-key="t-analytics">Legal</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link" data-key="t-analytics">Information Tech. (IT)</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link" data-key="t-analytics">Finance</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link" data-key="t-analytics">Human Resource (HR)</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link" data-key="t-analytics">General Services</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link" data-key="t-analytics">Procurement and Contracts</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link" data-key="t-analytics">Research and Strategic Support</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="#">
+                                <i class="mdi mdi-account-group"></i>
+                                <span data-key="t-news">Committies</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="#services" data-bs-toggle="collapse" role="button"
+                               aria-expanded="false" aria-controls="services">
+                                <i class="mdi mdi-cog"></i>
+                                <span data-key="t-news">E-Services</span>
+                            </a>
+                            <div class="collapse menu-dropdown" id="services">
+                                <ul class="nav nav-sm flex-column">
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link" data-key="t-analytics">HR Services</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link" data-key="t-analytics">HR Training Services</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link" data-key="t-analytics">HR Loans</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link" data-key="t-analytics">CCD Services</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link" data-key="t-analytics">Finance Services</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link" data-key="t-analytics">GS Services</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link" data-key="t-analytics">Procurement Services</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="eservices.html" class="nav-link" data-key="t-analytics">View More</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="#systems" data-bs-toggle="collapse" role="button"
+                               aria-expanded="false" aria-controls="systems">
+                                <i class="mdi mdi-cog"></i>
+                                <span data-key="t-news">Systems</span>
+                            </a>
+                            <div class="collapse menu-dropdown" id="systems">
+                                <ul class="nav nav-sm flex-column">
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link" data-key="t-analytics">AD Pension Public Site</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link" data-key="t-analytics">E-Supporting Services</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link" data-key="t-analytics">Kafaa</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link" data-key="t-analytics">Ounek</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link" data-key="t-analytics">Maktabi</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link" data-key="t-analytics">Salahyiaty</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link" data-key="t-analytics">Al Atheer</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link" data-key="t-analytics">Mesbar</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link" data-key="t-analytics">G2G </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link" data-key="t-analytics">Monafasa</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link" data-key="t-analytics">Sinyar</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link" data-key="t-analytics">Payment Systems</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link" data-key="t-analytics">My Process & Worklist</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link" data-key="t-analytics">Survey</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link" data-key="t-analytics">SMS Broadcast</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link" data-key="t-analytics">My App</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link" data-key="t-analytics">Sanad</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link" data-key="t-analytics">T&A Application</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="#resources" data-bs-toggle="collapse" role="button"
+                               aria-expanded="false" aria-controls="resources">
+                                <i class="mdi mdi-cog"></i>
+                                <span data-key="t-news">E-Resources</span>
+                            </a>
+                            <div class="collapse menu-dropdown" id="resources">
+                                <ul class="nav nav-sm flex-column">
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link" data-key="t-analytics">Internal Service Guide</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link" data-key="t-analytics">Services & Transactions Manual</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link" data-key="t-analytics">Resources</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link" data-key="t-analytics">E-Learning</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link" data-key="t-analytics">Knowledge Sharing</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link" data-key="t-analytics">Catalogue of IT Service and Application</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="#">
+                                <i class="mdi mdi-link"></i>
+                                <span data-key="t-news">Recent</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="#">
+                                <i class="mdi mdi-lock"></i>
+                                <span data-key="t-news">Hesabi (Change Password)</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Sidebar -->
+            </div>
+        </div>
+        <!-- Left Sidebar End -->
+        <!-- Vertical Overlay-->
+        <div class="vertical-overlay"></div>
+
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="main-content">
+            <header id="page-topbar">
+                <div class="layout-width">
+                    <div class="navbar-header">
+                        <div class="d-flex">
+                            <!-- LOGO -->
+                            <div class="navbar-brand-box horizontal-logo">
+                                <a href="index.html" class="logo logo-dark">
+                                    <span class="logo-sm">
+                                        <img src="assets/images/favicon.png" alt="" height="22">
+                                    </span>
+                                    <span class="logo-lg">
+                                        <img src="assets/images/favicon.png" alt="" height="17">
+                                    </span>
+                                </a>
+
+                                <a href="index.html" class="logo logo-light">
+                                    <span class="logo-sm">
+                                        <img src="assets/images/favicon.png" alt="" height="22">
+                                    </span>
+                                    <span class="logo-lg">
+                                        <img src="assets/images/favicon.png" alt="" height="17">
+                                    </span>
+                                </a>
+                            </div>
+
+                            <button type="button" class="btn btn-sm px-3 fs-16 header-item vertical-menu-btn topnav-hamburger"
+                                    id="topnav-hamburger-icon">
+                                <span class="hamburger-icon">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </span>
+                            </button>
+
+                            <!-- App Search-->
+                            <form class="app-search d-none d-md-block">
+                                <div class="position-relative">
+                                    <input type="text" class="form-control" placeholder="Search..." autocomplete="off"
+                                           id="search-options" value="">
+                                    <span class="mdi mdi-magnify search-widget-icon"></span>
+                                    <span class="mdi mdi-close-circle search-widget-icon search-widget-icon-close d-none"
+                                          id="search-close-options"></span>
+                                </div>
+                            </form>
+
+                        </div>
+
+                        <div class="d-flex align-items-center">
+
+                            <div class="dropdown d-md-none topbar-head-dropdown header-item">
+                                <button type="button" class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle"
+                                        id="page-header-search-dropdown" data-bs-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false">
+                                    <i class="bx bx-search"></i>
+                                </button>
+                                <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
+                                     aria-labelledby="page-header-search-dropdown">
+                                    <form class="p-3">
+                                        <div class="form-group m-0">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" placeholder="Search ..."
+                                                       aria-label="Recipient's username">
+                                                <button class="btn btn-primary" type="submit">
+                                                    <i class="mdi mdi-magnify"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="dropdown topbar-head-dropdown ms-1 header-item">
+                                <button type="button" class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle"
+                                        id="page-header-notifications-dropdown" data-bs-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false">
+                                    <i class='bx bxs-bell fs-18'></i>
+                                    <!-- <span class="position-absolute topbar-badge fs-10 translate-middle badge rounded-pill bg-danger">3
+                                        <span class="visually-hidden">unread messages</span>
+                                    </span> -->
+                                </button>
+                                <!-- <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
+                                    aria-labelledby="page-header-notifications-dropdown">
+
+                                    <div class="dropdown-head bg-primary bg-pattern rounded-top">
+                                        <div class="p-3">
+                                            <div class="row align-items-center">
+                                                <div class="col">
+                                                    <h6 class="m-0 fs-16 fw-semibold text-white"> Notifications </h6>
+                                                </div>
+                                                <div class="col-auto dropdown-tabs">
+                                                    <span class="badge badge-soft-light fs-13"> 4 New</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="px-2 pt-2">
+                                            <ul class="nav nav-tabs dropdown-tabs nav-tabs-custom" data-dropdown-tabs="true"
+                                                id="notificationItemsTab" role="tablist">
+                                                <li class="nav-item waves-effect waves-light">
+                                                    <a class="nav-link active" data-bs-toggle="tab" href="#all-noti-tab" role="tab"
+                                                        aria-selected="true">
+                                                        All (4)
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item waves-effect waves-light">
+                                                    <a class="nav-link" data-bs-toggle="tab" href="#messages-tab" role="tab"
+                                                        aria-selected="false">
+                                                        Messages
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item waves-effect waves-light">
+                                                    <a class="nav-link" data-bs-toggle="tab" href="#alerts-tab" role="tab"
+                                                        aria-selected="false">
+                                                        Alerts
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="tab-content" id="notificationItemsTabContent">
+                                        <div class="tab-pane fade show active py-2 ps-2" id="all-noti-tab" role="tabpanel">
+                                            <div data-simplebar style="max-height: 300px;" class="pe-2">
+                                                <div class="text-reset notification-item d-block dropdown-item position-relative">
+                                                    <div class="d-flex">
+                                                        <div class="avatar-xs me-3">
+                                                            <span class="avatar-title bg-soft-info text-info rounded-circle fs-16">
+                                                                <i class="bx bx-badge-check"></i>
+                                                            </span>
+                                                        </div>
+                                                        <div class="flex-1">
+                                                            <a href="#!" class="stretched-link">
+                                                                <h6 class="mt-0 mb-2 lh-base">Your <b>Elite</b> author Graphic
+                                                                    Optimization <span class="text-secondary">reward</span> is
+                                                                    ready!
+                                                                </h6>
+                                                            </a>
+                                                            <p class="mb-0 fs-11 fw-medium text-uppercase text-muted">
+                                                                <span><i class="mdi mdi-clock-outline"></i> Just 30 sec ago</span>
+                                                            </p>
+                                                        </div>
+                                                        <div class="px-2 fs-15">
+                                                            <div class="form-check notification-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="all-notification-check01">
+                                                                <label class="form-check-label"
+                                                                    for="all-notification-check01"></label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div
+                                                    class="text-reset notification-item d-block dropdown-item position-relative active">
+                                                    <div class="d-flex">
+                                                        <img src="assets/images/users/avatar-2.jpg"
+                                                            class="me-3 rounded-circle avatar-xs" alt="user-pic">
+                                                        <div class="flex-1">
+                                                            <a href="#!" class="stretched-link">
+                                                                <h6 class="mt-0 mb-1 fs-13 fw-semibold">Angela Bernier</h6>
+                                                            </a>
+                                                            <div class="fs-13 text-muted">
+                                                                <p class="mb-1">Answered to your comment on the cash flow forecast's
+                                                                    graph 🔔.</p>
+                                                            </div>
+                                                            <p class="mb-0 fs-11 fw-medium text-uppercase text-muted">
+                                                                <span><i class="mdi mdi-clock-outline"></i> 48 min ago</span>
+                                                            </p>
+                                                        </div>
+                                                        <div class="px-2 fs-15">
+                                                            <div class="form-check notification-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="all-notification-check02" checked>
+                                                                <label class="form-check-label"
+                                                                    for="all-notification-check02"></label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="text-reset notification-item d-block dropdown-item position-relative">
+                                                    <div class="d-flex">
+                                                        <div class="avatar-xs me-3">
+                                                            <span
+                                                                class="avatar-title bg-soft-danger text-danger rounded-circle fs-16">
+                                                                <i class='bx bx-message-square-dots'></i>
+                                                            </span>
+                                                        </div>
+                                                        <div class="flex-1">
+                                                            <a href="#!" class="stretched-link">
+                                                                <h6 class="mt-0 mb-2 fs-13 lh-base">You have received <b
+                                                                        class="text-success">20</b> new messages in the conversation
+                                                                </h6>
+                                                            </a>
+                                                            <p class="mb-0 fs-11 fw-medium text-uppercase text-muted">
+                                                                <span><i class="mdi mdi-clock-outline"></i> 2 hrs ago</span>
+                                                            </p>
+                                                        </div>
+                                                        <div class="px-2 fs-15">
+                                                            <div class="form-check notification-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="all-notification-check03">
+                                                                <label class="form-check-label"
+                                                                    for="all-notification-check03"></label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="text-reset notification-item d-block dropdown-item position-relative">
+                                                    <div class="d-flex">
+                                                        <img src="assets/images/users/avatar-8.jpg"
+                                                            class="me-3 rounded-circle avatar-xs" alt="user-pic">
+                                                        <div class="flex-1">
+                                                            <a href="#!" class="stretched-link">
+                                                                <h6 class="mt-0 mb-1 fs-13 fw-semibold">Maureen Gibson</h6>
+                                                            </a>
+                                                            <div class="fs-13 text-muted">
+                                                                <p class="mb-1">We talked about a project on linkedin.</p>
+                                                            </div>
+                                                            <p class="mb-0 fs-11 fw-medium text-uppercase text-muted">
+                                                                <span><i class="mdi mdi-clock-outline"></i> 4 hrs ago</span>
+                                                            </p>
+                                                        </div>
+                                                        <div class="px-2 fs-15">
+                                                            <div class="form-check notification-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="all-notification-check04">
+                                                                <label class="form-check-label"
+                                                                    for="all-notification-check04"></label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="my-3 text-center">
+                                                    <button type="button" class="btn btn-soft-success waves-effect waves-light">View
+                                                        All Notifications <i class="ri-arrow-right-line align-middle"></i></button>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="tab-pane fade py-2 ps-2" id="messages-tab" role="tabpanel"
+                                            aria-labelledby="messages-tab">
+                                            <div data-simplebar style="max-height: 300px;" class="pe-2">
+                                                <div class="text-reset notification-item d-block dropdown-item">
+                                                    <div class="d-flex">
+                                                        <img src="assets/images/users/avatar-3.jpg"
+                                                            class="me-3 rounded-circle avatar-xs" alt="user-pic">
+                                                        <div class="flex-1">
+                                                            <a href="#!" class="stretched-link">
+                                                                <h6 class="mt-0 mb-1 fs-13 fw-semibold">James Lemire</h6>
+                                                            </a>
+                                                            <div class="fs-13 text-muted">
+                                                                <p class="mb-1">We talked about a project on linkedin.</p>
+                                                            </div>
+                                                            <p class="mb-0 fs-11 fw-medium text-uppercase text-muted">
+                                                                <span><i class="mdi mdi-clock-outline"></i> 30 min ago</span>
+                                                            </p>
+                                                        </div>
+                                                        <div class="px-2 fs-15">
+                                                            <div class="form-check notification-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="messages-notification-check01">
+                                                                <label class="form-check-label"
+                                                                    for="messages-notification-check01"></label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="text-reset notification-item d-block dropdown-item">
+                                                    <div class="d-flex">
+                                                        <img src="assets/images/users/avatar-2.jpg"
+                                                            class="me-3 rounded-circle avatar-xs" alt="user-pic">
+                                                        <div class="flex-1">
+                                                            <a href="#!" class="stretched-link">
+                                                                <h6 class="mt-0 mb-1 fs-13 fw-semibold">Angela Bernier</h6>
+                                                            </a>
+                                                            <div class="fs-13 text-muted">
+                                                                <p class="mb-1">Answered to your comment on the cash flow forecast's
+                                                                    graph 🔔.</p>
+                                                            </div>
+                                                            <p class="mb-0 fs-11 fw-medium text-uppercase text-muted">
+                                                                <span><i class="mdi mdi-clock-outline"></i> 2 hrs ago</span>
+                                                            </p>
+                                                        </div>
+                                                        <div class="px-2 fs-15">
+                                                            <div class="form-check notification-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="messages-notification-check02">
+                                                                <label class="form-check-label"
+                                                                    for="messages-notification-check02"></label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="text-reset notification-item d-block dropdown-item">
+                                                    <div class="d-flex">
+                                                        <img src="assets/images/users/avatar-6.jpg"
+                                                            class="me-3 rounded-circle avatar-xs" alt="user-pic">
+                                                        <div class="flex-1">
+                                                            <a href="#!" class="stretched-link">
+                                                                <h6 class="mt-0 mb-1 fs-13 fw-semibold">Kenneth Brown</h6>
+                                                            </a>
+                                                            <div class="fs-13 text-muted">
+                                                                <p class="mb-1">Mentionned you in his comment on 📃 invoice #12501.
+                                                                </p>
+                                                            </div>
+                                                            <p class="mb-0 fs-11 fw-medium text-uppercase text-muted">
+                                                                <span><i class="mdi mdi-clock-outline"></i> 10 hrs ago</span>
+                                                            </p>
+                                                        </div>
+                                                        <div class="px-2 fs-15">
+                                                            <div class="form-check notification-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="messages-notification-check03">
+                                                                <label class="form-check-label"
+                                                                    for="messages-notification-check03"></label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="text-reset notification-item d-block dropdown-item">
+                                                    <div class="d-flex">
+                                                        <img src="assets/images/users/avatar-8.jpg"
+                                                            class="me-3 rounded-circle avatar-xs" alt="user-pic">
+                                                        <div class="flex-1">
+                                                            <a href="#!" class="stretched-link">
+                                                                <h6 class="mt-0 mb-1 fs-13 fw-semibold">Maureen Gibson</h6>
+                                                            </a>
+                                                            <div class="fs-13 text-muted">
+                                                                <p class="mb-1">We talked about a project on linkedin.</p>
+                                                            </div>
+                                                            <p class="mb-0 fs-11 fw-medium text-uppercase text-muted">
+                                                                <span><i class="mdi mdi-clock-outline"></i> 3 days ago</span>
+                                                            </p>
+                                                        </div>
+                                                        <div class="px-2 fs-15">
+                                                            <div class="form-check notification-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="messages-notification-check04">
+                                                                <label class="form-check-label"
+                                                                    for="messages-notification-check04"></label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="my-3 text-center">
+                                                    <button type="button" class="btn btn-soft-success waves-effect waves-light">View
+                                                        All Messages <i class="ri-arrow-right-line align-middle"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade p-4" id="alerts-tab" role="tabpanel" aria-labelledby="alerts-tab">
+                                            <div class="w-25 w-sm-50 pt-3 mx-auto">
+                                                <img src="assets/images/svg/bell.svg" class="img-fluid" alt="user-pic">
+                                            </div>
+                                            <div class="text-center pb-5 mt-2">
+                                                <h6 class="fs-18 fw-semibold lh-base">Hey! You have no any notifications </h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->
+                            </div>
+
+                            <div class="ms-1 header-item">
+                                <button type="button" class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle">
+                                    <i class='bx bx-time-five fs-18'></i>
+                                </button>
+                            </div>
+
+                            <div class="dropdown ms-sm-3 header-item topbar-user">
+                                <button type="button" class="btn" id="page-header-user-dropdown" data-bs-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">
+                                    <span class="d-flex align-items-center">
+                                        <img class="rounded-circle header-profile-user" src="assets/images/users/avatar-1.jpg"
+                                             alt="Header Avatar">
+                                    </span>
+                                </button>
+                                <!-- <div class="dropdown-menu dropdown-menu-end">
+
+                                    <h6 class="dropdown-header">Welcome Anna!</h6>
+                                    <a class="dropdown-item" href="pages-profile.html"><i
+                                            class="mdi mdi-account-circle text-muted fs-16 align-middle me-1"></i> <span
+                                            class="align-middle">Profile</span></a>
+                                    <a class="dropdown-item" href="apps-chat.html"><i
+                                            class="mdi mdi-message-text-outline text-muted fs-16 align-middle me-1"></i> <span
+                                            class="align-middle">Messages</span></a>
+                                    <a class="dropdown-item" href="apps-tasks-kanban.html"><i
+                                            class="mdi mdi-calendar-check-outline text-muted fs-16 align-middle me-1"></i> <span
+                                            class="align-middle">Taskboard</span></a>
+                                    <a class="dropdown-item" href="pages-faqs.html"><i
+                                            class="mdi mdi-lifebuoy text-muted fs-16 align-middle me-1"></i> <span
+                                            class="align-middle">Help</span></a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="pages-profile.html"><i
+                                            class="mdi mdi-wallet text-muted fs-16 align-middle me-1"></i> <span
+                                            class="align-middle">Balance : <b>$5971.67</b></span></a>
+                                    <a class="dropdown-item" href="pages-profile-settings.html"><span
+                                            class="badge bg-soft-success text-success mt-1 float-end">New</span><i
+                                            class="mdi mdi-cog-outline text-muted fs-16 align-middle me-1"></i> <span
+                                            class="align-middle">Settings</span></a>
+                                    <a class="dropdown-item" href="auth-lockscreen-basic.html"><i
+                                            class="mdi mdi-lock text-muted fs-16 align-middle me-1"></i> <span
+                                            class="align-middle">Lock screen</span></a>
+                                    <a class="dropdown-item" href="auth-logout-basic.html"><i
+                                            class="mdi mdi-logout text-muted fs-16 align-middle me-1"></i> <span
+                                            class="align-middle" data-key="t-logout">Logout</span></a>
+                                </div> -->
+                            </div>
+                            <div class="ms-1 header-item">
+                                <span class="text-start ms-xl-2">
+                                    <span class="d-none d-xl-inline-block ms-1 fw-medium user-name-text">Welcome Back, Amrat Nandial</span>
+                                    <span class="d-none d-xl-block ms-1 fs-12 text-muted user-name-sub-text"><i class='bx bxs-circle'></i> TIME IN 8:12 AM</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="page-content">
+                <div class="row">
+                    <div class="title-banner">
+                        <h3 class="text-white p-2 mb-0">Shaoor</h3>
+                    </div>
+                </div>
+                <div class="container-fluid mt-3">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-4">
+                            <h4 class="total-count-records fw-bold">Total Count Records: <span class="fw-normal">1000</span></h4>
+                        </div>
+                        <div class="col-sm-12 col-md-4"></div>
+                        <div class="col-sm-12 col-md-4">
+                            <h4 class="total-count-records float-end fw-bold">Total Search Records: <span class="fw-normal">450</span></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6">
+                            <div class="card categories-card">
+                                <div class="card-header">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-10 my-auto">
+                                            <h4 class="fw-bold mb-0 text-white">Category</h4>
+                                        </div>
+                                        <div class="col-sm-12 col-md-2 my-auto">
+                                            <a class="clear text-white" href="javascript:void()">Clear</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox1">Decree</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox1">Resolution/ Decision</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox1">Law</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox1">Circular</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox1">Legal Advice</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6">
+                            <div class="card deps-card">
+                                <div class="card-header">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-10 my-auto">
+                                            <h4 class="fw-bold mb-0 text-white">Department</h4>
+                                        </div>
+                                        <div class="col-sm-12 col-md-2 my-auto">
+                                            <a class="clear text-white" href="javascript:void()">Clear</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body scroller">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox2">HR Services</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox2">HR Loans</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox2">CCD Services</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox2">GS Services</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox2">Legal Services</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox2">BED Services</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox2">Finance Services</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox2">PMO Services</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox2">ECD Services</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox2">IT Services</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox2">EHS Services</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox2">CHD Services</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox2">HR Training Services</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox2">Procurement Services</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6">
+                            <div class="card topic-sources-card">
+                                <div class="card-header">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-10 my-auto">
+                                            <h4 class="fw-bold mb-0 text-white">Topic Source</h4>
+                                        </div>
+                                        <div class="col-sm-12 col-md-2 my-auto">
+                                            <a class="clear text-white" href="javascript:void()">Clear</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox3">Government of Dubai</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox3">Entity</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox3">Permanent Technical Committee</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox3">Management Committee</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox3">Financial Committee</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox3">Procurement Division</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox3">Department of Finance</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox3">Government of Abu Dhabi</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox3">Executive Council</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox3">Medical Committee </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox3">Government of Sharjah</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox3">Legal & Legislation Division </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox3">Managing Director Office</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox3">Director General Office</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox3">Customer Happiness Division</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox3">Abu Dhabi Pension Fund</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox3">Federal Law</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox3">Employer and Member Services Sector</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox3">Grievance Committee (Pension Affairs)</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6">
+                            <div class="card servicess-card">
+                                <div class="card-header">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-10 my-auto">
+                                            <h4 class="fw-bold mb-0 text-white">Service</h4>
+                                        </div>
+                                        <div class="col-sm-12 col-md-2 my-auto">
+                                            <a class="clear text-white" href="javascript:void()">Clear</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body scroller">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Entity Category</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Contradiction of Service Terms</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Family Support Deduction</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Addition of Contributions Nominal Term</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Active Member Transfer</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Benefits Transfer to Another Bank Account</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Pension Settlement</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Employees Services</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Nominal Service Term Purchase</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Services Addition for Military Officials</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Summary</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Active Member Registration</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Contributions Collection</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Cost Calculation</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Case Study</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Service Addition</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Transaction</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Entity Registration</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Update Entity Data</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Installment of Personnel Transfer Amounts</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Studies</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Employee Benefits</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Active Member Registration</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Update Active Member Data</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Installment of Additional Amounts</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Disbursement of End of Service Lump Sum Benefits</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Deduction from Pension/ Benefits</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Disbursement of Trainees Benefits</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Pensioners Advantages</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Trainees Registration</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Work Instructions</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Court Deduction</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Benefits Disbursement</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Service Term</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">People of Determination Registration</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Service Termination by A Disciplinary Decision</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Deduction of Service Addition Cost from the Benefits</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Organizational Structure & Occupational Empowerment/ Delegation of Authorities</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Administrative Instructions</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Pension Disbursement</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Judicial Officer</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Contracts & Agreements Audit</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Agreements & Memorandums of Understanding</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Legal Classification</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Entity Deduction</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Deducting Less Than One Year/ Old</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Decisions of the Permanent Technical Committee</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Legal Memorandums</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Contradiction of Service Terms</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Entities Classification</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Projects</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Nominal Term Purchase</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Addition of Nominal Contributions Term</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Response to Entities Enquiries</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Personnel Transfer Cancellation</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Pensionable Salary</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Unduly Disbursed Amounts</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Recruitment</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Investigation</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Entity Closure</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Inheritance</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Highest Share Entitlement</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Work Injury</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Amendments</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Governance & Organization</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Grievances</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Incentives & Rewards</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Medical Fitness</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Acceleration</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Time & Attendance</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Beneficiaries</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Training</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Combining Two Pensions or More</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Contradiction & Duplication in Service Terms</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Legal Cases</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Personnel Transfer Cancellation</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Installment of Personnel Transfer Amounts</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Committees & Work Teams</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Awareness & Guidance</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Inspection & Compliance</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h2>Slider with Date Range</h2>
+                    <rzslider rz-slider-model="dateRangeSlider.minValue"
+                              rz-slider-high="dateRangeSlider.maxValue"
+                              rz-slider-options="dateRangeSlider.options">
+                    </rzslider>
+
+
+
+
+                    <div class="row">
+                        <div class="table-responsive">
+                            <table class="table table-bordered dept-table" id="table">
+                                <thead>
+                                    <tr>
+                                        <th>Link</th>
+                                        <th>Topic</th>
+                                        <th>Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><i class="mdi mdi-link"></i></td>
+                                        <td>Anna</td>
+                                        <td>Pitt</td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="mdi mdi-link"></i></td>
+                                        <td>Anna</td>
+                                        <td>Pitt</td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="mdi mdi-link"></i></td>
+                                        <td>Anna</td>
+                                        <td>Pitt</td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="mdi mdi-link"></i></td>
+                                        <td>Anna</td>
+                                        <td>Pitt</td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="mdi mdi-link"></i></td>
+                                        <td>Anna</td>
+                                        <td>Pitt</td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="mdi mdi-link"></i></td>
+                                        <td>Anna</td>
+                                        <td>Pitt</td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="mdi mdi-link"></i></td>
+                                        <td>Anna</td>
+                                        <td>Pitt</td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="mdi mdi-link"></i></td>
+                                        <td>Anna</td>
+                                        <td>Pitt</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            © Copyrights. Abu Dhabi Pension Fund. All Rights Reserved.
+                        </div>
+                        <div class="col-sm-6">
+                            <ul class="nav justify-content-end">
+                                <li class="nav-item">
+                                    <a class="nav-link social-links" href="#"><i class='bx bxl-instagram-alt'></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link social-links" href="#"><i class='bx bxl-twitter'></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link social-links" href="#"><i class='bx bxl-facebook'></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <button onclick="topFunction()" class="btn btn-danger btn-icon" id="back-to-top">
+        <i class="ri-arrow-up-line"></i>
+    </button>
+
+    <!-- JAVASCRIPT -->
+    <script src="assets/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/libs/simplebar/simplebar.min.js"></script>
+    <script src="assets/libs/node-waves/waves.min.js"></script>
+    <script src="assets/libs/feather-icons/feather.min.js"></script>
+    <script src="assets/js/pages/plugins/lord-icon-2.1.0.js"></script>
+    <script src="assets/js/plugins.js"></script>
+    <!-- Date Range Slider JS-->
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/rzslider.js"></script>
+    <!-- App js -->
+    <script src="assets/js/app.js"></script>
+    <!-- DataTables JS-->
+    <script src="assets/libs/datatables/js/datatables.min.js"></script>
+    <script src="assets/libs/datatables/js/dataTables.bootstrap5.min.js"></script>
+    <script src="assets/libs/datatables/js/buttons.dataTables.min.js"></script>
+    <script src="assets/libs/datatables/js/buttons.html5.min.js"></script>
+    <script src="assets/libs/datatables/js/buttons.bootstrap5.min.js"></script>
+    <script src="assets/libs/datatables/js/buttons.print.min.js"></script>
+    <script src="assets/libs/datatables/js/jszip.min.js"></script>
+    <script src="assets/libs/datatables/js/responsive.bootstrap5.min.js"></script>
+    <script src="assets/libs/datatables/js/scroller.bootstrap5.min.js"></script>
+    <!-- Select2 JS -->
+    <script src="assets/libs/select2/select2.min.js"></script>
+
+    <script>
+        function uncheckAll() {
+            $("input[type='checkbox']:checked").prop("checked", false)
+        }
+        $('.clear').on('click', uncheckAll)
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#table').DataTable({
+                "bProcessing": true,
+                "bPaginate": true,
+                "sPaginationType": "full_numbers",
+                dom: "<'row'<'col-sm-4'l><'col-sm-4'B><'col-sm-4'f>>" + "<'row'<'col-sm-12'tr>>" + "<'row'<'col-sm-5'i><'col-sm-7'p>>",
+                buttons: ['copy', 'csv', 'excel', 'print'],
+            });
+        });
+    </script>
+
+</body>
+
+</html>
