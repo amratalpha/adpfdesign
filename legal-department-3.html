@@ -27,12 +27,12 @@
     <!-- Select 2 CSS-->
     <link href="assets/libs/select2/select2.min.css" rel="stylesheet" type="text/css" />
     <!-- DataTables CSS-->
-    <!-- <link href="assets/libs/datatables/css/datatables.min.css" rel="stylesheet" type="text/css" /> -->
     <link href="assets/libs/datatables/css/dataTables.bootstrap5.min.css" rel="stylesheet" type="text/css" />
-    <!-- <link href="assets/libs/datatables/css/buttons.dataTables.min.css" rel="stylesheet" type="text/css" /> -->
     <link href="assets/libs/datatables/css/buttons.bootstrap5.min.css" rel="stylesheet" type="text/css" />
     <link href="assets/libs/datatables/css/responsive.bootstrap5.min.css" rel="stylesheet" type="text/css" />
     <link href="assets/libs/datatables/css/scroller.bootstrap5.min.css" rel="stylesheet" type="text/css" />
+    <!-- Jquery UI CSS-->
+    <link href="assets/libs/jquery-ui-1.13.1/jquery-ui.min.css" rel="stylesheet" type="text/css" />
     
 </head>
 
@@ -726,17 +726,31 @@
                 </div>
             </header>
             <div class="page-content">
-                <div class="container-fluid">
+                <div class="row">
+                    <div class="title-banner">
+                        <h3 class="text-white p-2 mb-0">Shaoor</h3>
+                    </div>
+                </div>
+                <div class="container-fluid mt-3">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-4">
+                            <h4 class="total-count-records fw-bold">Total Count Records: <span class="fw-normal">1000</span></h4>
+                        </div>
+                        <div class="col-sm-12 col-md-4"></div>
+                        <div class="col-sm-12 col-md-4">
+                            <h4 class="total-count-records float-end fw-bold">Total Search Records: <span class="fw-normal">450</span></h4>
+                        </div>
+                    </div>
                     <div class="row">
                         <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6">
                             <div class="card category-card">
                                 <div class="card-header">
                                     <div class="row">
                                         <div class="col-sm-12 col-md-10 my-auto">
-                                            <h4 class="fw-bold mb-0">Category</h4>
+                                            <h4 class="fw-bold mb-0 text-white">Category</h4>
                                         </div>
                                         <div class="col-sm-12 col-md-2 my-auto">
-                                            <a class="clear" href="javascript:void()">Clear</a>
+                                            <a class="clear text-white" href="javascript:void()">Clear</a>
                                         </div>
                                     </div>
                                 </div>
@@ -784,10 +798,10 @@
                                 <div class="card-header">
                                     <div class="row">
                                         <div class="col-sm-12 col-md-10 my-auto">
-                                            <h4 class="fw-bold mb-0">Department</h4>
+                                            <h4 class="fw-bold mb-0 text-white">Department</h4>
                                         </div>
                                         <div class="col-sm-12 col-md-2 my-auto">
-                                            <a class="clear" href="javascript:void()">Clear</a>
+                                            <a class="clear text-white" href="javascript:void()">Clear</a>
                                         </div>
                                     </div>
                                 </div>
@@ -897,10 +911,10 @@
                                 <div class="card-header">
                                     <div class="row">
                                         <div class="col-sm-12 col-md-10 my-auto">
-                                            <h4 class="fw-bold mb-0">Topic Source</h4>
+                                            <h4 class="fw-bold mb-0 text-white">Topic Source</h4>
                                         </div>
                                         <div class="col-sm-12 col-md-2 my-auto">
-                                            <a class="clear" href="javascript:void()">Clear</a>
+                                            <a class="clear text-white" href="javascript:void()">Clear</a>
                                         </div>
                                     </div>
                                 </div>
@@ -1042,10 +1056,10 @@
                                 <div class="card-header">
                                     <div class="row">
                                         <div class="col-sm-12 col-md-10 my-auto">
-                                            <h4 class="fw-bold mb-0">Service</h4>
+                                            <h4 class="fw-bold mb-0 text-white">Service</h4>
                                         </div>
                                         <div class="col-sm-12 col-md-2 my-auto">
-                                            <a class="clear" href="javascript:void()">Clear</a>
+                                            <a class="clear text-white" href="javascript:void()">Clear</a>
                                         </div>
                                     </div>
                                 </div>
@@ -1585,6 +1599,60 @@
                         </div>
                     </div>
 
+                    <div class="row mt-2">
+                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6">
+                            <div class="card documents-type-header">
+                                <div class="card-header">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-10 my-auto">
+                                            <h4 class="fw-bold mb-0 text-white">Document Type</h4>
+                                        </div>
+                                        <div class="col-sm-12 col-md-2 my-auto">
+                                            <a class="clear text-white" href="javascript:void()">Clear</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">PDF</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Word</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Excel</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6">
+                            <div class="card dates-range-header">
+                                <div class="card-header">
+                                    <h4 class="fw-bold mb-0 text-white">Date Range</h4>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <input type="text" id="amount" style="border: 0; color: #77765a; font-weight: bold;" size="100"/>
+                                            <div id="slider-range" class="mt-2 slider-range"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="row">
                         <div class="table-responsive">
                             <table class="table table-bordered dept-table" id="table">
@@ -1673,12 +1741,16 @@
 
     <!-- JAVASCRIPT -->
     <script src="assets/libs/jquery/jquery-3.6.0.min.js"></script>
+    
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/libs/simplebar/simplebar.min.js"></script>
     <script src="assets/libs/node-waves/waves.min.js"></script>
     <script src="assets/libs/feather-icons/feather.min.js"></script>
     <script src="assets/js/pages/plugins/lord-icon-2.1.0.js"></script>
     <script src="assets/js/plugins.js"></script>
+    <!-- Date Range Slider JS-->
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/rzslider.js"></script>
     <!-- App js -->
     <script src="assets/js/app.js"></script>
     <!-- DataTables JS-->
@@ -1693,6 +1765,7 @@
     <script src="assets/libs/datatables/js/scroller.bootstrap5.min.js"></script>
     <!-- Select2 JS -->
     <script src="assets/libs/select2/select2.min.js"></script>
+    <script src="assets/libs/jquery-ui-1.13.1/jquery-ui.min.js"></script>
 
     <script>
         function uncheckAll() {
@@ -1711,6 +1784,24 @@
                 buttons: [ 'copy', 'csv', 'excel', 'print' ],
             });
         });
+    </script>
+
+    <script>
+        $(function() {
+            $( "#slider-range" ).slider({
+            range: true,
+            min: new Date('2021.01.01').getTime() / 1000,
+            max: new Date('2022.06.30').getTime() / 1000,
+            step: 86400,
+            values: [ new Date('2022.01.12').getTime() / 1000, new Date('2022.04.28').getTime() / 1000 ],
+            slide: function( event, ui ) {
+                $( "#amount" ).val( (new Date(ui.values[ 0 ] *1000).toDateString() ) + " - " + (new Date(ui.values[ 1 ] *1000)).toDateString() );
+            }
+            });
+            $( "#amount" ).val( (new Date($( "#slider-range" ).slider( "values", 0 )*1000).toDateString()) +
+            " - " + (new Date($( "#slider-range" ).slider( "values", 1 )*1000)).toDateString());
+        });
+
     </script>
     
 </body>
