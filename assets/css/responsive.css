@@ -792,6 +792,23 @@
 		height: 375px;
 	}
 
+	.categories-card .card-body {
+		height: 190px;
+		background-color: #aec3a2;
+	}
+	
+	.deps-card .card-body {
+		height: 190px;
+	}
+
+	.topic-sources-card .card-body {
+		height: 190px;
+	}
+
+	.servicess-card .card-body {
+		height: 190px;
+	}
+
 }
 
 @media only screen and (min-width: 1600px) and (max-width: 1919px) {

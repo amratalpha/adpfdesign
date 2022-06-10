@@ -27,12 +27,11 @@
     <!-- Select 2 CSS-->
     <link href="assets/libs/select2/select2.min.css" rel="stylesheet" type="text/css" />
     <!-- DataTables CSS-->
-    <link href="assets/libs/datatables/css/datatables.min.css" rel="stylesheet" type="text/css" />
     <link href="assets/libs/datatables/css/dataTables.bootstrap5.min.css" rel="stylesheet" type="text/css" />
-    <link href="assets/libs/datatables/css/buttons.dataTables.min.css" rel="stylesheet" type="text/css" />
     <link href="assets/libs/datatables/css/buttons.bootstrap5.min.css" rel="stylesheet" type="text/css" />
     <link href="assets/libs/datatables/css/responsive.bootstrap5.min.css" rel="stylesheet" type="text/css" />
     <link href="assets/libs/datatables/css/scroller.bootstrap5.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/libs/flatpickr/flatpickr.min.css" rel="stylesheet" type="text/css" />
     
 </head>
 
@@ -726,167 +725,900 @@
                 </div>
             </header>
             <div class="page-content">
-                <div class="container-fluid">
+                <div class="row">
+                    <div class="title-banner">
+                        <h3 class="text-white p-2 mb-0">Shaoor</h3>
+                    </div>
+                </div>
+                <div class="container-fluid mt-3">
                     <div class="row">
+                        <div class="col-sm-12 col-md-4">
+                            <h4 class="total-count-records fw-bold">Total Count Records: <span class="fw-normal">1000</span></h4>
+                        </div>
+                        <div class="col-sm-12 col-md-4"></div>
+                        <div class="col-sm-12 col-md-4">
+                            <h4 class="total-count-records float-end fw-bold">Total Search Records: <span class="fw-normal">450</span></h4>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
                         <div class="col-sm-12 col-md-3">
                             <div class="card categories-card">
                                 <div class="card-header">
-                                    <h4 class="mb-0 fw-bold">Category</h4>
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-10 my-auto">
+                                            <h4 class="fw-bold mb-0 text-white">Category</h4>
+                                        </div>
+                                        <div class="col-sm-12 col-md-2 my-auto">
+                                            <a class="clear text-white" href="javascript:void()">Clear</a>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="card-body">
-                                    <select class="category" name="category" multiple="multiple">
-                                        <option value="decree">Decree</option>
-                                        <option value="resolution-decision">Resolution/ Decision</option>
-                                        <option value="law">Law</option>
-                                        <option value="circular">Circular</option>
-                                        <option value="legal-advice">Legal Advice</option>  
-                                    </select>  
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox1">Decree</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox1">Resolution/ Decision</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox1">Law</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox1">Circular</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox1">Legal Advice</label>
+                                            </div>   
+                                        </div>
+                                    </div>
                                 </div>
                             </div>              
                         </div>
                         <div class="col-sm-12 col-md-3">
                             <div class="card deps-card">
                                 <div class="card-header">
-                                    <h4 class="mb-0 fw-bold">Department</h4>
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-10 my-auto">
+                                            <h4 class="fw-bold mb-0 text-white">Department</h4>
+                                        </div>
+                                        <div class="col-sm-12 col-md-2 my-auto">
+                                            <a class="clear text-white" href="javascript:void()">Clear</a>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="card-body">
-                                    <select class="department" name="department" multiple="multiple">
-                                        <option value="her-services">HR Services</option> 
-                                        <option value="hr-loans">HR Loans</option> 
-                                        <option value="ccd-services">CCD Services</option> 
-                                        <option value="gs-services">GS Services</option> 
-                                        <option value="legal-services">Legal Services</option> 
-                                        <option value="bed-services">BED Services</option>  
-                                        <option value="finance-cervices">Finance Services</option>  
-                                        <option value="pmo-services">PMO Services</option>  
-                                        <option value="ecd-services">ECD Services</option> 
-                                        <option value="it-services">IT Services</option>  
-                                        <option value="ehs-services">EHS Services</option>  
-                                        <option value="chd-services">CHD Services</option>  
-                                        <option value="hr-training-services">HR Training Services</option>  
-                                        <option value="procurement-services">Procurement Services</option>  
-                                    </select>  
+                                <div class="card-body scroller">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox2">HR Services</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox2">HR Loans</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox2">CCD Services</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox2">GS Services</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox2">Legal Services</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox2">BED Services</label> 
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox2">Finance Services</label> 
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox2">PMO Services</label> 
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox2">ECD Services</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox2">IT Services</label> 
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox2">EHS Services</label> 
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox2">CHD Services</label> 
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox2">HR Training Services</label> 
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox2">Procurement Services</label> 
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>              
                         </div>
                         <div class="col-sm-12 col-md-3">
                             <div class="card topic-sources-card">
                                 <div class="card-header">
-                                    <h4 class="mb-0 fw-bold">Topic Source</h4>
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-10 my-auto">
+                                            <h4 class="fw-bold mb-0 text-white">Topic Source</h4>
+                                        </div>
+                                        <div class="col-sm-12 col-md-2 my-auto">
+                                            <a class="clear text-white" href="javascript:void()">Clear</a>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="card-body">
-                                    <select class="source" name="source" multiple="multiple">
-                                        <option value="gov-dubai">Government of Dubai</option> 
-                                        <option value="entitiy">Entity</option> 
-                                        <option value="permanent-committee">Permanent Technical Committee</option> 
-                                        <option value="management-committee">Management Committee</option> 
-                                        <option value="financial-committee">Financial Committee</option>
-                                        <option value="procurement-division">Procurement Division</option>
-                                        <option value="department-finance">Department of Finance</option>
-                                        <option value="gov-abudhabi">Government of Abu Dhabi</option>
-                                        <option value="executive-council">Executive Council</option> 
-                                        <option value="medical-committee">Medical Committee </option>  
-                                        <option value="gov-sharjah">Government of Sharjah</option>  
-                                        <option value="legam">Legal & Legislation Division </option>  
-                                        <option value="mdo">Managing Director Office</option> 
-                                        <option value="gdo">Director General Office</option>  
-                                        <option value="chd">Customer Happiness Division</option>  
-                                        <option value="abpf">Abu Dhabi Pension Fund</option>  
-                                        <option value="fl">Federal Law</option> 
-                                        <option value="emss">Employer and Member Services Sector</option>  
-                                        <option value="gc">Grievance Committee (Pension Affairs)</option>   
-                                    </select>  
+                                <div class="card-body scroller">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox3">Government of Dubai</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox3">Entity</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox3">Permanent Technical Committee</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox3">Management Committee</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox3">Financial Committee</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox3">Procurement Division</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox3">Department of Finance</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox3">Government of Abu Dhabi</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox3">Executive Council</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox3">Medical Committee </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox3">Government of Sharjah</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox3">Legal & Legislation Division </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox3">Managing Director Office</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox3">Director General Office</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox3">Customer Happiness Division</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox3">Abu Dhabi Pension Fund</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox3">Federal Law</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox3">Employer and Member Services Sector</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox3">Grievance Committee (Pension Affairs)</label>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>              
                         </div>
                         <div class="col-sm-12 col-md-3">
                             <div class="card servicess-card">
                                 <div class="card-header">
-                                    <h4 class="mb-0 fw-bold">Services</h4>
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-10 my-auto">
+                                            <h4 class="fw-bold mb-0 text-white">Service</h4>
+                                        </div>
+                                        <div class="col-sm-12 col-md-2 my-auto">
+                                            <a class="clear text-white" href="javascript:void()">Clear</a>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="card-body">
-                                    <select class="services" name="services" multiple="multiple">
-                                        <option value="en-cat">Entity Category</option>
-                                        <option value="cont-der-term">Contradiction of Service Terms</option>
-                                        <option value="familsup-ded">Family Support Deduction</option>
-                                        <option value="additiocont-nomial-term">Addition of Contributions Nominal Term</option>
-                                        <option value="active-mem-tr">Active Member Transfer</option>
-                                        <option value="benefits-tr">Benefits Transfer to Another Bank Account</option>
-                                        <option value="pen-set">Pension Settlement</option>
-                                        <option value="emp-ser">Employees Services</option>
-                                        <option value="nom-ser-term-pur">Nominal Service Term Purchase</option>
-                                        <option value="ser-add">Services Addition for Military Officials</option>
-                                        <option value="summary">Summary</option>
-                                        <option value="active-mem-reg">Active Member Registration</option>
-                                        <option value="cont-coll">Contributions Collection</option>
-                                        <option value="cost-calc">Cost Calculation</option>
-                                        <option value="case-study">Case Study</option>
-                                        <option value="ser-add">Service Addition</option>
-                                        <option value="transaction">Transaction</option>
-                                        <option value="en-reg">Entity Registration</option>
-                                        <option value="up-ent-data">Update Entity Data</option>
-                                        <option value="ins-pe-tr-am">Installment of Personnel Transfer Amounts</option>
-                                        <option value="studies">Studies</option>
-                                        <option value="emp-ben">Employee Benefits</option>
-                                        <option value="ip-ac-mem=data">Update Active Member Data</option>
-                                        <option value="ins-add-am">Installment of Additional Amounts</option>
-                                        <option value="dis-ser-lump-sum-ebn">Disbursement of End of Service Lump Sum Benefits</option>
-                                        <option value="ded-pen-ben">Deduction from Pension/ Benefits</option>
-                                        <option value="dis-tr-ben">Disbursement of Trainees Benefits</option>
-                                        <option value="pen-adv">Pensioners Advantages</option>
-                                        <option value="tr-reg">Trainees Registration</option>
-                                        <option value="work-ins">Work Instructions</option>
-                                        <option value="court-ded">Court Deduction</option>
-                                        <option value="ben-disb">Benefits Disbursement</option>
-                                        <option value="service-term">Service Term</option>
-                                        <option value="pe-det-reg">People of Determination Registration</option>
-                                        <option value="ser-ter-dis-dec">Service Termination by A Disciplinary Decision</option>
-                                        <option value="ded-ser-add-cost-ben">Deduction of Service Addition Cost from the Benefits</option>
-                                        <option value="org-str-occ">Organizational Structure & Occupational Empowerment/ Delegation of Authorities</option>
-                                        <option value="admin-ins">Administrative Instructions</option>
-                                        <option value="pen-disb">Pension Disbursement</option>
-                                        <option value="jid-off">Judicial Officer</option>
-                                        <option value="con-agree-aud">Contracts & Agreements Audit</option>
-                                        <option value="agree-mem-under">Agreements & Memorandums of Understanding</option>
-                                        <option value="leg-class">Legal Classification</option>
-                                        <option value="ent-ded">Entity Deduction</option>
-                                        <option value="ded-less">Deducting Less Than One Year/ Old</option>
-                                        <option value="dec-per-tech-comm">Decisions of the Permanent Technical Committee</option>
-                                        <option value="leg-memor">Legal Memorandums</option>
-                                        <option value="ent-class">Entities Classification</option>
-                                        <option value="projetcs">Projects</option>
-                                        <option value="nom-term-purc">Nominal Term Purchase</option>
-                                        <option value="add-nom-cont-term">Addition of Nominal Contributions Term</option>
-                                        <option value="res-ent-enq">Response to Entities Enquiries</option>
-                                        <option value="per-tra-cancel">Personnel Transfer Cancellation</option>
-                                        <option value="pen-salary">Pensionable Salary</option>
-                                        <option value="und-disb-am">Unduly Disbursed Amounts</option>
-                                        <option value="recruitment">Recruitment</option>
-                                        <option value="investigation">Investigation</option>
-                                        <option value="entity-closure">Entity Closure</option>
-                                        <option value="inheritance">Inheritance</option>
-                                        <option value="high-share-entit">Highest Share Entitlement</option>
-                                        <option value="work-injury">Work Injury</option>
-                                        <option value="amendments">Amendments</option>
-                                        <option value="gover-org">Governance & Organization</option>
-                                        <option value="grievances">Grievances</option>
-                                        <option value="onc-rewards">Incentives & Rewards</option>
-                                        <option value="medical-fitness">Medical Fitness</option>
-                                        <option value="acceleration">Acceleration</option>
-                                        <option value="time-attendace">Time & Attendance</option>
-                                        <option value="beneficiaries">Beneficiaries</option>
-                                        <option value="training">Training</option>
-                                        <option value="comb-pens">Combining Two Pensions or More</option>
-                                        <option value="cont-dup-ser-term">Contradiction & Duplication in Service Terms</option>
-                                        <option value="legal-cases">Legal Cases</option>
-                                        <option value="per-tra-cancel">Personnel Transfer Cancellation</option>
-                                        <option value="ins-per-tra-amounts">Installment of Personnel Transfer Amounts</option>
-                                        <option value="comm-work-teams">Committees & Work Teams</option>
-                                        <option value="awar-guid">Awareness & Guidance</option>
-                                        <option value="insp-comp">Inspection & Compliance</option> 
-                                    </select>    
+                                <div class="card-body scroller">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Entity Category</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Contradiction of Service Terms</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Family Support Deduction</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Addition of Contributions Nominal Term</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Active Member Transfer</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Benefits Transfer to Another Bank Account</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Pension Settlement</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Employees Services</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Nominal Service Term Purchase</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Services Addition for Military Officials</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Summary</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Active Member Registration</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Contributions Collection</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Cost Calculation</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Case Study</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Service Addition</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Transaction</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Entity Registration</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Update Entity Data</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Installment of Personnel Transfer Amounts</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Studies</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12"><div class="form-check form-check-inline w-100">
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                            <label class="form-check-label" for="inlineCheckbox4">Employee Benefits</label>
+                                        </div></div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Active Member Registration</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Update Active Member Data</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Installment of Additional Amounts</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Disbursement of End of Service Lump Sum Benefits</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Deduction from Pension/ Benefits</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Disbursement of Trainees Benefits</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Pensioners Advantages</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12"><div class="form-check form-check-inline w-100">
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                            <label class="form-check-label" for="inlineCheckbox4">Trainees Registration</label>
+                                        </div></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Work Instructions</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Court Deduction</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Benefits Disbursement</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Service Term</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">People of Determination Registration</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Service Termination by A Disciplinary Decision</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Deduction of Service Addition Cost from the Benefits</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Organizational Structure & Occupational Empowerment/ Delegation of Authorities</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Administrative Instructions</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Pension Disbursement</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Judicial Officer</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Contracts & Agreements Audit</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Agreements & Memorandums of Understanding</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Legal Classification</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Entity Deduction</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Deducting Less Than One Year/ Old</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Decisions of the Permanent Technical Committee</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Legal Memorandums</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Contradiction of Service Terms</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Entities Classification</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Projects</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Nominal Term Purchase</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Addition of Nominal Contributions Term</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Response to Entities Enquiries</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Personnel Transfer Cancellation</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Pensionable Salary</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Unduly Disbursed Amounts</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Recruitment</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Investigation</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Entity Closure</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Inheritance</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Highest Share Entitlement</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Work Injury</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Amendments</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Governance & Organization</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Grievances</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Incentives & Rewards</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Medical Fitness</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Acceleration</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Time & Attendance</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Beneficiaries</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Training</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Combining Two Pensions or More</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Contradiction & Duplication in Service Terms</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Legal Cases</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Personnel Transfer Cancellation</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Installment of Personnel Transfer Amounts</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Committees & Work Teams</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Awareness & Guidance</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Inspection & Compliance</label>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>            
+                        </div>
+                    </div>
+
+                    <div class="row mt-2">
+                        <div class="col-sm-12 col-md-3">
+                            <div class="card document-type-header">
+                                <div class="card-header">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-10 my-auto">
+                                            <h4 class="fw-bold mb-0">Document Type</h4>
+                                        </div>
+                                        <div class="col-sm-12 col-md-2 my-auto">
+                                            <a class="clear" href="javascript:void()">Clear</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">PDF</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Word</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-check form-check-inline w-100">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox4">Excel</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-3">
+                            <div class="card document-type-header">
+                                <div class="card-header">
+                                    <h4 class="fw-bold mb-0">Date Range</h4>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <input type="text" class="form-control" data-provider="flatpickr" data-date-format="d M, Y" data-multiple-date="true">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -984,8 +1716,10 @@
     </button>
 
     <!-- JAVASCRIPT -->
-    <script src="assets/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="assets/libs/jquery/jquery.min.js"></script>
+    <script src="assets/js/moment.min.js"></script>
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    
     <script src="assets/libs/simplebar/simplebar.min.js"></script>
     <script src="assets/libs/node-waves/waves.min.js"></script>
     <script src="assets/libs/feather-icons/feather.min.js"></script>
@@ -1005,6 +1739,9 @@
     <script src="assets/libs/datatables/js/scroller.bootstrap5.min.js"></script>
     <!-- Select2 JS -->
     <script src="assets/libs/select2/select2.min.js"></script>
+    <!-- init js -->
+    <script src="assets/libs/flatpickr/flatpickr.min.js"></script>
+    
 
     <script>
         $(document).ready(function() {
@@ -1025,6 +1762,15 @@
                 buttons: [ 'copy', 'csv', 'excel', 'print' ],
             });
         });
+    </script>
+
+    <script>
+         
+        $("#rangeDate").flatpickr({
+            mode: 'range',
+            dateFormat: "Y-m-d"
+        });
+        
     </script>
     
 </body>
