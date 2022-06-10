@@ -2322,6 +2322,7 @@ body {
 
 .accordion-border-box .accordion-item .accordion-button {
 	border-radius: .25rem;
+	font-size: 16px;
 }
 
 .accordion-border-box .accordion-item .accordion-button:not(.collapsed) {
@@ -11835,14 +11836,14 @@ a.fg-emoji-picker-close-button {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	background-color: #405189;
+	background-color: #4d6340;
 	border-radius: 5px 5px 0 0;
 }
 
 .flatpickr-months .flatpickr-month {
 	background: 0 0;
-	color: rgba(255,255,255,.9);
-	fill: rgba(255,255,255,.9);
+	color: rgba(255,255,255,1) !important;
+	fill: rgba(255,255,255,1) !important;
 	height: 34px;
 	line-height: 1;
 	text-align: center;
@@ -11865,8 +11866,8 @@ a.fg-emoji-picker-close-button {
 	height: 34px;
 	padding: 10px;
 	z-index: 3;
-	color: rgba(255,255,255,.9);
-	fill: rgba(255,255,255,.9);
+	color: rgba(255,255,255,1) !important;
+	fill: rgba(255,255,255,1) !important;
 }
 
 .flatpickr-months .flatpickr-next-month.flatpickr-disabled,.flatpickr-months .flatpickr-prev-month.flatpickr-disabled {
@@ -12110,7 +12111,7 @@ a.fg-emoji-picker-close-button {
 }
 
 .flatpickr-weekdays {
-	background-color: #405189;
+	background-color: #4d6340 !important;
 	text-align: center;
 	overflow: hidden;
 	width: 100%;
@@ -12146,6 +12147,7 @@ span.flatpickr-weekday {
 	-ms-flex: 1;
 	flex: 1;
 	font-weight: 500;
+	color: #fff !important;
 }
 
 .dayContainer,.flatpickr-weeks {
@@ -12453,6 +12455,7 @@ span.flatpickr-weekday {
 .flatpickr-input[readonly] {
 	cursor: pointer;
 	background-color: var(--vz-input-bg);
+	border: 1px solid #fff;
 }
 
 [data-inline-date=true],[data-time-inline] {

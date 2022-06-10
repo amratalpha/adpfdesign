@@ -861,7 +861,7 @@ a.read-more:hover {
 	border-radius: 15px 15px 0px 0px;
 }
 
-.categories-card .card-header {
+.categories-card .card-header, .document-type-header .card-header {
 	border-radius: 15px 15px 0px 0px;
 	background-color: #4d6340;
 }
@@ -874,7 +874,7 @@ a.read-more:hover {
 	border-radius: 15px 15px 0px 0px;
 }
 
-.deps-card .card-header {
+.deps-card .card-header, .date-range-header .card-header {
 	border-radius: 15px 15px 0px 0px;
 	background-color: #77755a;
 }
@@ -889,11 +889,11 @@ a.read-more:hover {
 	background-color: #c6a45d;
 }
 
-.categories-card .card-body {
+.categories-card .card-body, .document-type-header .card-body {
 	background-color: #aec3a2;
 }
 
-.deps-card .card-body {
+.deps-card .card-body, .date-range-header .card-body {
 	background-color: #bdbca8;
 }
 
@@ -908,6 +908,24 @@ a.read-more:hover {
 .title-banner {
 	background-color: #77755a;
 }
+
+.date-range-header .card-header {
+	border-radius: 15px 15px 0px 0px;
+}
+
+.document-type-header .card-header {
+	border-radius: 15px 15px 0px 0px;
+}
+
+.table>tbody>tr:nth-child(odd)>td, 
+.table>tbody>tr:nth-child(odd)>th {
+   background-color: #f2f2f2; 
+ }
+
+.table>tbody>tr:nth-child(even)>td, 
+.table>tbody>tr:nth-child(even)>th {
+   background-color: #fff; 
+ }
 
 .select2.select2-container.select2-container--default {
     width: 100% !important;

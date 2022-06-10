@@ -537,6 +537,26 @@
 	.eservices-box .card-body {
 		height: 196px;
 	}
+
+	.categories-card .card-body {
+		height: 190px;
+	}
+	
+	.deps-card .card-body {
+		height: 190px;
+	}
+
+	.topic-sources-card .card-body {
+		height: 190px;
+	}
+
+	.servicess-card .card-body {
+		height: 190px;
+	}
+
+	.date-range-header .card-body {
+		height: 120px;
+	}
 	
 }
 
@@ -627,6 +647,26 @@
 	.dept-btn {
 		width: 100%;
 		height: 57px;
+	}
+
+	.categories-card .card-body {
+		height: 190px;
+	}
+	
+	.deps-card .card-body {
+		height: 190px;
+	}
+
+	.topic-sources-card .card-body {
+		height: 190px;
+	}
+
+	.servicess-card .card-body {
+		height: 190px;
+	}
+
+	.date-range-header .card-body {
+		height: 120px;
 	}
 	
 }
@@ -794,7 +834,6 @@
 
 	.categories-card .card-body {
 		height: 190px;
-		background-color: #aec3a2;
 	}
 	
 	.deps-card .card-body {
@@ -809,6 +848,10 @@
 		height: 190px;
 	}
 
+	.date-range-header .card-body {
+		height: 120px;
+	}
+	
 }
 
 @media only screen and (min-width: 1600px) and (max-width: 1919px) {
@@ -987,6 +1030,26 @@
 
 	.service1-card .card-body {
 		height: 449px;
+	}
+
+	.categories-card .card-body {
+		height: 190px;
+	}
+	
+	.deps-card .card-body {
+		height: 190px;
+	}
+
+	.topic-sources-card .card-body {
+		height: 190px;
+	}
+
+	.servicess-card .card-body {
+		height: 190px;
+	}
+
+	.date-range-header .card-body {
+		height: 120px;
 	}
 
 }
@@ -1203,6 +1266,26 @@
 		height: 385px;
 	}
 
+	.categories-card .card-body {
+		height: 190px;
+	}
+	
+	.deps-card .card-body {
+		height: 190px;
+	}
+
+	.topic-sources-card .card-body {
+		height: 190px;
+	}
+
+	.servicess-card .card-body {
+		height: 190px;
+	}
+
+	.date-range-header .card-body {
+		height: 120px;
+	}
+
 }
 
 @media only screen and (min-width: 2560px) {
@@ -1415,5 +1498,25 @@
 
 	.topic-source1-card .card-body {
 		height: 385px;
+	}
+
+	.categories-card .card-body {
+		height: 190px;
+	}
+	
+	.deps-card .card-body {
+		height: 190px;
+	}
+
+	.topic-sources-card .card-body {
+		height: 190px;
+	}
+
+	.servicess-card .card-body {
+		height: 190px;
+	}
+
+	.date-range-header .card-body {
+		height: 120px;
 	}
 }
