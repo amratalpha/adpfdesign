@@ -852,6 +852,7 @@ a.read-more:hover {
 
 .category-card .card-body, .document-type-header .card-body {
 	background-color: #aec3a2;
+	border-radius: 0px 0px 15px 15px;
 }
 
 .dep-card .card-header {
@@ -861,6 +862,7 @@ a.read-more:hover {
 
 .dep-card .card-body, .date-range-header .card-body {
 	background-color: #bdbca8;
+	border-radius: 0px 0px 15px 15px;
 }
 
 .topic-source-card .card-header {
@@ -870,6 +872,7 @@ a.read-more:hover {
 
 .topic-source-card .card-body {
 	background-color: #b8d590;
+	border-radius: 0px 0px 15px 15px;
 }
 
 .services-card .card-header {
@@ -879,6 +882,7 @@ a.read-more:hover {
 
 .services-card .card-body {
 	background-color: #d7c08e;
+	border-radius: 0px 0px 15px 15px;
 }
 
 .categories-card .card-header, .documents-type-header .card-header {
@@ -911,18 +915,22 @@ a.read-more:hover {
 
 .categories-card .card-body, .document-type-header .card-body {
 	background-color: #aec3a2;
+	border-radius: 0px 0px 15px 15px;
 }
 
 .deps-card .card-body, .date-range-header .card-body {
 	background-color: #bdbca8;
+	border-radius: 0px 0px 15px 15px;
 }
 
 .topic-sources-card .card-body {
 	background-color: #b8d590;
+	border-radius: 0px 0px 15px 15px;
 }
 
 .servicess-card .card-body {
 	background-color: #d7c08e;
+	border-radius: 0px 0px 15px 15px;
 }
 
 .title-banner {
@@ -931,10 +939,12 @@ a.read-more:hover {
 
 .date-range-header .card-header {
 	border-radius: 15px 15px 0px 0px;
+	background-color: #77755a;
 }
 
 .document-type-header .card-header {
 	border-radius: 15px 15px 0px 0px;
+	background-color: #4d6340;
 }
 
 .table>tbody>tr:nth-child(odd)>td, 
