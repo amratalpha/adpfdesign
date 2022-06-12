@@ -669,7 +669,30 @@
 	.date-range-header .card-body {
 		height: 120px;
 	}
+
+	.category-card .card-body {
+		height: 100px;
+	}
+
+	.dep-card .card-body {
+		height: 100px;
+	}
+
+	.topic-source-card .card-body {
+		height: 430px;
+	}
+
+	.services-card .card-body {
+		height: 430px;
+	}
 	
+	.documents-type-header .card-body {
+		height: 82px;
+	}
+
+	.dates-range-header .card-body {
+		height: 82px;
+	}
 }
 
 @media only screen and (min-width: 1440px) and (max-width: 1599px) {

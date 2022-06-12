@@ -762,6 +762,10 @@ a.read-more:hover {
 	transform: scale(1.05);
 }
 
+.e-services-card .carc-body {
+	background-color: #f6f6f6;
+}
+
 .icon-box {
 	width: 100px;
 	height: 100px;
