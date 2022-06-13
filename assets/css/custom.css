@@ -954,11 +954,15 @@ a.read-more:hover {
 .table>tbody>tr:nth-child(odd)>td, 
 .table>tbody>tr:nth-child(odd)>th {
    background-color: #f2f2f2; 
- }
+}
 
 .table>tbody>tr:nth-child(even)>td, 
 .table>tbody>tr:nth-child(even)>th {
    background-color: #fff; 
+}
+
+.thumb-up, .cart {
+	color: #fff;
  }
 
 .select2.select2-container.select2-container--default {
