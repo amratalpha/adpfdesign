@@ -1017,6 +1017,14 @@ span.ui-slider-handle.ui-corner-all.ui-state-default {
 	background-color: #77765a;
 }
 
+.toolbar-top {
+	display: none;
+}
+
+.sw-theme-arrows .nav-item{
+	margin: 0px;
+}
+
 /* */
 
 /* Footer */
