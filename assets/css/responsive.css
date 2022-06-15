@@ -837,15 +837,11 @@
 	}
 
 	.category-card .card-body {
-		height: 100px;
+		height: 120px;
 	}
 
 	.dep-card .card-body {
-		height: 100px;
-	}
-
-	.services-card .card-body {
-		height: 375px;
+		height: 120px;
 	}
 
 	.dep1-card .card-body {
@@ -853,7 +849,7 @@
 	}
 
 	.services-card .card-body {
-		height: 375px;
+		height: 240px;
 	}
 
 	.categories-card .card-body {
