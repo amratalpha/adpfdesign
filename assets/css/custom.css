@@ -751,10 +751,10 @@ a.read-more:hover {
     transform: scale(1.2);
 }
 
-.timelines {
+section {
 	height: 600px;
 	background-image: linear-gradient(to bottom, rgb(77 99 64) 0%, rgb(77 99 64) 100%);
-}
+}	
 
 .timelines h1 {
 	margin-top: 50px;
