@@ -24,216 +24,32 @@
     <link href="assets/css/custom.css" rel="stylesheet" type="text/css" />
     <!-- Responsive CSS-->
     <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
-    
-    <style>
-        @media (min-width: 1400px){
-            .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-                max-width: 1320px;
-            }
-        }
 
 
-        section {
-            height: 600px;
-            background-image: linear-gradient(to bottom, rgb(77 99 64) 0%, rgb(77 99 64) 100%);
-        }
+    <!--Hero CSS-->
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
 
-            section h1 {
-                margin-top: 50px;
-                margin-bottom: 350px;
-                color: white;
-            }
+    <!-- Vendor CSS Files -->
+    <link href="assets-hero/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets-hero/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets-hero/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets-hero/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets-hero/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-        p {
-            font-family: "Source Sans Pro", sans-serif;
-            font-size: 18px;
-        }
+    <!-- Variables CSS Files. Uncomment your preferred color scheme -->
+    <link href="assets-hero/css/variables.css" rel="stylesheet">
+    <!-- <link href="assets-hero/css/variables-blue.css" rel="stylesheet"> -->
+    <!-- <link href="assets-hero/css/variables-green.css" rel="stylesheet"> -->
+    <!-- <link href="assets-hero/css/variables-orange.css" rel="stylesheet"> -->
+    <!-- <link href="assets-hero/css/variables-purple.css" rel="stylesheet"> -->
+    <!-- <link href="assets-hero/css/variables-red.css" rel="stylesheet"> -->
+    <!-- <link href="assets-hero/css/variables-pink.css" rel="stylesheet"> -->
+    <!-- Template Main CSS File -->
+    <link href="assets-hero/css/main.css" rel="stylesheet">
 
-        h2 {
-            font-family: "Roboto", sans-serif;
-        }
-
-        .timeline {
-            width: 100%;
-            position: relative;
-            perspective: 5000px;
-        }
-        p {
-            margin-top: 15px;
-        }
-            .timeline:before {
-                position: absolute;
-                content: "";
-                width: 100%;
-                height: 15px;
-                background-color: #d5dfe5;
-                border-radius: 15px;
-                top: 76px;
-            }
-
-            .timeline .timeline-item {
-                /*text-align: center;*/
-                position: relative;
-                z-index: 1;
-                cursor: pointer;
-            }
-
-                .timeline .timeline-item:hover:after {
-                    transform: scale(1.5, 1.5);
-                }
-
-                .timeline .timeline-item.selected:after {
-                    background-color: #4d6340;
-                    border: 5px solid #698f37;
-                    transform: scale(1.5, 1.5);
-                }
-
-                .timeline .timeline-item:after {
-                    width: 30px;
-                    height: 30px;
-                    position: absolute;
-                    top: 69px;
-                    left: 50%;
-                    margin-left: -15px;
-                    background-color: #f5efed;
-                    border: 5px solid #d5dfe5;
-                    content: "";
-                    border-radius: 50%;
-                    transition: transform 0.5s ease;
-                }
-
-                .timeline .timeline-item .timeline-content {
-                    position: absolute;
-                    top: -300px;
-                    display: none;
-                    width: 350px;
-                    left: -60px;
-                    cursor: auto;
-                }
-
-                    .timeline .timeline-item .timeline-content.fadeIn {
-                        animation-delay: 0.2s;
-                    }
-
-                    .timeline .timeline-item .timeline-content.animated {
-                        display: block;
-                    }
-
-        .flex-container {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: flex-start;
-            align-content: flex-start;
-            align-items: flex-start;
-        }
-
-        .flex-items-default {
-            width: 224px;
-            height: 150px;
-        }
-
-        .dropdown {
-            width: 400px;
-            height: 326px;
-            background: white;
-            box-shadow: 0 3px 20px 1px rgba(0, 0, 0, 0.1);
-            border-radius: 5px;
-            position: absolute;
-            top: -310px;
-            animation-duration: 0.2s;
-            transition: left 0.3s ease;
-        }
-
-            .dropdown .inner {
-                position: relative;
-                width: 100%;
-                height: 326px;
-            }
-
-                .dropdown .inner .arrow-down {
-                    position: absolute;
-                    bottom: -19px;
-                    left: 50%;
-                    margin-left: -20px;
-                }
-
-        .arrow-down {
-            width: 0;
-            height: 0;
-            border-left: 20px solid transparent;
-            border-right: 20px solid transparent;
-            border-top: 20px solid white;
-        }
-
-        .animated {
-            display: block;
-        }
-
-        .material-icons {
-            position: absolute;
-            top: 180px;
-            left: 160px;
-            width: 100%;
-            color: white;
-            font-size: 33px !important;
-        }
-        /* fallback */
-        @font-face {
-            font-family: 'Material Icons';
-            font-style: normal;
-            font-weight: 400;
-            src: url(https://fonts.gstatic.com/s/materialicons/v130/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
-        }
-
-        .material-icons {
-            font-family: 'Material Icons';
-            font-weight: normal;
-            font-style: normal;
-            font-size: 24px;
-            line-height: 1;
-            letter-spacing: normal;
-            text-transform: none;
-            display: inline-block;
-            white-space: nowrap;
-            word-wrap: normal;
-            direction: ltr;
-            -webkit-font-feature-settings: 'liga';
-            -webkit-font-smoothing: antialiased;
-        }
-        .hexagon {
-            position: relative;
-            width: 75px;
-            height: 43.3px;
-            background-color: #4d6340;
-            margin: 21.65px 0;
-            left: 50%;
-            margin-left: -37px;
-            top: 25px;
-        }
-
-            .hexagon:before,
-            .hexagon:after {
-                content: "";
-                position: absolute;
-                width: 0;
-                border-left: 37.5px solid transparent;
-                border-right: 37.5px solid transparent;
-            }
-
-            .hexagon:before {
-                bottom: 100%;
-                border-bottom: 21.65px solid #4d6340;
-            }
-
-            .hexagon:after {
-                top: 100%;
-                width: 0;
-                border-top: 21.65px solid #4d6340;
-            }
-
-    </style>
-   
 
 </head>
 
@@ -242,7 +58,7 @@
     <!-- Begin page -->
     <div id="layout-wrapper">
         <div class="banner"></div>
-        
+
         <!-- ========== App Menu ========== -->
         <div class="app-menu navbar-menu">
             <!-- LOGO -->
@@ -266,7 +82,7 @@
                     </span>
                 </a>
                 <button type="button" class="btn btn-sm p-0 fs-20 header-item float-end btn-vertical-sm-hover"
-                    id="vertical-hover">
+                        id="vertical-hover">
                     <i class="ri-record-circle-line"></i>
                 </button>
             </div>
@@ -290,7 +106,7 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link menu-link" href="#department" data-bs-toggle="collapse" role="button"
-                            aria-expanded="false" aria-controls="department">
+                               aria-expanded="false" aria-controls="department">
                                 <i class="mdi mdi-office-building"></i>
                                 <span data-key="t-news">Division/Department</span>
                             </a>
@@ -349,7 +165,7 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link menu-link" href="#services" data-bs-toggle="collapse" role="button"
-                            aria-expanded="false" aria-controls="services">
+                               aria-expanded="false" aria-controls="services">
                                 <i class="mdi mdi-cog"></i>
                                 <span data-key="t-news">E-Services</span>
                             </a>
@@ -384,7 +200,7 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link menu-link" href="#systems" data-bs-toggle="collapse" role="button"
-                            aria-expanded="false" aria-controls="systems">
+                               aria-expanded="false" aria-controls="systems">
                                 <i class="mdi mdi-cog"></i>
                                 <span data-key="t-news">Systems</span>
                             </a>
@@ -395,7 +211,7 @@
                                     </li>
                                     <li class="nav-item">
                                         <a href="#" class="nav-link" data-key="t-analytics">E-Supporting Services</a>
-                                    </li>   
+                                    </li>
                                     <li class="nav-item">
                                         <a href="#" class="nav-link" data-key="t-analytics">Kafaa</a>
                                     </li>
@@ -449,7 +265,7 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link menu-link" href="#resources" data-bs-toggle="collapse" role="button"
-                            aria-expanded="false" aria-controls="resources">
+                               aria-expanded="false" aria-controls="resources">
                                 <i class="mdi mdi-cog"></i>
                                 <span data-key="t-news">E-Resources</span>
                             </a>
@@ -460,7 +276,7 @@
                                     </li>
                                     <li class="nav-item">
                                         <a href="#" class="nav-link" data-key="t-analytics">Services & Transactions Manual</a>
-                                    </li>   
+                                    </li>
                                     <li class="nav-item">
                                         <a href="#" class="nav-link" data-key="t-analytics">Resources</a>
                                     </li>
@@ -515,7 +331,7 @@
                                         <img src="assets/images/favicon.png" alt="" height="17">
                                     </span>
                                 </a>
-    
+
                                 <a href="index.html" class="logo logo-light">
                                     <span class="logo-sm">
                                         <img src="assets/images/favicon.png" alt="" height="22">
@@ -525,56 +341,57 @@
                                     </span>
                                 </a>
                             </div>
-    
+
                             <button type="button" class="btn btn-sm px-3 fs-16 header-item vertical-menu-btn topnav-hamburger"
-                                id="topnav-hamburger-icon">
+                                    id="topnav-hamburger-icon">
                                 <span class="hamburger-icon">
                                     <span></span>
                                     <span></span>
                                     <span></span>
                                 </span>
                             </button>
-    
+
                             <!-- App Search-->
                             <form class="app-search d-none d-md-block">
                                 <div class="position-relative">
                                     <input type="text" class="form-control" placeholder="Search..." autocomplete="off"
-                                        id="search-options" value="">
+                                           id="search-options" value="">
                                     <span class="mdi mdi-magnify search-widget-icon"></span>
                                     <span class="mdi mdi-close-circle search-widget-icon search-widget-icon-close d-none"
-                                        id="search-close-options"></span>
+                                          id="search-close-options"></span>
                                 </div>
                             </form>
-        
+
                         </div>
-    
+
                         <div class="d-flex align-items-center">
-    
+
                             <div class="dropdown d-md-none topbar-head-dropdown header-item">
                                 <button type="button" class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle"
-                                    id="page-header-search-dropdown" data-bs-toggle="dropdown" aria-haspopup="true"
-                                    aria-expanded="false">
+                                        id="page-header-search-dropdown" data-bs-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false">
                                     <i class="bx bx-search"></i>
                                 </button>
                                 <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
-                                    aria-labelledby="page-header-search-dropdown">
+                                     aria-labelledby="page-header-search-dropdown">
                                     <form class="p-3">
                                         <div class="form-group m-0">
                                             <div class="input-group">
                                                 <input type="text" class="form-control" placeholder="Search ..."
-                                                    aria-label="Recipient's username">
-                                                <button class="btn btn-primary" type="submit"><i
-                                                        class="mdi mdi-magnify"></i></button>
+                                                       aria-label="Recipient's username">
+                                                <button class="btn btn-primary" type="submit">
+                                                    <i class="mdi mdi-magnify"></i>
+                                                </button>
                                             </div>
                                         </div>
                                     </form>
                                 </div>
                             </div>
-    
+
                             <div class="dropdown topbar-head-dropdown ms-1 header-item">
                                 <button type="button" class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle"
-                                    id="page-header-notifications-dropdown" data-bs-toggle="dropdown" aria-haspopup="true"
-                                    aria-expanded="false">
+                                        id="page-header-notifications-dropdown" data-bs-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false">
                                     <i class='bx bxs-bell fs-18'></i>
                                     <!-- <span class="position-absolute topbar-badge fs-10 translate-middle badge rounded-pill bg-danger">3
                                         <span class="visually-hidden">unread messages</span>
@@ -582,7 +399,7 @@
                                 </button>
                                 <!-- <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
                                     aria-labelledby="page-header-notifications-dropdown">
-    
+
                                     <div class="dropdown-head bg-primary bg-pattern rounded-top">
                                         <div class="p-3">
                                             <div class="row align-items-center">
@@ -594,7 +411,7 @@
                                                 </div>
                                             </div>
                                         </div>
-    
+
                                         <div class="px-2 pt-2">
                                             <ul class="nav nav-tabs dropdown-tabs nav-tabs-custom" data-dropdown-tabs="true"
                                                 id="notificationItemsTab" role="tablist">
@@ -618,9 +435,9 @@
                                                 </li>
                                             </ul>
                                         </div>
-    
+
                                     </div>
-    
+
                                     <div class="tab-content" id="notificationItemsTabContent">
                                         <div class="tab-pane fade show active py-2 ps-2" id="all-noti-tab" role="tabpanel">
                                             <div data-simplebar style="max-height: 300px;" class="pe-2">
@@ -652,7 +469,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-    
+
                                                 <div
                                                     class="text-reset notification-item d-block dropdown-item position-relative active">
                                                     <div class="d-flex">
@@ -680,7 +497,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-    
+
                                                 <div class="text-reset notification-item d-block dropdown-item position-relative">
                                                     <div class="d-flex">
                                                         <div class="avatar-xs me-3">
@@ -709,7 +526,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-    
+
                                                 <div class="text-reset notification-item d-block dropdown-item position-relative">
                                                     <div class="d-flex">
                                                         <img src="assets/images/users/avatar-8.jpg"
@@ -735,15 +552,15 @@
                                                         </div>
                                                     </div>
                                                 </div>
-    
+
                                                 <div class="my-3 text-center">
                                                     <button type="button" class="btn btn-soft-success waves-effect waves-light">View
                                                         All Notifications <i class="ri-arrow-right-line align-middle"></i></button>
                                                 </div>
                                             </div>
-    
+
                                         </div>
-    
+
                                         <div class="tab-pane fade py-2 ps-2" id="messages-tab" role="tabpanel"
                                             aria-labelledby="messages-tab">
                                             <div data-simplebar style="max-height: 300px;" class="pe-2">
@@ -772,7 +589,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-    
+
                                                 <div class="text-reset notification-item d-block dropdown-item">
                                                     <div class="d-flex">
                                                         <img src="assets/images/users/avatar-2.jpg"
@@ -799,7 +616,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-    
+
                                                 <div class="text-reset notification-item d-block dropdown-item">
                                                     <div class="d-flex">
                                                         <img src="assets/images/users/avatar-6.jpg"
@@ -826,7 +643,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-    
+
                                                 <div class="text-reset notification-item d-block dropdown-item">
                                                     <div class="d-flex">
                                                         <img src="assets/images/users/avatar-8.jpg"
@@ -852,7 +669,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-    
+
                                                 <div class="my-3 text-center">
                                                     <button type="button" class="btn btn-soft-success waves-effect waves-light">View
                                                         All Messages <i class="ri-arrow-right-line align-middle"></i></button>
@@ -870,23 +687,23 @@
                                     </div>
                                 </div> -->
                             </div>
-    
+
                             <div class="ms-1 header-item">
                                 <button type="button" class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle">
                                     <i class='bx bx-time-five fs-18'></i>
                                 </button>
                             </div>
-    
+
                             <div class="dropdown ms-sm-3 header-item topbar-user">
                                 <button type="button" class="btn" id="page-header-user-dropdown" data-bs-toggle="dropdown"
-                                    aria-haspopup="true" aria-expanded="false">
+                                        aria-haspopup="true" aria-expanded="false">
                                     <span class="d-flex align-items-center">
                                         <img class="rounded-circle header-profile-user" src="assets/images/users/avatar-1.jpg"
-                                            alt="Header Avatar">
+                                             alt="Header Avatar">
                                     </span>
                                 </button>
                                 <!-- <div class="dropdown-menu dropdown-menu-end">
-                                    
+
                                     <h6 class="dropdown-header">Welcome Anna!</h6>
                                     <a class="dropdown-item" href="pages-profile.html"><i
                                             class="mdi mdi-account-circle text-muted fs-16 align-middle me-1"></i> <span
@@ -926,6 +743,9 @@
                     </div>
                 </div>
             </header>
+            
+
+
             <div class="page-content">
                 <div class="container-fluid">
                     <div class="card">
@@ -934,68 +754,178 @@
                         </div>
                         <div class="card-body">
 
-                            <section>
-                                <div class="container">
-                                    <h1 class="text-center">About Us</h1>
-                                    <div class="timeline flex-container">
+                            <!-- ======= About Section ======= -->
+                            <section id="about" class="about">
+                                <div class="container" data-aos="fade-up">
 
-                                        <div class="timeline-item flex-items-default selected">
-                                            <div class="timeline-content text-left animated bounceIn">
-                                                <h2>Explore</h2>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident eveniet nulla amet, sapiente voluptatum praesentium.</p>
-                                                <div class="hexagon"></div>
-                                                <i class="material-icons">explore</i>
-                                            </div>
-                                        </div>
-                                        <div class="timeline-item flex-items-default">
-                                            <div class="timeline-content text-left">
-                                                <h2>Plan</h2>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident eveniet nulla amet, sapiente voluptatum praesentium.</p>
-                                                <div class="hexagon"></div>
-                                                <i class="material-icons">border_style</i>
-                                            </div>
-                                        </div>
-                                        <div class="timeline-item flex-items-default">
-                                            <div class="timeline-content text-left">
-                                                <h2>Production</h2>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident eveniet nulla amet, sapiente voluptatum praesentium.</p>
-                                                <div class="hexagon"></div>
-                                                <i class="material-icons">format_shapes</i>
-                                            </div>
-                                        </div>
-                                        <div class="timeline-item flex-items-default">
-                                            <div class="timeline-content text-left">
-                                                <h2>Review</h2>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident eveniet nulla amet, sapiente voluptatum praesentium.</p>
-                                                <div class="hexagon"></div>
-                                                <i class="material-icons">rate_review</i>
-                                            </div>
-                                        </div>
-                                        <div class="timeline-item flex-items-default">
-                                            <div class="timeline-content text-left">
-                                                <h2>Ship</h2>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident eveniet nulla amet, sapiente voluptatum praesentium.</p>
-                                                <div class="hexagon"></div>
-                                                <i class="material-icons">important_devices</i>
-                                            </div>
-                                        </div>
+                                  
 
-                                        <div class="dropdown animated bounceIn" style="left: -88px;">
-                                            <div class="inner">
-                                                <div class="arrow-down"></div>
+                                    <div class="row g-4 g-lg-5" data-aos="fade-up" data-aos-delay="200">
+
+
+
+                                        <div class="col-lg-12">
+
+                                            <!-- Tabs -->
+                                            <ul class="nav nav-pills mb-3">
+                                                <li><a class="nav-link active" data-bs-toggle="pill" href="#tab1">Who We Are?</a></li>
+                                                <li><a class="nav-link" data-bs-toggle="pill" href="#tab2">What Do We Do?</a></li>
+                                                <li><a class="nav-link" data-bs-toggle="pill" href="#tab3">Our Vision</a></li>
+                                                <li><a class="nav-link" data-bs-toggle="pill" href="#tab4">Our Mission</a></li>
+                                                <li><a class="nav-link" data-bs-toggle="pill" href="#tab5">Our Values</a></li>
+                                            </ul><!-- End Tabs -->
+                                            <!-- Tab Content -->
+                                            <div class="tab-content">
+
+                                                <div class="tab-pane fade show active" id="tab1">
+
+                                                  
+
+                                                    <div class="d-flex align-items-center mt-4">
+                                                        <i class="bi bi-check2"></i>
+                                                        <h4>
+                                                            The Abu Dhabi Pension Fund (ADPF) is an important Abu Dhabi Government entity. The Fund was founded in 2000 to manage contributions, pensions and end-of-service benefits for UAE nationals working in or retired from the government and private sectors in the Emirate of Abu Dhabi and their beneficiaries.
+
+                                                        </h4>
+                                                    </div>
+
+
+                                                </div><!-- End Tab 1 Content -->
+
+                                                <div class="tab-pane fade show" id="tab2">
+
+                                                   
+
+                                                    <div class="d-flex align-items-center mt-4">
+                                                        <i class="bi bi-check2"></i>
+                                                        <h4>
+                                                            We collect pension contributions from eligible employed UAE nationals and their employers, as well as the annual contributions from the government.
+                                                        </h4>
+
+                                                    </div>
+
+                                                    <div class="d-flex align-items-center mt-4">
+                                                        <i class="bi bi-check2"></i>
+                                                        <h4>
+                                                            We manage the resulting financial assets through careful, wise and long-term investment strategies, to ensure that all due pensions and benefits are delivered to eligible customers when they become entitled to receive them.
+                                                        </h4>
+                                                    </div>
+
+                                                    <div class="d-flex align-items-center mt-4">
+                                                        <i class="bi bi-check2"></i>
+                                                        <h4>
+                                                            We assist and advise Abu Dhabi government on strategies and policies for social insurance and retirement provision to help ensure that the Fund fulfills its mandate and the government achieves its objectives.
+                                                        </h4>
+                                                    </div>
+
+                                                    <div class="d-flex align-items-center mt-4">
+                                                        <i class="bi bi-check2"></i>
+                                                        <h4>
+                                                            We support Abu Dhabi government vision for an open, sustainable and global economy, a confident and secure future for all Abu Dhabi citizens.
+                                                        </h4>
+                                                    </div>
+
+                                                    <div class="d-flex align-items-center mt-4">
+                                                        <i class="bi bi-check2"></i>
+                                                        <h4>
+                                                            We pay pensions and end-of-service benefits to eligible contributors when these payments are due.
+                                                        </h4>
+                                                    </div>
+
+                                                    <div class="d-flex align-items-center mt-4">
+                                                        <i class="bi bi-check2"></i>
+                                                        <h4>
+                                                            We monitor the annual status of our pensioners and beneficiaries through the Annual Declaration process, to ensure that they continue to receive their payments and to protect the interests of all the Fund’s stakeholders.
+                                                        </h4>
+                                                    </div>
+
+                                                </div><!-- End Tab 2 Content -->
+
+                                                <div class="tab-pane fade show" id="tab3">
+
+                                                   
+
+                                                    <div class="d-flex align-items-center mt-4">
+                                                        <i class="bi bi-check2"></i>
+                                                        <h4>
+                                                            Excellence in services provision and financial sustainability by optimizing the best utilization of capabilities and resources.
+
+                                                        </h4>
+                                                    </div>
+
+                                                </div><!-- End Tab 3 Content -->
+
+                                                <div class="tab-pane fade show" id="tab4">
+
+                                                    
+
+                                                    <div class="d-flex align-items-center mt-4">
+                                                        <i class="bi bi-check2"></i>
+                                                        <h4>
+                                                            An Investment Pension Fund devoted to offer exceptional and sustainable services to secure a decent life for citizens by ensuring financial sustainability through the collection, management, and investment of contributions.
+
+                                                        </h4>
+                                                    </div>
+
+                                                </div><!-- End Tab 4 Content -->
+
+                                                <div class="tab-pane fade show" id="tab5">
+
+                                                   
+
+                                                    <div class="d-flex align-items-center mt-4">
+                                                        <i class="bi bi-check2"></i>
+                                                        <h4>Excellence: Applying high standards of excellence to our accomplishments and outcomes to ensure professionalism and high performance. Taking into consideration the exchange of information and knowledge with our stakeholders/partners as an essential element in our culture, to achieve both customer satisfaction and high-level quality.</h4>
+                                                    </div>
+
+                                                    <div class="d-flex align-items-center mt-4">
+                                                        <i class="bi bi-check2"></i>
+                                                        <h4>Accountability: Employees are held accountable for their job roles, completing their given tasks, and working with the one-team spirit. Alongside maintaining confidentially of information according to the rules, regulations, and laws in force in the Fund.</h4>
+                                                    </div>
+
+                                                    <div class="d-flex align-items-center mt-4">
+                                                        <i class="bi bi-check2"></i>
+                                                        <h4>Transparency: Employees should be encouraged to communicate honestly without barriers and to apply justice& fairness in their everyday life at work with those around them. In addition, employees should be fair in distributing the rights and duties without discrimination while maintaining clarity and credibility in mechanisms, procedures, laws, and information, in which indeed will ensure building bridges of trust between employees.</h4>
+                                                    </div>
+
+                                                    <div class="d-flex align-items-center mt-4">
+                                                        <i class="bi bi-check2"></i>
+                                                        <h4>Sustainability:	Adopting long-term sustainable investment policies to ensure financial sustainability, in addition to employing modern technologies to ensure the permanent development of the business environment while preserving the surrounding.</h4>
+                                                    </div>
+
+                                                    <div class="d-flex align-items-center mt-4">
+                                                        <i class="bi bi-check2"></i>
+                                                        <h4>Respect: Employees are committed to enhance the culture of respect that is found in our national identity, by respecting different cultures and preserving human dignity</h4>
+                                                    </div>
+
+                                                    <div class="d-flex align-items-center mt-4">
+                                                        <i class="bi bi-check2"></i>
+                                                        <h4>Creativity & Innovation: To ensure the establishment of a culture filled with creativity and innovation; employees should be encouraged to take rational risks to generate ideas that are outside the ordinary framework to create positive changes and generate more progress & development to the Fund.</h4>
+                                                    </div>
+
+
+                                                </div><!-- End Tab 5 Content -->
+
                                             </div>
+
                                         </div>
 
                                     </div>
+
                                 </div>
-                            </section>
+                            </section><!-- End About Section -->
 
 
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
+
+
+
+
+
             <footer class="footer">
                 <div class="container-fluid">
                     <div class="row">
@@ -1035,103 +965,17 @@
     <script src="assets/js/plugins.js"></script>
     <!-- App js -->
     <script src="assets/js/app.js"></script>
-    <script>
-        // Globals
-        var prefixes =
-            "webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend";
-        var $container = $(".container");
-        var $timeline = $(".timeline");
-        var $timelineItem = $(".timeline-item");
-        var $timelineContent = $(".timeline-content");
-        var $dropDown = $(".dropdown");
-        var $hasHovered = true;
-        var hideOnExit = false;
+    <!--Hero JS-->
+    <!-- Vendor JS Files -->
+    <script src="assets-hero/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets-hero/vendor/aos/aos.js"></script>
+    <script src="assets-hero/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets-hero/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets-hero/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets-hero/vendor/php-email-form/validate.js"></script>
 
-        // mouseenter event handler
-        $timelineItem.on("mouseenter", function (e) {
-            var isSelected = $(this).hasClass("selected");
-
-            if (isSelected === false) {
-                var leftPos = $(this).position().left,
-                    left = leftPos - 88,
-                    $that = $(this);
-
-                $timelineItem.removeClass("selected");
-                $(this).addClass("selected");
-
-                if ($hasHovered === false) {
-                    // Show Bounce
-
-                    // Set Flag
-                    $hasHovered = true;
-
-                    // Show DD Bounce
-                    showBounce(left);
-
-                    // Show DD content Bounce
-                    showContentBounce($that);
-                } else {
-                    // Follow
-
-                    // Change pos of DD to follow
-                    dropDownFollow(left);
-
-                    // Hide previous dd content
-                    $timelineContent.removeClass("animated fadeIn bounceIn");
-
-                    // Show hovered dd content
-                    $that.find($timelineContent).addClass("animated fadeIn");
-                }
-            }
-        });
-
-        // mouseleave event handler
-        $timeline.on("mouseleave", function (e) {
-            if (hideOnExit) {
-                //   Set Flag
-                $hasHovered = false;
-
-                // Hide DD
-                hideDropDown();
-
-                // Hide DD content
-                $timelineContent.removeClass("animated fadeIn");
-            }
-        });
-
-        // Animation end event listener
-        $dropDown.on(prefixes, function (e) {
-            if (e.originalEvent.animationName === "fadeOut") {
-                $dropDown.removeAttr("style");
-            }
-        });
-
-        /**
-         * Private functions that do showing/hiding/animating
-         */
-        function showContentBounce(that) {
-            $hasBounced = true;
-            that.find(".timeline-content").addClass("animated bounceIn");
-        }
-
-        function showBounce(pos) {
-            $dropDown
-                .css("left", pos + "px")
-                .removeClass("fadeOut")
-                .addClass("animated bounceIn");
-        }
-
-        function dropDownFollow(pos) {
-            $dropDown.css("left", pos + "px");
-        }
-
-        function hideDropDown() {
-            $timelineItem.removeClass("selected");
-            $dropDown.removeClass("bounceIn").addClass("fadeOut");
-        }
-
-
-    </script>
+    <!-- Template Main JS File -->
+    <script src="assets-hero/js/main.js"></script>
 </body>
 
 </html>
