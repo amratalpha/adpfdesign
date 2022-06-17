@@ -678,13 +678,13 @@
 		height: 100px;
 	}
 
-	.topic-source-card .card-body {
+	/* .topic-source-card .card-body {
 		height: 430px;
 	}
 
 	.services-card .card-body {
 		height: 430px;
-	}
+	} */
 	
 	.documents-type-header .card-body {
 		height: 82px;
@@ -848,9 +848,9 @@
 		height: 154px;
 	}
 
-	.services-card .card-body {
+	/* .services-card .card-body {
 		height: 240px;
-	}
+	} */
 
 	.categories-card .card-body {
 		height: 190px;
@@ -1048,9 +1048,9 @@
 		height: 100px;
 	}
 
-	.services-card .card-body {
-		height: 316px;
-	}
+	/* .services-card .card-body {
+		height: 216px;
+	} */
 
 	.dep1-card .card-body {
 		height: 154px;
@@ -1286,9 +1286,9 @@
 		height: 100px;
 	}
 
-	.services-card .card-body {
-		height: 277px;
-	}
+	/* .services-card .card-body {
+		height: 168px;
+	} */
 
 	.dep1-card .card-body {
 		height: 115px;
@@ -1528,9 +1528,9 @@
 		height: 100px;
 	}
 
-	.services-card .card-body {
+	/* .services-card .card-body {
 		height: 277px;
-	}
+	} */
 
 	.dep1-card .card-body {
 		height: 115px;
