@@ -1494,9 +1494,77 @@ ul.tree:before {
     border-radius: 0px 0px 15px 15px;
 }
 
+.lg-dept-search {
+	height:42px;
+}
+
+.lg-dept-search-box {
+	position: relative;
+	box-shadow: 0 0 40px rgba(51, 51, 51, .1);
+}
+
+.lg-dept-search-box input {
+	height: 60px;
+	text-indent: 0px;
+	border: 2px solid #d6d4d4;
+}
+
+.lg-dept-search-box input:focus {
+	box-shadow: none;
+	border: 2px solid #4d6340;
+}
+
+.lg-dept-search-box .lg-dept-search-icon {
+	position: absolute;
+	top: 25px;
+	right: 25px;
+}
+
+.advanced {
+    color: #4d6340;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+[data-bs-toggle="collapse"] .fa-solid:before {
+	content: "\f078";
+}
+
+[data-bs-toggle="collapse"].collapsed .fa-solid:before {
+	content: "\f054";
+}
+
+.lg-dept-pills .nav-link {
+    font-size: 16px;
+}
+
+/* .lg-dept-pills .nav-link:focus, .nav-link:hover{
+	color: #000;
+} */
+
+.lg-dept-nav .nav-link {
+    color: #000;
+	font-size: 16px;
+}
+
+.lg-dept-pills .nav-link.active {
+	background-color: #4d6340;
+}
+
+.lg7-date-range {
+    border: 0;
+    color: #000;
+    font-weight: bold;
+    background: transparent;
+}
+
+.lg-dept7-item a {
+	padding: 0px;
+}
+
 .thumb-up, .cart {
 	color: #fff;
- }
+}
 
 .select2.select2-container.select2-container--default {
     width: 100% !important;

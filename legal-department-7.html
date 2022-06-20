@@ -1,0 +1,996 @@
+<!doctype html>
+<html lang="en" data-layout="vertical" data-topbar="light" data-sidebar="dark" data-sidebar-size="lg">
+
+<head>
+
+    <meta charset="utf-8" />
+    <title>Abu Dhabi Pension Fund</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+    <meta content="Themesbrand" name="author" />
+    <link rel="shortcut icon" href="assets/images/favicon.png">
+    <link rel="stylesheet" href="assets/libs/glightbox/css/glightbox.min.css">
+    <script src="assets/js/layout.js"></script>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/app.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/custom.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
+    <link href="assets/libs/jquery-ui-1.13.1/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+    
+    
+</head>
+
+<body>
+
+    <!-- Begin page -->
+    <div id="layout-wrapper">
+        <div class="banner"></div>
+
+        <!-- ========== App Menu ========== -->
+        <div class="app-menu navbar-menu">
+            <!-- LOGO -->
+            <div class="navbar-brand-box">
+                <!-- Dark Logo-->
+                <a href="index.html" class="logo logo-dark">
+                    <span class="logo-sm">
+                        <img src="assets/images/favicon.png" alt="favicon" height="22">
+                    </span>
+                    <span class="logo-lg">
+                        <img src="assets/images/pension-logo.png" alt="Logo" class="main-logo img-fluid">
+                    </span>
+                </a>
+                <!-- Light Logo-->
+                <a href="index.html" class="logo logo-light">
+                    <span class="logo-sm">
+                        <img src="assets/images/favicon.png" alt="favicon" height="22">
+                    </span>
+                    <span class="logo-lg">
+                        <img src="assets/images/pension-logo.png" alt="Logo" class="main-logo img-fluid">
+                    </span>
+                </a>
+                <button type="button" class="btn btn-sm p-0 fs-20 header-item float-end btn-vertical-sm-hover"
+                        id="vertical-hover">
+                    <i class="ri-record-circle-line"></i>
+                </button>
+            </div>
+
+            <div id="scrollbar" class="h-100 scroller">
+                <div class="container-fluid">
+
+                    <div id="two-column-menu"></div>
+                    <ul class="navbar-nav" id="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="index.html">
+                                <i class="mdi mdi-home"></i>
+                                <span data-key="t-dashboards">Homepage</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="about-us.html">
+                                <i class="mdi mdi-information"></i>
+                                <span data-key="t-news">About Us</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="#department" data-bs-toggle="collapse" role="button"
+                               aria-expanded="false" aria-controls="department">
+                                <i class="mdi mdi-office-building"></i>
+                                <span data-key="t-news">Division/Department</span>
+                            </a>
+                            <div class="collapse menu-dropdown" id="department">
+                                <ul class="nav nav-sm flex-column">
+                                    <li class="nav-item">
+                                        <a href="department.html" class="nav-link" data-key="t-analytics">DG Office</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" class="nav-link" data-key="t-analytics">Audit and Risk Management</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" class="nav-link" data-key="t-analytics">Quality and Excellence</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" class="nav-link" data-key="t-analytics">Strategy Office</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" class="nav-link" data-key="t-analytics">Corporate Communication</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" class="nav-link" data-key="t-analytics">Pensions and Benefits Dept.</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" class="nav-link" data-key="t-analytics">Investment Dept.</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" class="nav-link" data-key="t-analytics">Legal</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" class="nav-link" data-key="t-analytics">Information Tech. (IT)</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" class="nav-link" data-key="t-analytics">Finance</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" class="nav-link" data-key="t-analytics">Human Resource (HR)</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" class="nav-link" data-key="t-analytics">General Services</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" class="nav-link" data-key="t-analytics">Procurement and Contracts</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" class="nav-link" data-key="t-analytics">Research and Strategic Support</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="#">
+                                <i class="mdi mdi-account-group"></i>
+                                <span data-key="t-news">Committies</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="#services" data-bs-toggle="collapse" role="button"
+                               aria-expanded="false" aria-controls="services">
+                                <i class="mdi mdi-cog"></i>
+                                <span data-key="t-news">E-Services</span>
+                            </a>
+                            <div class="collapse menu-dropdown" id="services">
+                                <ul class="nav nav-sm flex-column">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" class="nav-link" data-key="t-analytics">HR Services</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" class="nav-link" data-key="t-analytics">HR Training Services</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" class="nav-link" data-key="t-analytics">HR Loans</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" class="nav-link" data-key="t-analytics">CCD Services</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" class="nav-link" data-key="t-analytics">Finance Services</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" class="nav-link" data-key="t-analytics">GS Services</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" class="nav-link" data-key="t-analytics">Procurement Services</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="eservices.html" class="nav-link" data-key="t-analytics">View More</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="#systems" data-bs-toggle="collapse" role="button"
+                               aria-expanded="false" aria-controls="systems">
+                                <i class="mdi mdi-cog"></i>
+                                <span data-key="t-news">Systems</span>
+                            </a>
+                            <div class="collapse menu-dropdown" id="systems">
+                                <ul class="nav nav-sm flex-column">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" class="nav-link" data-key="t-analytics">AD Pension Public Site</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" class="nav-link" data-key="t-analytics">E-Supporting Services</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" class="nav-link" data-key="t-analytics">Kafaa</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" class="nav-link" data-key="t-analytics">Ounek</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" class="nav-link" data-key="t-analytics">Maktabi</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" class="nav-link" data-key="t-analytics">Salahyiaty</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" class="nav-link" data-key="t-analytics">Al Atheer</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" class="nav-link" data-key="t-analytics">Mesbar</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" class="nav-link" data-key="t-analytics">G2G </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" class="nav-link" data-key="t-analytics">Monafasa</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" class="nav-link" data-key="t-analytics">Sinyar</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" class="nav-link" data-key="t-analytics">Payment Systems</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" class="nav-link" data-key="t-analytics">My Process & Worklist</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" class="nav-link" data-key="t-analytics">Survey</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" class="nav-link" data-key="t-analytics">SMS Broadcast</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" class="nav-link" data-key="t-analytics">My App</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" class="nav-link" data-key="t-analytics">Sanad</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" class="nav-link" data-key="t-analytics">T&A Application</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="#resources" data-bs-toggle="collapse" role="button"
+                               aria-expanded="false" aria-controls="resources">
+                                <i class="mdi mdi-cog"></i>
+                                <span data-key="t-news">E-Resources</span>
+                            </a>
+                            <div class="collapse menu-dropdown" id="resources">
+                                <ul class="nav nav-sm flex-column">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" class="nav-link" data-key="t-analytics">Internal Service Guide</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" class="nav-link" data-key="t-analytics">Services & Transactions Manual</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" class="nav-link" data-key="t-analytics">Resources</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" class="nav-link" data-key="t-analytics">E-Learning</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" class="nav-link" data-key="t-analytics">Knowledge Sharing</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" class="nav-link" data-key="t-analytics">Catalogue of IT Service and Application</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="#">
+                                <i class="mdi mdi-link"></i>
+                                <span data-key="t-news">Recent</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="#">
+                                <i class="mdi mdi-lock"></i>
+                                <span data-key="t-news">Hesabi (Change Password)</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Sidebar -->
+            </div>
+        </div>
+        <!-- Left Sidebar End -->
+        <!-- Vertical Overlay-->
+        <div class="vertical-overlay"></div>
+
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="main-content">
+            <header id="page-topbar">
+                <div class="layout-width">
+                    <div class="navbar-header">
+                        <div class="d-flex">
+                            <!-- LOGO -->
+                            <div class="navbar-brand-box horizontal-logo">
+                                <a href="index.html" class="logo logo-dark">
+                                    <span class="logo-sm">
+                                        <img src="assets/images/favicon.png" alt="" height="22">
+                                    </span>
+                                    <span class="logo-lg">
+                                        <img src="assets/images/favicon.png" alt="" height="17">
+                                    </span>
+                                </a>
+    
+                                <a href="index.html" class="logo logo-light">
+                                    <span class="logo-sm">
+                                        <img src="assets/images/favicon.png" alt="" height="22">
+                                    </span>
+                                    <span class="logo-lg">
+                                        <img src="assets/images/favicon.png" alt="" height="17">
+                                    </span>
+                                </a>
+                            </div>
+    
+                            <button type="button" class="btn btn-sm px-3 fs-16 header-item vertical-menu-btn topnav-hamburger"
+                                id="topnav-hamburger-icon">
+                                <span class="hamburger-icon">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </span>
+                            </button>
+    
+                            <!-- App Search-->
+                            <form class="app-search d-none d-md-block">
+                                <div class="position-relative">
+                                    <input type="text" class="form-control" placeholder="Search..." autocomplete="off"
+                                        id="search-options" value="">
+                                    <span class="mdi mdi-magnify search-widget-icon"></span>
+                                    <span class="mdi mdi-close-circle search-widget-icon search-widget-icon-close d-none"
+                                        id="search-close-options"></span>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="d-flex align-items-center">
+
+                            <div class="mid">
+                                <label class="rocker rocker-small">
+                                    <input type="checkbox" checked>
+                                    <span class="switch-left">In</span>
+                                    <span class="switch-right">Out</span>
+                                </label>
+                            </div>
+
+                            <a href="indexar.html" type="button" class="btn btn-primary btn-ar">AR</a>
+
+                            <div class="dropdown d-md-none topbar-head-dropdown header-item ms-3">
+                                <button type="button" class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle"
+                                    id="page-header-search-dropdown" data-bs-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    <i class="bx bx-search"></i>
+                                </button>
+                                <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
+                                    aria-labelledby="page-header-search-dropdown">
+                                    <form class="p-3">
+                                        <div class="form-group m-0">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" placeholder="Search ..."
+                                                    aria-label="Recipient's username">
+                                                <button class="btn btn-primary" type="submit"><i
+                                                        class="mdi mdi-magnify"></i></button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+    
+                            <div class="dropdown topbar-head-dropdown ms-3 header-item">
+                                <button type="button" class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle"
+                                    id="page-header-notifications-dropdown" data-bs-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    <i class='bx bxs-bell fs-18'></i>
+                                </button>
+                            </div>
+        
+                            <div class="dropdown ms-sm-3 header-item topbar-user">
+                                <button type="button" class="btn" id="page-header-user-dropdown" data-bs-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    <span class="d-flex align-items-center">
+                                        <img class="rounded-circle header-profile-user" src="assets/images/users/avatar-1.jpg"
+                                            alt="Header Avatar">
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="ms-1 header-item">
+                                <span class="text-start ms-xl-2">
+                                    <span class="d-none d-xl-inline-block ms-1 fw-medium user-name-text">Welcome Back, Amrat Nandial</span>
+                                    <span class="d-none d-xl-block ms-1 fs-12 text-muted user-name-sub-text"><i class='bx bxs-circle'></i> TIME IN 8:12 AM</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="page-content">
+                <div class="row">
+                    <div class="title-banner">
+                        <h3 class="text-white p-2 mb-0">Shoor</h3>
+                    </div>
+                </div>
+                <div class="container-fluid mt-3">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-4 col-lg-3">
+                            <div class="card card-animate">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <p class="fw-medium text-muted mb-0">Total Count Records</p>
+                                            <h2 class="mt-4 ff-secondary">1000</h2>
+                                        </div>
+                                        <div>
+                                            <div class="avatar-sm flex-shrink-0">
+                                                <span class="avatar-title bg-soft-info rounded-circle fs-2">
+                                                    <i data-feather="folder" class="text-info"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-4 col-lg-3">
+                            <div class="card card-animate">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <p class="fw-medium text-muted mb-0">Total Search Records</p>
+                                            <h2 class="mt-4 ff-secondary">450</h2>
+                                        </div>
+                                        <div>
+                                            <div class="avatar-sm flex-shrink-0">
+                                                <span class="avatar-title bg-soft-info rounded-circle fs-2">
+                                                    <i data-feather="folder" class="text-info"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="col-lg-12">
+                                        <div class="row">
+                                            <div class="lg-dept-search-box">
+                                                <input type="text" class="form-control" placeholder="Search">
+                                                <i class="fa-solid fa-magnifying-glass lg-dept-search-icon"></i>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="row float-end me-2 mt-2 mb-2">
+                                            <a data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" class="advanced collapsed float-end"> 
+                                                Advance Search With Filters 
+                                                <i class="fa-solid fa-chevron-right"></i>
+                                            </a>
+                                        </div>
+
+                                        <div class="row mt-5">
+                                            <div class="collapse " id="collapseExample">
+                                                <ul class="nav nav-pills lg-dept-pills" role="tablist">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link active" data-bs-toggle="pill" href="#category">Category</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" data-bs-toggle="pill" href="#departments">Department</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" data-bs-toggle="pill" href="#source">Topic Source</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" data-bs-toggle="pill" href="#service">Service</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" data-bs-toggle="pill" href="#document">Document Type</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" data-bs-toggle="pill" href="#date">Date Range</a>
+                                                    </li>
+                                                </ul>
+    
+                                                <div class="tab-content">
+                                                    <div id="category" class="container tab-pane active"><br>
+                                                        <div class="row">
+                                                            <div class="col-sm-12">
+                                                                <ul class="filter option-set combine nav lg-dept-nav" data-filter-group="category">
+                                                                    <li class="nav-item"><a class="nav-link selected" href="#" data-filter-value="">All</a></li>    
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".decree">Decree</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".resolution-decision">Resolution/ Decision</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".law">Law</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".circular">Circular</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".legal-advice">Legal Advice</a></li>
+                                                                </ul> 
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="departments" class="container tab-pane fade"><br>
+                                                        <div class="row">
+                                                            <div class="col-sm-12">
+                                                                <ul class="filter option-set combine nav lg-dept-nav" data-filter-group="department">
+                                                                    <li class="nav-item"><a class="nav-link selected" href="#" data-filter-value="">All</a></li> 
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".hr-services">HR Services</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".hr-loans">HR Loans</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".ccd-services">CCD Services</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".gs-services">GS Services</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".legal-services">Legal Services</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".bed-services">BED Services</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".finance-services">Finance Services</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".pmo-services">PMO Services</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".ecd-services">ECD Services</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".it-services">IT Services</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".ehs-services">EHS Services</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".chd-services">CHD Services</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".hr-training-services">HR Training Services</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".procurement-services">Procurement Services</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="source" class="container tab-pane fade"><br>
+                                                        <div class="row">
+                                                            <div class="col-sm-12">
+                                                                <ul class="filter option-set combine nav lg-dept-nav" data-filter-group="topic-source">
+                                                                    <li class="nav-item"><a class="nav-link selected" href="#" data-filter-value="">All</a></li> 
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".gov-dubai">Government of Dubai</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".entity">Entity</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".per-tec-comm">Permanent Technical Committee</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".manag-comm">Management Committee</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".finan-comm">Financial Committee</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".proc-dev">Procurement Division</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".dep-fin">Department of Finance</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".gov-abu-dhabi">Government of Abu Dhabi</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".exec-coun">Executive Council</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".med-comm">Medical Committee </a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".gov-sharjah">Government of Sharjah</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".legal-division">Legal & Legislation Division </a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".man-dir-off">Managing Director Office</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".dir-gen-off">Director General Office</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".cus-hap-div">Customer Happiness Division</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".adpf">Abu Dhabi Pension Fund</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".fed-law">Federal Law</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".emp-ser-sec">Employer and Member Services Sector</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".gri-comm">Grievance Committee (Pension Affairs)</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="service" class="container tab-pane fade"><br>
+                                                        <div class="row">
+                                                            <div class="col-sm-12">
+                                                                <ul class="filter option-set combine nav lg-dept-nav" data-filter-group="service">
+                                                                    <li class="nav-item"><a class="nav-link selected" href="#" data-filter-value="">All</a></li> 
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".ent-cat">Entity Category</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".con-ser-term">Contradiction of Service Terms</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".fam-sup-ded">Family Support Deduction</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".add-con-term">Addition of Contributions Nominal Term</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".ac-mem-tran">Active Member Transfer</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".ben-trans">Benefits Transfer to Another Bank Account</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".pen-sett">Pension Settlement</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".emp-ser">Employees Services</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".nom-ser">Nominal Service Term Purchase</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".ser-add-mil-off">Services Addition for Military Officials</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".summary">Summary</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".act-mem-reg">Active Member Registration</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".cont-coll">Contributions Collection</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".cost-calc">Cost Calculation</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".case-study">Case Study</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".ser-add">Service Addition</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".transaction">Transaction</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".ent-reg">Entity Registration</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".update-ent-data">Update Entity Data</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".ins-per-trans">Installment of Personnel Transfer Amounts</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".studies">Studies</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".emp-benefits">Employee Benefits</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".up-act-meb-data">Update Active Member Data</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".ins-add-amounts">Installment of Additional Amounts</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".dis-lum-sum-ben">Disbursement of End of Service Lump Sum Benefits</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".ded-pen-ben">Deduction from Pension/ Benefits</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".disb-tra-ben">Disbursement of Trainees Benefits</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".pens-adv">Pensioners Advantages</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".trai-reg">Trainees Registration</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".work-ins">Work Instructions</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".court-ded">Court Deduction</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".benef-disb">Benefits Disbursement</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".service-term">Service Term</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".peo-det-reg">People of Determination Registration</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".ser-ter-disc-dec">Service Termination by A Disciplinary Decision</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".ded-ser-add">Deduction of Service Addition Cost from the Benefits</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".org-stru-occ">Organizational Structure & Occupational Empowerment/ Delegation of Authorities</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".admin-inst">Administrative Instructions</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".pens-disbur">Pension Disbursement</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".jud-off">Judicial Officer</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".cont-agg-audit">Contracts & Agreements Audit</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".agree-memo-und">Agreements & Memorandums of Understanding</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".legal-class">Legal Classification</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".entity-deduction">Entity Deduction</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".ded-less-than">Deducting Less Than One Year/ Old</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".dec-per-tech-comm">Decisions of the Permanent Technical Committee</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".legal-memor">Legal Memorandums</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".cont-service-terms">Contradiction of Service Terms</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".entit-class">Entities Classification</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".projects">Projects</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".nom-term-pur">Nominal Term Purchase</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".add-nom-cont-term">Addition of Nominal Contributions Term</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".resp-ent-enq">Response to Entities Enquiries</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".per-tra-cacnel">Personnel Transfer Cancellation</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".pen-salary">Pensionable Salary</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".und-dis-am">Unduly Disbursed Amounts</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".recruitment">Recruitment</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".investigation">Investigation</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".entity-clousre">Entity Closure</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".inheritance">Inheritance</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".high-share-ent">Highest Share Entitlement</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".work-ingury">Work Injury</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".amendments">Amendments</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".gov-org">Governance & Organization</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".grievance">Grievances</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".incen-awards">Incentives & Rewards</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".medical-fitness">Medical Fitness</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".acc">Acceleration</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".time-att">Time & Attendance</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".beneficiaries">Beneficiaries</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".training">Training</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".comb-two-pens">Combining Two Pensions or More</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".cont-dup-ser-term">Contradiction & Duplication in Service Terms</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".legal-cases">Legal Cases</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".comm-work-terms">Committees & Work Teams</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".awar-guid">Awareness & Guidance</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".insp-comp">Inspection & Compliance</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="document" class="container tab-pane fade"><br>
+                                                        <div class="row">
+                                                            <div class="col-sm-12">
+                                                                <ul class="filter option-set combine nav lg-dept-nav" data-filter-group="document-type">
+                                                                    <li class="nav-item"><a class="nav-link selected" href="#" data-filter-value="">All</a></li> 
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".pdf">PDF</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".word">Word</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#" data-filter-value=".excel">Excel</a></li>
+                                                                </ul> 
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="date" class="container tab-pane fade"><br>
+                                                        <div class="row">
+                                                            <div class="col-sm-12">
+                                                                <input type="text" id="amount" class="lg7-date-range" size="100" />
+                                                                <div id="slider-range" class="mt-2 slider-range"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12">
+                            <div class="wrapper">
+                                <div class="grid">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-12 col-md-3 item lg-dept7-item decree hr-services gov-dubai ent-cat pdf">
+                                            <a class="nav-link" href="#">
+                                                <div class="card card-animate">
+                                                    <div class="card-body">
+                                                        <div class="d-flex justify-content-between">
+                                                            <div>
+                                                                <h3 class="ff-secondary fw-semibold">Lorem Ipsum</h3>
+                                                                <p class="fw-medium text-muted mb-0 pt-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                                            </div>
+                                                            <div>
+                                                                <div class="avatar-sm flex-shrink-0">
+                                                                    <span class="avatar-title bg-soft-info rounded-circle fs-2">
+                                                                        <i data-feather="link" class="text-info"></i>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+        
+                                        <div class="col-12 col-sm-12 col-md-3 item lg-dept7-item resolution-decision hr-loans entity con-ser-term word">
+                                            <a class="nav-link" href="#">
+                                                <div class="card card-animate">
+                                                    <div class="card-body">
+                                                        <div class="d-flex justify-content-between">
+                                                            <div>
+                                                                <h3 class="ff-secondary fw-semibold">Lorem Ipsum</h3>
+                                                                <p class="fw-medium text-muted mb-0 pt-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                                            </div>
+                                                            <div>
+                                                                <div class="avatar-sm flex-shrink-0">
+                                                                    <span class="avatar-title bg-soft-info rounded-circle fs-2">
+                                                                        <i data-feather="link" class="text-info"></i>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+        
+                                        <div class="col-12 col-sm-12 col-md-3 item lg-dept7-item law ccd-services per-tec-comm fam-sup-ded excel">
+                                            <a class="nav-link" href="#">
+                                                <div class="card card-animate">
+                                                    <div class="card-body">
+                                                        <div class="d-flex justify-content-between">
+                                                            <div>
+                                                                <h3 class="ff-secondary fw-semibold">Lorem Ipsum</h3>
+                                                                <p class="fw-medium text-muted mb-0 pt-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                                            </div>
+                                                            <div>
+                                                                <div class="avatar-sm flex-shrink-0">
+                                                                    <span class="avatar-title bg-soft-info rounded-circle fs-2">
+                                                                        <i data-feather="link" class="text-info"></i>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+        
+                                        <div class="col-12 col-sm-12 col-md-3 item lg-dept7-item decree resolution-decision hr-services hr-loans gov-dubai entity ent-cat con-ser-term word pdf">
+                                            <a class="nav-link" href="#">
+                                                <div class="card card-animate">
+                                                    <div class="card-body">
+                                                        <div class="d-flex justify-content-between">
+                                                            <div>
+                                                                <h3 class="ff-secondary fw-semibold">Lorem Ipsum</h3>
+                                                                <p class="fw-medium text-muted mb-0 pt-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                                            </div>
+                                                            <div>
+                                                                <div class="avatar-sm flex-shrink-0">
+                                                                    <span class="avatar-title bg-soft-info rounded-circle fs-2">
+                                                                        <i data-feather="link" class="text-info"></i>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            © Copyrights. Abu Dhabi Pension Fund. All Rights Reserved.
+                        </div>
+                        <div class="col-sm-6">
+                            <ul class="nav justify-content-end">
+                                <li class="nav-item">
+                                    <a class="nav-link social-links" href="#"><i class='bx bxl-instagram-alt'></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link social-links" href="#"><i class='bx bxl-twitter'></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link social-links" href="#"><i class='bx bxl-facebook'></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <button onclick="topFunction()" class="btn btn-danger btn-icon" id="back-to-top">
+        <i class="ri-arrow-up-line"></i>
+    </button>
+
+    <!-- JAVASCRIPT -->
+    <script src="assets/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/font-awsome.js"></script>
+    <script src="assets/libs/simplebar/simplebar.min.js"></script>
+    <script src="assets/libs/node-waves/waves.min.js"></script>
+    <script src="assets/libs/feather-icons/feather.min.js"></script>
+    <script src="assets/js/pages/plugins/lord-icon-2.1.0.js"></script>
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/libs/jquery-ui-1.13.1/jquery-ui.min.js"></script>
+    <script src="assets/libs/isotope-layout/isotope.pkgd.min.js"></script>
+
+    <script>
+        function uncheckAll() {
+            $("input[type='checkbox']:checked").prop("checked", false)
+        }
+        $('.clear').on('click', uncheckAll)
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#table').DataTable({
+                "bProcessing": true,
+                "bPaginate": true,
+                "sPaginationType": "full_numbers",
+                dom: "<'row'<'col-sm-4'l><'col-sm-4'B><'col-sm-4'f>>" + "<'row'<'col-sm-12'tr>>" + "<'row'<'col-sm-5'i><'col-sm-7'p>>",
+                buttons: ['copy', 'csv', 'excel', 'print'],
+            });
+        });
+    </script>
+
+    <script>
+        $(function () {
+            $("#slider-range").slider({
+                range: true,
+                min: new Date('2021.01.01').getTime() / 1000,
+                max: new Date('2022.06.30').getTime() / 1000,
+                step: 86400,
+                values: [new Date('2022.01.12').getTime() / 1000, new Date('2022.04.28').getTime() / 1000],
+                slide: function (event, ui) {
+                    $("#amount").val((new Date(ui.values[0] * 1000).toDateString()) + " - " + (new Date(ui.values[1] * 1000)).toDateString());
+                }
+            });
+            $("#amount").val((new Date($("#slider-range").slider("values", 0) * 1000).toDateString()) +
+                " - " + (new Date($("#slider-range").slider("values", 1) * 1000)).toDateString());
+        });
+
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            var $container = $(".grid"); // the container with all the elements to filter inside
+            var filters = {}; //should be outside the scope of the filtering function
+            /* --- read the documentation on isotope.metafizzy.co for more options --- */
+            var $grid = $container.isotope({
+                itemSelector: ".item", // the elements to filter
+                percentPosition: true, // true if you use percentage widths
+            });
+            // save some classes for later usage
+            /* ---
+            activeClass: adds this class to filters that are selected (active)
+            comboClass: the class that indicates that the filter group is a chain filter, i.e. if you select two filters, only items with BOTH filters will be shown
+            exclClass: the class that indicates that the filter group is an exclusion filter, i.e. you can only select one filter from that group at a time
+            resetClass: the class for the overall reset button
+            --- */
+            var activeClass = "selected",
+                comboClass = "combine",
+                exclClass = "exclusive",
+                resetClass = "reset";
+            var $defaults = $("a." + activeClass + '[data-filter-value=""]');
+            $(".option-set a").click(function(e) {
+                // insert your link selector where it says '.option-set a'
+                var $this = $(this); // cache the clicked link
+                var comboFilter,
+                    filterAttr = "data-filter-value";
+                if(resetClass && !$this.hasClass(resetClass)) {
+                    // defining variables
+                    var filterValue = $this.attr(filterAttr); // cache the filter
+                    var $optionSet = $this.parents(".option-set"); // cache the parent element
+                    var group = $optionSet.attr("data-filter-group"); // cache the parent filter group
+                    var filterGroup = filters[group]; // make new variable for the property being filtered
+                    if(!filterGroup) {
+                        // if the property doesn't exist
+                        filterGroup = filters[group] = []; // make a new empty array
+                    }
+                    var $selectAll = $optionSet.find("a[" + filterAttr + '=""]'); // cache the 'select all' button in the current group
+                    $("." + resetClass).removeClass(activeClass);
+                    comboFiltering($this, filters, filterAttr, filterValue, $optionSet, group, $selectAll, activeClass, comboClass, exclClass);
+                    comboFilter = getComboFilter(filters); // join all the filters
+                    if(!comboFilter.length) $("a." + resetClass).addClass(activeClass);
+                    $this.toggleClass(activeClass);
+                } else {
+                    filters = {};
+                    comboFilter = "";
+                    $(".option-set a").removeClass(activeClass);
+                    $(this).addClass(activeClass);
+                    $defaults.addClass(activeClass);
+                }
+                $grid.isotope({
+                    filter: comboFilter
+                });
+                e.preventDefault();
+            });
+        });
+
+        function comboFiltering($this, filters, filterAttr, filterValue, $optionSet, group, $selectAll, activeClass, comboClass, exclClass) {
+            // for non-exclusive groups of filters
+            if(!$optionSet.hasClass(exclClass)) {
+                // replace 'exclusive' with the class of your exclusive filter groups
+                // if link is a filter that isn't selected
+                if(!$this.hasClass(activeClass) && filterValue.length) {
+                    filters[group].push(filterValue); // add filter to array
+                    $selectAll.removeClass(activeClass); // remove the selected class from the 'select all' button
+                } else if(filterValue.length) {
+                    // if link is a selected filter
+                    // remove filter from array
+                    // check if the filter group we're concerned with is a combination filter (.one.two instead of .one,.two)
+                    if($optionSet.hasClass(comboClass)) {
+                        filters[group][0] = filters[group][0].replace(filterValue, ""); // delete the filter from the combined string
+                        if(!filters[group][0].length)
+                        // check if there is anything left in the string after deletion
+                            filters[group].splice(0, 1); // if no, remove the empty string
+                    } else {
+                        // if filter group is not a combo filter
+                        var curIndex = filters[group].indexOf(filterValue); // get index of filter string in array
+                        if(curIndex > -1) filters[group].splice(curIndex, 1); // remove the filter
+                    }
+                    if(!$optionSet.find("a." + activeClass).not($this).length)
+                    // if there are no remaining filters
+                        $selectAll.addClass(activeClass); // add the active class to the 'select all' button
+                } else {
+                    // if link is the show all button for that group
+                    $optionSet.find("a." + activeClass).removeClass(activeClass); // remove the active class from all other buttons
+                    filters[group] = []; // clear the array of all filters
+                }
+                // join everything to a single string for the combined filtering groups
+                if($optionSet.hasClass(comboClass) && filters[group].length) filters[group] = [filters[group].join("")];
+            } else {
+                // for exclusive groups
+                // if link is a filter that isn't selected
+                if(!$this.hasClass(activeClass) && filterValue.length) {
+                    // run a loop for all active filters
+                    $optionSet.find("a." + activeClass).each(function(k, filterLink) {
+                        // remove all active filters in the same group from the array
+                        var removeFilter = $(filterLink).attr(filterAttr);
+                        var removeIndex = filters[group].indexOf(removeFilter);
+                        filters[group].splice(removeIndex, 1);
+                    });
+                    filters[group].push(filterValue); // add selected filter to array
+                    $optionSet.find("a." + activeClass).removeClass(activeClass); // remove the active class from all other links in the group
+                } else if(filterValue.length) {
+                    // if link is a selected filter
+                    // remove filter from array
+                    var curIndex = filters[group].indexOf(filterValue);
+                    if(curIndex > -1) filters[group].splice(curIndex, 1);
+                    if(!$optionSet.find("a." + activeClass).not($this).length)
+                    // if there are no remaining filters
+                        $selectAll.addClass(activeClass); // add active class to 'select all' button
+                } else {
+                    // if link is the show all button for that group
+                    $optionSet.find("a." + activeClass).removeClass(activeClass); // remove active class from all other buttons
+                    filters[group] = []; // reset all filters for this group
+                }
+            }
+        }
+        /* --- concat filters --- */
+        function getComboFilter(filters) {
+            // pass the entire array of filters to the function
+            var i = 0; // set counter variable as zero
+            var comboFilters = []; // make a new array to save the string of filters
+            for(var prop in filters) {
+                // loop through all the properties in the filter array passed to the function
+                var filterGroup = filters[prop]; // define variable
+                // skip to next filter group if it doesn't have any values
+                if(!filterGroup.length) {
+                    continue; // exit loop and move on with next iteration
+                }
+                if(i === 0) {
+                    // copy to new array
+                    comboFilters = filterGroup.slice(0);
+                } else {
+                    var filterSelectors = [];
+                    // copy to fresh array
+                    var groupCombo = comboFilters.slice(0);
+                    // merge filter Groups
+                    for(var k = 0, len3 = filterGroup.length; k < len3; k++) {
+                        for(var j = 0, len2 = groupCombo.length; j < len2; j++) {
+                            filterSelectors.push(groupCombo[j] + filterGroup[k]);
+                        }
+                    }
+                    // apply filter selectors to combo filters for next group
+                    comboFilters = filterSelectors;
+                }
+                i++; // increment
+            }
+            var comboFilter = comboFilters.join(", ");
+            return comboFilter;
+        }
+    </script>
+
+</body>
+
+</html>

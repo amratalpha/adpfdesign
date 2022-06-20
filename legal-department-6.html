@@ -16,11 +16,6 @@
     <link href="assets/css/app.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/custom.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
-    <link href="assets/libs/select2/select2.min.css" rel="stylesheet" type="text/css" />
-    <link href="assets/libs/datatables/css/dataTables.bootstrap5.min.css" rel="stylesheet" type="text/css" />
-    <link href="assets/libs/datatables/css/buttons.bootstrap5.min.css" rel="stylesheet" type="text/css" />
-    <link href="assets/libs/datatables/css/responsive.bootstrap5.min.css" rel="stylesheet" type="text/css" />
-    <link href="assets/libs/datatables/css/scroller.bootstrap5.min.css" rel="stylesheet" type="text/css" />
     <link href="assets/libs/jquery-ui-1.13.1/jquery-ui.min.css" rel="stylesheet" type="text/css" />
     
     
@@ -1128,37 +1123,8 @@
     <script src="assets/js/plugins.js"></script>
     <script src="assets/js/script.js"></script>
     <script src="assets/js/app.js"></script>
-    <script src="assets/libs/datatables/js/datatables.min.js"></script>
-    <script src="assets/libs/datatables/js/dataTables.bootstrap5.min.js"></script>
-    <script src="assets/libs/datatables/js/buttons.dataTables.min.js"></script>
-    <script src="assets/libs/datatables/js/buttons.html5.min.js"></script>
-    <script src="assets/libs/datatables/js/buttons.bootstrap5.min.js"></script>
-    <script src="assets/libs/datatables/js/buttons.print.min.js"></script>
-    <script src="assets/libs/datatables/js/jszip.min.js"></script>
-    <script src="assets/libs/datatables/js/responsive.bootstrap5.min.js"></script>
-    <script src="assets/libs/datatables/js/scroller.bootstrap5.min.js"></script>
-    <script src="assets/libs/select2/select2.min.js"></script>
     <script src="assets/libs/jquery-ui-1.13.1/jquery-ui.min.js"></script>
     <script src="assets/libs/isotope-layout/isotope.pkgd.min.js"></script>
-
-    <script>
-        function uncheckAll() {
-            $("input[type='checkbox']:checked").prop("checked", false)
-        }
-        $('.clear').on('click', uncheckAll)
-    </script>
-
-    <script>
-        $(document).ready(function () {
-            $('#table').DataTable({
-                "bProcessing": true,
-                "bPaginate": true,
-                "sPaginationType": "full_numbers",
-                dom: "<'row'<'col-sm-4'l><'col-sm-4'B><'col-sm-4'f>>" + "<'row'<'col-sm-12'tr>>" + "<'row'<'col-sm-5'i><'col-sm-7'p>>",
-                buttons: ['copy', 'csv', 'excel', 'print'],
-            });
-        });
-    </script>
 
     <script>
         $(function () {
