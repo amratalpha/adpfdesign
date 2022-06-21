@@ -1255,6 +1255,87 @@ ul.tree:before {
 	width: 100%;
 }
 
+/*-------------vertical-tree-view------------*/
+
+.vertical-tree ul{
+	padding-left: 30px;
+}
+
+.vertical-tree li {
+	margin: 0px 0;
+	list-style-type: none;
+	position: relative;
+	padding: 20px 5px 0px 5px;
+}
+
+.vertical-tree li::before{
+	content: '';
+	position: absolute; 
+	top: 0;
+	width: 1px; 
+	height: 100%;
+	right: auto; 
+	left: -20px;
+	border-left: 2px solid #ccc;
+	bottom: 50px;
+}
+
+.vertical-tree li::after{
+	content: '';
+	position: absolute; 
+	top: 34px; 
+	width: 25px; 
+	height: 20px;
+	right: auto; 
+	left: -20px;
+	border-top: 2px solid #ccc;
+}
+
+.vertical-tree li a{
+	display: inline-block;
+	padding: 8px 30px;
+	text-decoration: none;
+	background-color: #4d6340;
+	color: #fff;
+	border: 1px solid #4d6340;
+	font-size: 13px;
+	border-radius: 4px;
+}
+
+.sub-menu {
+	background-color: #77755a !important;
+	border: 1px solid #77755a !important;
+}
+
+.sub-menu-level {
+	background-color: #c6a45d !important;
+	border: 1px solid #c6a45d !important;
+}
+
+
+.vertical-tree > ul > li::before, 
+.vertical-tree > ul > li::after{
+	border: 0;
+}
+
+.vertical-tree li:last-child::before{ 
+		height: 34px;
+}
+
+.vertical-tree li a:hover, 
+.vertical-tree li a:hover+ul li a {
+	background-color: #77755a;
+	color: #fff;
+	border: 1px solid #77755a;
+}
+
+.vertical-tree li a:hover+ul li::after, 
+.vertical-tree li a:hover+ul li::before, 
+.vertical-tree li a:hover+ul::before, 
+.vertical-tree li a:hover+ul ul::before{
+	border-color:  #fbba00;
+}
+
 /* Legal Department */
 
 .clear {
